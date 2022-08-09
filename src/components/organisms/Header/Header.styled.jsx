@@ -53,10 +53,12 @@ export const StyleNavigationWrapper = styled.div`
   }
 `;
 
-export const StyleHeaderContactsWrapper = styled.div`
+export const StyleHeaderContactsWrapper = styled.a`
   display: flex;
   align-items: center;
   gap: 14px;
+
+  color: #000;
 `;
 
 export const StyleHeaderContactsIconWrapper = styled.div`
@@ -76,18 +78,18 @@ export const StyleHeaderContactsTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5px;
-`;
 
-export const StyleHeaderContactsText = styled.p`
-  font-weight: 500;
-  font-size: 16px;
+  & p:first-of-type {
+    font-weight: 500;
+    font-size: 16px;
 
-  opacity: 0.7;
-`;
+    opacity: 0.7;
+  }
 
-export const StyleHeaderContactsSubtext = styled.p`
-  font-weight: 600;
-  font-size: 18px;
+  & p:last-of-type {
+    font-weight: 600;
+    font-size: 18px;
+  }
 `;
 
 export const StyleHeaderNavButtonWrapper = styled.div`

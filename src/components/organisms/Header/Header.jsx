@@ -3,8 +3,6 @@ import Navigation from '../../atoms/Navigation';
 import {
   StyleHeader,
   StyleHeaderContactsIconWrapper,
-  StyleHeaderContactsSubtext,
-  StyleHeaderContactsText,
   StyleHeaderContactsTextWrapper,
   StyleHeaderContactsWrapper,
   StyleHeaderNavButtonWrapper,
@@ -32,15 +30,13 @@ const Header = () => {
       <StyleNavigationWrapper isNavOpen={isNavOpen}>
         <Navigation />
         <StyleHeaderSeparator></StyleHeaderSeparator>
-        <StyleHeaderContactsWrapper>
+        <StyleHeaderContactsWrapper href={'tel:+18002652452'}>
           <StyleHeaderContactsIconWrapper>
             <PhoneIcon />
           </StyleHeaderContactsIconWrapper>
           <StyleHeaderContactsTextWrapper>
-            <StyleHeaderContactsText>Road Assistance</StyleHeaderContactsText>
-            <StyleHeaderContactsSubtext>
-              1800 265 24 52
-            </StyleHeaderContactsSubtext>
+            <p>Road Assistance</p>
+            <p>1800 265 24 52</p>
           </StyleHeaderContactsTextWrapper>
         </StyleHeaderContactsWrapper>
       </StyleNavigationWrapper>
