@@ -2,12 +2,12 @@ import React, { Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ROUTES from './shared/constants/routes';
 import './App.css';
-import Navigation from './components/organisms/Navigation';
+import Header from './components/organisms/Header/Header';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Navigation />
+      <Header />
       <Suspense>
         <Routes>
           {ROUTES.map((route) => (
