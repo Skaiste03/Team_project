@@ -19,6 +19,8 @@ const TEXTS = {
     batteries: 'Batteries',
     insur: 'Insurance Claim',
     custom: 'Custom Service',
+    wash: 'Car wash',
+    ac: 'AC Repair',
   },
 };
 
