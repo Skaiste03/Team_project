@@ -12,9 +12,11 @@ export const StyledCallToActionContainer = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
 
+  /* CTA container */
   max-width: 1280px;
   margin: 0 auto;
   padding: 0;
+  /* CTA container */
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     padding: 0 15px;
