@@ -10,6 +10,7 @@ export const StyleNavigation = styled.nav`
 export const StyleNavigationList = styled.ul`
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
 
   width: 100%;
