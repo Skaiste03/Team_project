@@ -11,6 +11,7 @@ import {
 } from './Header.styled';
 import { LogoIcon, NavIcon, PhoneIcon } from '../../../assets/icons';
 import { Link } from 'react-router-dom';
+import TEXTS from '../../../shared/constants/texts';
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -28,13 +29,13 @@ const Header = () => {
       <StyleHeaderNavWrapper isNavOpen={isNavOpen}>
         <Navigation />
         <StyleHeaderSeparator></StyleHeaderSeparator>
-        <StyleHeaderContactsWrapper href={'tel:+18002652452'}>
+        <StyleHeaderContactsWrapper href={`tel:${TEXTS.header.phone}`}>
           <StyleHeaderContactsIconWrapper>
             <PhoneIcon />
           </StyleHeaderContactsIconWrapper>
           <StyleHeaderContactsTextWrapper>
-            <p>Road Assistance</p>
-            <p>1800 265 24 52</p>
+            <p>{TEXTS.header.service}</p>
+            <p>{TEXTS.header.phone}</p>
           </StyleHeaderContactsTextWrapper>
         </StyleHeaderContactsWrapper>
       </StyleHeaderNavWrapper>
