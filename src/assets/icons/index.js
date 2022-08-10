@@ -1,3 +1,16 @@
+// How to create new svg icon?
+
+// Example:
+// export const ExampleIcon = (props) => {
+//   return <svg {...props}></svg>;
+// };
+
+// Usage:
+// import { ExampleIcon } from '../assets/icons';
+// const ExampleComponent = () => {
+//   return <ExampleIcon width={'20'} height={'20'}/>
+// }
+
 export const LogoIcon = (props) => {
   return (
     <svg
