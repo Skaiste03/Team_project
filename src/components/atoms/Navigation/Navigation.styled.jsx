@@ -10,7 +10,6 @@ export const StyleNavigation = styled.nav`
 export const StyleNavigationList = styled.ul`
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 10px;
 
   width: 100%;
@@ -23,7 +22,6 @@ export const StyleNavigationList = styled.ul`
   }
 
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
-    flex-direction: row;
     gap: 40px;
   }
 
