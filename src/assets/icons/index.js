@@ -34,7 +34,7 @@ export const NavIcon = (props) => {
     <svg
       xmlns='http://www.w3.org/2000/svg'
       width='27'
-      height='auto'
+      height='31'
       viewBox='0 0 448 512'
       {...props}
     >
