@@ -7,7 +7,12 @@ export const StyleHeader = styled.header`
   justify-content: space-between;
   gap: 32px;
 
-  padding: 18px 0;
+  padding: 18px 30px;
+
+  /* Nav container */
+  max-width: 1280px;
+  margin: 0 auto;
+  /* Nav container */
 
   & svg {
     display: block;
@@ -20,6 +25,7 @@ export const StyleHeader = styled.header`
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     justify-content: space-between;
+    padding: 18px 15px;
   }
 `;
 
@@ -41,7 +47,7 @@ export const StyleHeaderNavWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 32px;
+  gap: 20px;
 
   width: 100%;
 
@@ -50,6 +56,10 @@ export const StyleHeaderNavWrapper = styled.div`
     flex-direction: row;
 
     width: auto;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    gap: 32px;
   }
 `;
 
