@@ -11,7 +11,7 @@ import {
 } from './Header.styled';
 import { LogoIcon, NavIcon, PhoneIcon } from '../../../assets/icons';
 import { Link } from 'react-router-dom';
-import TEXTS from '../../../shared/constants/texts';
+import TEXTS from '../../../shared/texts/texts';
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);

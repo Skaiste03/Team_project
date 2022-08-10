@@ -1,6 +1,6 @@
 // import React from 'react';
 import { uid } from 'uid';
-import TEXTS from './texts';
+import TEXTS from '../texts/texts';
 // const HomePage = React.lazy(() => import('../pages/HomePage'));
 
 const ROUTES = [
