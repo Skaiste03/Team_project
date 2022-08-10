@@ -1,9 +1,9 @@
-import React, { Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ROUTES from "./shared/constants/routes";
-import "./App.css";
-import Header from "./components/organisms/Header/Header";
-import Footer from "./components/organisms/Footer/Footer";
+import React, { Suspense } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ROUTES from './shared/constants/routes';
+import './App.css';
+import Header from './components/organisms/Header/Header';
+import Footer from './components/organisms/Footer/Footer';
 
 const App = () => {
   return (
