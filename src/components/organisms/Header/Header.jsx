@@ -7,7 +7,7 @@ import {
   StyleHeaderContactsWrapper,
   StyleHeaderNavButtonWrapper,
   StyleHeaderSeparator,
-  StyleNavigationWrapper,
+  StyleHeaderNavWrapper,
 } from './Header.styled';
 import { LogoIcon, NavIcon, PhoneIcon } from '../../../assets/icons';
 import { Link } from 'react-router-dom';
@@ -25,7 +25,7 @@ const Header = () => {
         <NavIcon />
       </StyleHeaderNavButtonWrapper>
 
-      <StyleNavigationWrapper isNavOpen={isNavOpen}>
+      <StyleHeaderNavWrapper isNavOpen={isNavOpen}>
         <Navigation />
         <StyleHeaderSeparator></StyleHeaderSeparator>
         <StyleHeaderContactsWrapper href={'tel:+18002652452'}>
@@ -37,7 +37,7 @@ const Header = () => {
             <p>1800 265 24 52</p>
           </StyleHeaderContactsTextWrapper>
         </StyleHeaderContactsWrapper>
-      </StyleNavigationWrapper>
+      </StyleHeaderNavWrapper>
     </StyleHeader>
   );
 };

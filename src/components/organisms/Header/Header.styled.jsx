@@ -36,7 +36,7 @@ export const StyleHeaderSeparator = styled.div`
   }
 `;
 
-export const StyleNavigationWrapper = styled.div`
+export const StyleHeaderNavWrapper = styled.div`
   display: ${({ isNavOpen }) => (isNavOpen ? 'flex' : 'none')};
   align-items: center;
   justify-content: center;
