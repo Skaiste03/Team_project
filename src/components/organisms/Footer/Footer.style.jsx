@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import BREAKPOINTS from "../../../shared/constants/breakpoints";
+import styled from 'styled-components';
+import BREAKPOINTS from '../../../shared/constants/breakpoints';
 
 export const StyledFooter = styled.footer`
   width: calc((100vw / 100%) - 100vw);
