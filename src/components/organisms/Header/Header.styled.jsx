@@ -72,6 +72,10 @@ export const StyleHeaderContactsIconWrapper = styled.div`
 
   width: 40px;
   height: 40px;
+
+  & svg {
+    color: #fff;
+  }
 `;
 
 export const StyleHeaderContactsTextWrapper = styled.div`

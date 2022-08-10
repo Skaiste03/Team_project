@@ -9,9 +9,7 @@ import {
   StyleHeaderSeparator,
   StyleNavigationWrapper,
 } from './Header.styled';
-import { ReactComponent as LogoIcon } from '../../../assets/images/logo-icon.svg';
-import { ReactComponent as PhoneIcon } from '../../../assets/images/phone-icon.svg';
-import { ReactComponent as NavIcon } from '../../../assets/images/nav-icon.svg';
+import { LogoIcon, NavIcon, PhoneIcon } from '../../../assets/icons';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
