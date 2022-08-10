@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react';
 import {
   FacebookIcon,
   InstagramIcon,
   LinkedinIcon,
   TwitterIcon,
   LogoIcon,
-} from "../../../assets/icons";
+} from '../../../assets/icons';
 import {
   StyledFooter,
   StyledFooterTopDiv,
   StyledFooterBottomDiv,
-} from "./Footer.style";
-import Navigation from "../../atoms/Navigation";
-import TEXTS from "../../../shared/texts/texts";
+} from './Footer.style';
+import Navigation from '../../atoms/Navigation';
+import TEXTS from '../../../shared/texts/texts';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
