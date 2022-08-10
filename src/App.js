@@ -4,7 +4,7 @@ import ROUTES from './shared/constants/routes';
 import './App.css';
 import Header from './components/organisms/Header/Header';
 import SERVICES from './shared/constants/services';
-import CallToAction from './components/atoms/CallToAction/CallToAction';
+import Card from './components/atoms/Card/Card';
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
         </Routes>
       </Suspense>
       {SERVICES.map((service) => (
-        <CallToAction key={service.id} service={service} />
+        <Card key={service.id} service={service} />
       ))}
     </BrowserRouter>
   );
