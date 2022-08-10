@@ -1,13 +1,14 @@
 // import React from 'react';
 import { uid } from 'uid';
+import TEXTS from './texts';
 // const HomePage = React.lazy(() => import('../pages/HomePage'));
 
 const ROUTES = [
-  { id: uid(), path: '/', text: 'Home', element: '' },
-  { id: uid(), path: '/', text: 'About us', element: '' },
-  { id: uid(), path: '/', text: 'Services', element: '' },
-  { id: uid(), path: '/', text: 'Blog', element: '' },
-  { id: uid(), path: '/', text: 'Contact', element: '' },
+  { id: uid(), path: '/', element: '', text: `${TEXTS.navigation.home}` },
+  { id: uid(), path: '/', element: '', text: `${TEXTS.navigation.aboutus}` },
+  { id: uid(), path: '/', element: '', text: `${TEXTS.navigation.services}` },
+  { id: uid(), path: '/', element: '', text: `${TEXTS.navigation.blog}` },
+  { id: uid(), path: '/', element: '', text: `${TEXTS.navigation.contact}` },
 ];
 
 export default ROUTES;
