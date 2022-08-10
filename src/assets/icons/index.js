@@ -5,7 +5,7 @@
 //   return <svg {...props}></svg>;
 // };
 
-// Usage:
+// Usage in components:
 // import { ExampleIcon } from '../assets/icons';
 // const ExampleComponent = () => {
 //   return <ExampleIcon width={'20'} height={'20'}/>
