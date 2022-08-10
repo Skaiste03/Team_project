@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import BREAKPOINTS from '../../../shared/constants/breakpoints';
+import styled from "styled-components";
+import BREAKPOINTS from "../../../shared/constants/breakpoints";
 
 export const StyleNavigation = styled.nav`
   display: flex;
@@ -16,6 +16,8 @@ export const StyleNavigationList = styled.ul`
   width: 100%;
 
   list-style: none;
+
+  align-items: center;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     flex-direction: row;
