@@ -1,8 +1,15 @@
 import React from 'react';
-import { StyledHomePage } from './HomePage.styled';
+import Hero from './components/organisms/Hero/Hero';
+import { StyledHeroContainer, StyledHomePage } from './HomePage.style';
 
 const HomePage = () => {
-  return <StyledHomePage>HomePage</StyledHomePage>;
+  return (
+    <StyledHomePage>
+      <StyledHeroContainer>
+        <Hero />
+      </StyledHeroContainer>
+    </StyledHomePage>
+  );
 };
 
 export default HomePage;
