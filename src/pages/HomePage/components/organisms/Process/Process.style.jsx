@@ -7,6 +7,8 @@ export const StyledProcess = styled.div`
   flex-direction: column;
   gap: 60px;
 
+  padding: 128px 0;
+
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     flex-direction: row;
     gap: 20px;
@@ -42,4 +44,16 @@ export const StyledProcessHeading = styled.h2`
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     text-align: left;
   }
+`;
+
+export const StyledProcessDesc = styled.p`
+  color: #1e1b1b;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+
+  margin-top: 16px;
+  margin-bottom: 32px;
+
+  opacity: 0.6;
 `;
