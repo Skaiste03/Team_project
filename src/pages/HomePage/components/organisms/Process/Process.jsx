@@ -1,8 +1,20 @@
 import React from 'react';
-import { StyledProcess } from './Process.style';
+import {
+  StyledPocessRight,
+  StyledProcess,
+  StyledProcessHeading,
+  StyledProcessLeft,
+} from './Process.style';
 
 const Process = () => {
-  return <StyledProcess>Process</StyledProcess>;
+  return (
+    <StyledProcess>
+      <StyledProcessLeft>
+        <StyledProcessHeading></StyledProcessHeading>
+      </StyledProcessLeft>
+      <StyledPocessRight></StyledPocessRight>
+    </StyledProcess>
+  );
 };
 
 export default Process;
