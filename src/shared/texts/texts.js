@@ -41,14 +41,6 @@ const TEXTS = {
     quote: 'Get your quote',
     more: 'Learn more',
     message: 'Send a message',
-    size: {
-      sm: 'sm',
-      lg: 'lg',
-    },
-    bg: {
-      primary: 'primary',
-      black: 'black',
-    },
   },
 };
 
