@@ -19,6 +19,7 @@ const TEXTS = {
     },
     address: 'NH 234 Public Square San Francisco 65368',
     openhours: 'Monday to Friday 9:00 AM to 10:00 AM',
+    cop: 'Copyright Finsweet',
   },
   services: {
     diag: 'Diagnostics',
