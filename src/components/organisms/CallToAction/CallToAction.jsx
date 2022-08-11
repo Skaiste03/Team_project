@@ -20,11 +20,7 @@ const CallToAction = () => {
           <StyledCallToActionHeading>
             {TEXTS.cta.heading}
           </StyledCallToActionHeading>
-          <Button
-            text={TEXTS.button.contact}
-            size={TEXTS.button.size.sm}
-            bg={TEXTS.button.bg.black}
-          />
+          <Button text={TEXTS.button.contact} bg='black' />
         </StyledCallToActionBorder>
       </StyledCallToActionContainer>
     </StyledCallToAction>
