@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import BREAKPOINTS from '../../shared/constants/breakpoints';
 
-export const StyledHomePage = styled.div``;
+export const StyledHomePage = styled.main``;
 
 export const StyledHeroContainer = styled.div`
   max-width: 1280px;
@@ -11,4 +11,8 @@ export const StyledHeroContainer = styled.div`
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     padding: 0 15px;
   }
+`;
+
+export const StyledServicesWrapper = styled.div`
+  background-color: #e2e6e9;
 `;
