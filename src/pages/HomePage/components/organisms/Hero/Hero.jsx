@@ -16,13 +16,14 @@ import {
 } from './Hero.style';
 import TEXTS from '../../../../../shared/texts/texts';
 import { TimeHeroIcon, StarHeroIcon } from '../../../../../assets/icons';
+import Button from '../../../../../components/atoms/Button';
 
 const Hero = () => {
   return (
     <StyledHero>
       <StyledHeroLeft>
         <StyledHeroHeading>{TEXTS.homePage.hero.heading}</StyledHeroHeading>
-        <button>{TEXTS.homePage.hero.button}</button>
+        <Button bg={'primary'} text={TEXTS.homePage.hero.button} />
         <StyledHeroOpenWrapper>
           <TimeHeroIcon />
           <StyledHeroOpenTitle>
