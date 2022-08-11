@@ -66,7 +66,7 @@ const Footer = () => {
             <Navigation />
           </div>
           <div className="copyright">
-            &copy; Copyright Finsweet {currentYear}
+            &copy; {TEXTS.footer.cop} {currentYear}
           </div>
         </StyledFooterBottomContainerDiv>
       </StyledFooterBottomDiv>
