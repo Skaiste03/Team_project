@@ -8,16 +8,23 @@ import {
   StyledHeroOpenWrapper,
   StyledHeroRight,
 } from './Hero.style';
+import TEXTS from '../../../../../shared/texts/texts';
+import { TimeHeroIcon } from '../../../../../assets/icons';
 
 const Hero = () => {
   return (
     <StyledHero>
       <StyledHeroLeft>
-        <StyledHeroHeading></StyledHeroHeading>
-        <button>Placeholder</button>
+        <StyledHeroHeading>{TEXTS.homePage.hero.heading}</StyledHeroHeading>
+        <button>{TEXTS.homePage.hero.button}</button>
         <StyledHeroOpenWrapper>
-          <StyledHeroOpenTitle></StyledHeroOpenTitle>
-          <StyledHeroOpenSubTitle></StyledHeroOpenSubTitle>
+          <TimeHeroIcon />
+          <StyledHeroOpenTitle>
+            {TEXTS.homePage.hero.openTitle}
+          </StyledHeroOpenTitle>
+          <StyledHeroOpenSubTitle>
+            {TEXTS.homePage.hero.openSubTitle}
+          </StyledHeroOpenSubTitle>
         </StyledHeroOpenWrapper>
       </StyledHeroLeft>
       <StyledHeroRight></StyledHeroRight>

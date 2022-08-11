@@ -24,7 +24,22 @@ export const StyledHeroHeading = styled.h1`
 `;
 
 export const StyledHeroOpenWrapper = styled.div`
+  display: grid;
+  justify-content: start;
+  grid-template-columns: repeat(2, auto);
+  grid-column-gap: 13px;
+
   padding-top: 48px;
+
+  & svg {
+    justify-self: center;
+    align-self: center;
+
+    color: #e2e6e9;
+
+    grid-row-start: 1;
+    grid-row-end: span 2;
+  }
 `;
 
 export const StyledHeroOpenTitle = styled.p`
@@ -35,6 +50,8 @@ export const StyledHeroOpenTitle = styled.p`
 `;
 
 export const StyledHeroOpenSubTitle = styled.span`
+  grid-column: 2;
+
   color: #939191;
   font-weight: 500;
   font-size: 16px;
