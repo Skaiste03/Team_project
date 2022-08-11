@@ -52,6 +52,7 @@ const TEXTS = {
         value: '24',
       },
     },
+  },
   cta: {
     heading: 'Get in touch with us for your service related query',
   },
