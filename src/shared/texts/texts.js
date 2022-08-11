@@ -52,23 +52,23 @@ const TEXTS = {
         value: '24',
       },
     },
+    services: {
+      conventient: {
+        title: 'Convenient service',
+        desc: 'Through True Rich Attended does no end it his mother since real had half every him.',
+      },
+      expert: {
+        title: 'Expert mechanics',
+        desc: 'Through True Rich Attended does no end it his mother since real had half every him.',
+      },
+      pricing: {
+        title: 'Transparent pricing',
+        desc: 'Through True Rich Attended does no end it his mother since real had half every him.',
+      },
+    },
   },
   cta: {
     heading: 'Get in touch with us for your service related query',
-  },
-  experience: {
-    conventient: {
-      title: 'Convenient service',
-      desc: 'Through True Rich Attended does no end it his mother since real had half every him.',
-    },
-    expert: {
-      title: 'Expert mechanics',
-      desc: 'Through True Rich Attended does no end it his mother since real had half every him.',
-    },
-    pricing: {
-      title: 'Transparent pricing',
-      desc: 'Through True Rich Attended does no end it his mother since real had half every him.',
-    },
   },
 };
 
