@@ -20,6 +20,18 @@ const TEXTS = {
     address: "NH 234 Public Square San Francisco 65368",
     openhours: "Monday to Friday 9:00 AM to 10:00 AM",
   },
+  services: {
+    diag: 'Diagnostics',
+    engine: 'Engine Repair',
+    wheel: 'Wheel Repair',
+    oil: 'Oil Filter',
+    body: 'Body Work',
+    batteries: 'Batteries',
+    insur: 'Insurance Claim',
+    custom: 'Custom Service',
+    wash: 'Car wash',
+    ac: 'AC Repair',
+  },
 };
 
 export default TEXTS;
