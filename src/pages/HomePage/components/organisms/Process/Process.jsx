@@ -7,6 +7,7 @@ import {
   StyledProcessLeft,
 } from './Process.style';
 import TEXTS from '../../../../../shared/texts/texts';
+import QuoteCard from '../../../../../components/atoms/QuoteCard/QuoteCard';
 
 const Process = () => {
   return (
@@ -18,7 +19,9 @@ const Process = () => {
         <StyledProcessDesc>{TEXTS.homePage.process.desc}</StyledProcessDesc>
         <button>{TEXTS.homePage.process.buttonText}</button>
       </StyledProcessLeft>
-      <StyledPocessRight></StyledPocessRight>
+      <StyledPocessRight>
+        <QuoteCard />
+      </StyledPocessRight>
     </StyledProcess>
   );
 };

@@ -16,10 +16,23 @@ export const StyledProcess = styled.div`
 `;
 
 export const StyledProcessLeft = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
   width: 100%;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     width: calc(50% - 10px);
+  }
+
+  & button {
+    align-self: center;
+
+    @media screen and (min-width: ${BREAKPOINTS.md}) {
+      align-self: flex-start;
+    }
   }
 `;
 
@@ -52,8 +65,15 @@ export const StyledProcessDesc = styled.p`
   font-size: 16px;
   line-height: 28px;
 
+  text-align: center;
+
   margin-top: 16px;
   margin-bottom: 32px;
 
   opacity: 0.6;
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    padding-right: 30%;
+    text-align: left;
+  }
 `;
