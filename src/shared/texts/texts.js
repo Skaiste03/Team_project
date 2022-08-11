@@ -33,6 +33,9 @@ const TEXTS = {
     wash: 'Car wash',
     ac: 'AC Repair',
   },
+  cta: {
+    heading: 'Get in touch with us for your service related query',
+  },
 };
 
 export default TEXTS;
