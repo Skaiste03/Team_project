@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const StyledServiceCard = styled.div`
   display: grid;
   grid-column-gap: 16px;
+  grid-row-gap: 8px;
   grid-template-columns: repeat(2, auto);
   justify-content: start;
 

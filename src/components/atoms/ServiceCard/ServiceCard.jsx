@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyledServiceCard } from './ServiceCard.style';
 
-const ServiceCard = (props) => {
+const ServiceCard = ({ experiance }) => {
   return (
     <StyledServiceCard>
-      <img src={props.icon} alt='' />
-      <p>{props.title}</p>
-      <span>{props.desc}</span>
+      <img src={experiance.icon} alt='' />
+      <p>{experiance.title}</p>
+      <span>{experiance.desc}</span>
     </StyledServiceCard>
   );
 };
