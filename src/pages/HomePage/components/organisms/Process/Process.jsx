@@ -8,6 +8,7 @@ import {
 } from './Process.style';
 import TEXTS from '../../../../../shared/texts/texts';
 import QuoteCard from '../../../../../components/atoms/QuoteCard/QuoteCard';
+import { HOME_PAGE_QUOTES } from '../../../../../shared/constants/quotes';
 
 const Process = () => {
   return (
@@ -20,7 +21,13 @@ const Process = () => {
         <button>{TEXTS.homePage.process.buttonText}</button>
       </StyledProcessLeft>
       <StyledPocessRight>
-        <QuoteCard />
+        {HOME_PAGE_QUOTES.map((quote, index) => (
+          <QuoteCard
+            quote={quote}
+            number={index + 1}
+            line={index !== HOME_PAGE_QUOTES.length - 1}
+          />
+        ))}
       </StyledPocessRight>
     </StyledProcess>
   );

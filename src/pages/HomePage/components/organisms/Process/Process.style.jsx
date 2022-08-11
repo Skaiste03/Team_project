@@ -5,6 +5,7 @@ export const StyledProcess = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: flex-start;
   gap: 60px;
 
   padding: 128px 0;
@@ -37,6 +38,10 @@ export const StyledProcessLeft = styled.div`
 `;
 
 export const StyledPocessRight = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
   width: 100%;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
