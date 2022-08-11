@@ -92,6 +92,8 @@ export const StyledServicesRightHeading = styled.h3`
   letter-spacing: -0.03em;
   text-align: center;
 
+  margin-bottom: 32px;
+
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     text-align: left;
   }

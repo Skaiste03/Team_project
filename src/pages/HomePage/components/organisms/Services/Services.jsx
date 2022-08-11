@@ -12,6 +12,8 @@ import TEXTS from '../../../../../shared/texts/texts';
 import ServiceCard from '../../../../../components/atoms/ServiceCard';
 import EXPERIANCES from '../../../../../shared/constants/experiences';
 import { ArrowIcon } from '../../../../../assets/icons';
+import Form from '../../../../../components/organisms/Form/Form';
+import { HOME_PAGE_FORM } from '../../../../../shared/constants/forms';
 
 const Services = () => {
   return (
@@ -35,6 +37,8 @@ const Services = () => {
         <StyledServicesRightHeading>
           {TEXTS.homePage.services.formHeading}
         </StyledServicesRightHeading>
+
+        <Form inputs={HOME_PAGE_FORM} buttonText={TEXTS.homePage.form.button} />
       </StyledServicesRight>
     </StyledServices>
   );
