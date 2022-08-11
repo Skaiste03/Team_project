@@ -54,6 +54,7 @@ const TEXTS = {
     },
     services: {
       heading: 'We are taking car servicing seriously',
+      button: 'Know more about us',
       conventient: {
         title: 'Convenient service',
         desc: 'Through True Rich Attended does no end it his mother since real had half every him.',
