@@ -76,6 +76,23 @@ const TEXTS = {
       },
       button: 'Get your quote',
     },
+    process: {
+      heading: 'We follow a clear process to help you out.',
+      desc: 'Through True Rich Attended does no end it his mother since real had half every him case in packages enquire',
+      buttonText: 'Learn more',
+      firstProcess: {
+        title: 'Get a Quote',
+        desc: 'Through True Rich Attended does no end it his mother since real had half every.',
+      },
+      secondProcess: {
+        title: 'Book an Appointment',
+        desc: 'Through True Rich Attended does no end it his mother since real had half every.',
+      },
+      thirdProcess: {
+        title: 'Get your Service Done',
+        desc: 'Through True Rich Attended does no end it his mother since real had half every.',
+      },
+    },
   },
   cta: {
     heading: 'Get in touch with us for your service related query',
