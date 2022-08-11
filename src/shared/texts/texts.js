@@ -35,6 +35,17 @@ const TEXTS = {
   cta: {
     heading: 'Get in touch with us for your service related query',
   },
+  button: {
+    contact: 'Contact Us',
+    service: 'Book a service',
+    quote: 'Get your quote',
+    more: 'Learn more',
+    message: 'Send a message',
+    size: {
+      sm: 'sm',
+      lg: 'lg',
+    },
+  },
 };
 
 export default TEXTS;
