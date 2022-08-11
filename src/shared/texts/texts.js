@@ -42,6 +42,15 @@ const TEXTS = {
       button: 'Book a service',
       openTitle: 'Monday to Friday 9:00 AM to 10:00  AM',
       openSubTitle: 'We are open',
+      service: 'Quick service',
+      rating: {
+        text: 'Rating',
+        value: '4.5/5',
+      },
+      hr: {
+        text: 'hr',
+        value: '24',
+      },
     },
   },
 };
