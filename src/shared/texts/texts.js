@@ -6,10 +6,12 @@ const TEXTS = {
     blog: 'Blog',
     contact: 'Contact',
   },
+
   header: {
     service: 'Road Assistance',
     phone: '1800 265 24 52',
   },
+
   footer: {
     heading: 'Get in touch with us for your service',
     titles: {
@@ -21,6 +23,7 @@ const TEXTS = {
     openhours: 'Monday to Friday 9:00 AM to 10:00 AM',
     cop: 'Copyright Finsweet',
   },
+
   services: {
     diag: 'Diagnostics',
     engine: 'Engine Repair',
@@ -33,6 +36,22 @@ const TEXTS = {
     wash: 'Car wash',
     ac: 'AC Repair',
   },
+  homePage: {
+    hero: {
+      heading: 'Get your vehicle service done online at one place',
+      button: 'Book a service',
+      openTitle: 'Monday to Friday 9:00 AM to 10:00  AM',
+      openSubTitle: 'We are open',
+      service: 'Quick service',
+      rating: {
+        text: 'Rating',
+        value: '4.5/5',
+      },
+      hr: {
+        text: 'hr',
+        value: '24',
+      },
+    },
   cta: {
     heading: 'Get in touch with us for your service related query',
   },
