@@ -69,6 +69,13 @@ const TEXTS = {
         desc: 'Through True Rich Attended does no end it his mother since real had half every him.',
       },
     },
+    form: {
+      placeholder: {
+        location: 'Enter your location',
+        number: 'Your phone number',
+      },
+      button: 'Get your quote',
+    },
   },
   cta: {
     heading: 'Get in touch with us for your service related query',
