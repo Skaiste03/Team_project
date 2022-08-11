@@ -1,15 +1,21 @@
 import React from 'react';
 import {
   StyledHero,
+  StyledHeroBannerService,
+  StyledHeroBannerServiceCircle,
+  StyledHeroBannerStars,
+  StyledHeroBannerStarsWrapper,
+  StyledHeroBannerTextWrapper,
   StyledHeroHeading,
   StyledHeroLeft,
   StyledHeroOpenSubTitle,
   StyledHeroOpenTitle,
   StyledHeroOpenWrapper,
   StyledHeroRight,
+  StyledHeroRightBg,
 } from './Hero.style';
 import TEXTS from '../../../../../shared/texts/texts';
-import { TimeHeroIcon } from '../../../../../assets/icons';
+import { TimeHeroIcon, StarHeroIcon } from '../../../../../assets/icons';
 
 const Hero = () => {
   return (
@@ -27,7 +33,29 @@ const Hero = () => {
           </StyledHeroOpenSubTitle>
         </StyledHeroOpenWrapper>
       </StyledHeroLeft>
-      <StyledHeroRight></StyledHeroRight>
+      <StyledHeroRight>
+        <StyledHeroRightBg></StyledHeroRightBg>
+        <StyledHeroBannerService>
+          <StyledHeroBannerServiceCircle>
+            <p>
+              24 <span>hr</span>
+            </p>
+          </StyledHeroBannerServiceCircle>
+          <p>Quick service</p>
+        </StyledHeroBannerService>
+        <StyledHeroBannerStars>
+          <StyledHeroBannerTextWrapper>
+            4.5/5<span>Rating</span>
+          </StyledHeroBannerTextWrapper>
+          <StyledHeroBannerStarsWrapper>
+            <StarHeroIcon />
+            <StarHeroIcon />
+            <StarHeroIcon />
+            <StarHeroIcon />
+            <StarHeroIcon />
+          </StyledHeroBannerStarsWrapper>
+        </StyledHeroBannerStars>
+      </StyledHeroRight>
     </StyledHero>
   );
 };
