@@ -54,6 +54,7 @@ const TEXTS = {
     },
     services: {
       heading: 'We are taking car servicing seriously',
+      formHeading: 'Get a quote for the car service',
       button: 'Know more about us',
       conventient: {
         title: 'Convenient service',
