@@ -56,6 +56,38 @@ const TEXTS = {
   cta: {
     heading: 'Get in touch with us for your service related query',
   },
+
+  aboutPage: {
+    team: {
+      heading: 'Meet our Team',
+    },
+    members: {
+      nr1: {
+        name: 'Javena Melo',
+        position: 'Founder, Director',
+      },
+      nr2: {
+        name: 'Paul Honson',
+        position: 'Head Technician',
+      },
+      nr3: {
+        name: 'Devon Lane',
+        position: 'Technician',
+      },
+      nr4: {
+        name: 'Jalen Davies',
+        position: 'Marketing Manager',
+      },
+      nr5: {
+        name: 'Kylee Danford',
+        position: 'Sales Manager',
+      },
+      nr6: {
+        name: 'Luisa Wilson',
+        position: 'Support Assistant',
+      },
+    },
+  },
 };
 
 export default TEXTS;
