@@ -1,13 +1,23 @@
 import React from 'react';
-import { StyledQuoteCard, StyledQuoteCardCircle } from './QuoteCard.style';
+import {
+  StyledQuoteCard,
+  StyledQuoteCardCircle,
+  StyledQuoteCardLine,
+  StyledQuoteDesc,
+  StyledQuoteTitle,
+  StyledQuoteCardCircleBottom,
+} from './QuoteCard.style';
 
-const QuoteCard = () => {
+const QuoteCard = ({ quote, line, number }) => {
   return (
     <StyledQuoteCard>
       <StyledQuoteCardCircle>
-        <div></div>
-        <span>03</span>
+        <StyledQuoteCardCircleBottom />
+        <span>{'0' + number}</span>
       </StyledQuoteCardCircle>
+      {line && <StyledQuoteCardLine></StyledQuoteCardLine>}
+      <StyledQuoteTitle>{quote.title}</StyledQuoteTitle>
+      <StyledQuoteDesc>{quote.desc}</StyledQuoteDesc>
     </StyledQuoteCard>
   );
 };
