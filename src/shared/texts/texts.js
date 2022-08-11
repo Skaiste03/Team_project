@@ -21,6 +21,7 @@ const TEXTS = {
     },
     address: 'NH 234 Public Square San Francisco 65368',
     openhours: 'Monday to Friday 9:00 AM to 10:00 AM',
+    cop: 'Copyright Finsweet',
   },
 
   services: {
@@ -35,7 +36,6 @@ const TEXTS = {
     wash: 'Car wash',
     ac: 'AC Repair',
   },
-
   homePage: {
     hero: {
       heading: 'Get your vehicle service done online at one place',
@@ -52,6 +52,8 @@ const TEXTS = {
         value: '24',
       },
     },
+  cta: {
+    heading: 'Get in touch with us for your service related query',
   },
 };
 
