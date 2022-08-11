@@ -12,3 +12,7 @@ export const StyledHeroContainer = styled.div`
     padding: 0 15px;
   }
 `;
+
+export const StyledServicesWrapper = styled.div`
+  background-color: #e2e6e9;
+`;
