@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../../atoms/Button';
 import { StyledForm, StyledInput, StyledInputsWrapper } from './Form.style';
 
 const Form = ({ inputs, buttonText }) => {
@@ -15,7 +16,7 @@ const Form = ({ inputs, buttonText }) => {
           ></StyledInput>
         ))}
       </StyledInputsWrapper>
-      <button>{buttonText}</button>
+      <Button bg={'primary'} text={buttonText} />
     </StyledForm>
   );
 };

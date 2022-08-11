@@ -9,6 +9,7 @@ import {
 import TEXTS from '../../../../../shared/texts/texts';
 import QuoteCard from '../../../../../components/atoms/QuoteCard/QuoteCard';
 import { HOME_PAGE_QUOTES } from '../../../../../shared/constants/quotes';
+import Button from '../../../../../components/atoms/Button';
 
 const Process = () => {
   return (
@@ -18,7 +19,7 @@ const Process = () => {
           {TEXTS.homePage.process.heading}
         </StyledProcessHeading>
         <StyledProcessDesc>{TEXTS.homePage.process.desc}</StyledProcessDesc>
-        <button>{TEXTS.homePage.process.buttonText}</button>
+        <Button bg={'primary'} text={TEXTS.homePage.process.buttonText} />
       </StyledProcessLeft>
       <StyledPocessRight>
         {HOME_PAGE_QUOTES.map((quote, index) => (
