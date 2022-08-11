@@ -52,6 +52,23 @@ const TEXTS = {
         value: '24',
       },
     },
+    services: {
+      heading: 'We are taking car servicing seriously',
+      formHeading: 'Get a quote for the car service',
+      button: 'Know more about us',
+      conventient: {
+        title: 'Convenient service',
+        desc: 'Through True Rich Attended does no end it his mother since real had half every him.',
+      },
+      expert: {
+        title: 'Expert mechanics',
+        desc: 'Through True Rich Attended does no end it his mother since real had half every him.',
+      },
+      pricing: {
+        title: 'Transparent pricing',
+        desc: 'Through True Rich Attended does no end it his mother since real had half every him.',
+      },
+    },
   },
   cta: {
     heading: 'Get in touch with us for your service related query',

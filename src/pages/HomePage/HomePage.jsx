@@ -1,6 +1,11 @@
 import React from 'react';
 import Hero from './components/organisms/Hero/Hero';
-import { StyledHeroContainer, StyledHomePage } from './HomePage.style';
+import Services from './components/organisms/Services/Services';
+import {
+  StyledHeroContainer,
+  StyledHomePage,
+  StyledServicesWrapper,
+} from './HomePage.style';
 
 const HomePage = () => {
   return (
@@ -8,6 +13,9 @@ const HomePage = () => {
       <StyledHeroContainer>
         <Hero />
       </StyledHeroContainer>
+      <StyledServicesWrapper>
+        <Services />
+      </StyledServicesWrapper>
     </StyledHomePage>
   );
 };
