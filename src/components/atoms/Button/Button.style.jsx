@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledButton = styled.button`
-  width: ${(props) =>
-    props.size === 'sm' ? '177' : props.size === 'lg' ? '208' : props.size}px;
-  height: 64px;
-
   font-size: 18px;
   font-weight: 600;
   color: #fff;
