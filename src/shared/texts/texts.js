@@ -45,6 +45,10 @@ const TEXTS = {
       sm: 'sm',
       lg: 'lg',
     },
+    bg: {
+      primary: 'primary',
+      black: 'black',
+    },
   },
 };
 
