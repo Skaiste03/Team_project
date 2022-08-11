@@ -127,6 +127,7 @@ const TEXTS = {
         position: 'Support Assistant',
       },
     },
+  },
   button: {
     contact: 'Contact Us',
     service: 'Book a service',
