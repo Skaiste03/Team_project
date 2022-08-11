@@ -24,7 +24,7 @@ export const StyledFooterTopContainerDiv = styled.div`
   flex-wrap: wrap;
   align-items: center;
 
-  padding: 70px 18px;
+  padding: 70px 30px;
 
   gap: 40px;
 
