@@ -38,14 +38,16 @@ const Hero = () => {
         <StyledHeroBannerService>
           <StyledHeroBannerServiceCircle>
             <p>
-              24 <span>hr</span>
+              {TEXTS.homePage.hero.hr.value}&nbsp;
+              <span>{TEXTS.homePage.hero.hr.text}</span>
             </p>
           </StyledHeroBannerServiceCircle>
-          <p>Quick service</p>
+          <p>{TEXTS.homePage.hero.service}</p>
         </StyledHeroBannerService>
         <StyledHeroBannerStars>
           <StyledHeroBannerTextWrapper>
-            4.5/5<span>Rating</span>
+            {TEXTS.homePage.hero.rating.value}
+            <span>{TEXTS.homePage.hero.rating.text}</span>
           </StyledHeroBannerTextWrapper>
           <StyledHeroBannerStarsWrapper>
             <StarHeroIcon />

@@ -32,18 +32,19 @@ export const StyledHeroLeft = styled.div`
 export const StyledHeroRight = styled.div`
   position: relative;
 
-  display: none;
   width: 100%;
-  height: 632px;
+  height: 316px;
 
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
-    display: block;
     width: 50%;
+    height: 632px;
   }
 `;
 
 export const StyledHeroRightBg = styled.div`
   position: absolute;
+
+  display: none;
 
   background-image: url(${heroImg});
   background-repeat: no-repeat;
@@ -54,6 +55,10 @@ export const StyledHeroRightBg = styled.div`
 
   width: 100%;
   height: 100%;
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    display: block;
+  }
 `;
 
 export const StyledHeroHeading = styled.h1`
@@ -109,6 +114,7 @@ export const StyledHeroOpenSubTitle = styled.span`
 export const StyledHeroBannerService = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 14px;
 
   background: linear-gradient(138.85deg, #ffffff -38.72%, #ffffff 153.95%);
@@ -118,8 +124,9 @@ export const StyledHeroBannerService = styled.div`
 
   position: absolute;
 
-  top: 81px;
+  top: 71px;
   left: 0;
+  right: 0;
 
   padding: 0 15px;
   height: 102px;
@@ -130,11 +137,18 @@ export const StyledHeroBannerService = styled.div`
     font-size: 24px;
     line-height: 36px;
   }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    top: 81px;
+    right: initial;
+    justify-content: initial;
+  }
 `;
 
 export const StyledHeroBannerStars = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 15px;
 
   background: linear-gradient(138.85deg, #ffffff -38.72%, #ffffff 153.95%);
@@ -144,11 +158,19 @@ export const StyledHeroBannerStars = styled.div`
 
   position: absolute;
 
-  bottom: 70px;
-  right: -20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
   padding: 0 35px;
   height: 102px;
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    right: -20px;
+    bottom: 70px;
+    left: initial;
+    justify-content: initial;
+  }
 `;
 
 export const StyledHeroBannerTextWrapper = styled.p`
