@@ -82,9 +82,17 @@ export const StyledQuoteTitle = styled.p`
 
   color: #1e1b1b;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 22px;
   line-height: 28px;
   letter-spacing: -0.03em;
+
+  @media screen and (min-width: ${BREAKPOINTS.sm}) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    font-size: 32px;
+  }
 
   @media screen and (min-width: ${BREAKPOINTS.xl}) {
     line-height: 48px;

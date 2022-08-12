@@ -9,23 +9,26 @@ import TEXTS from '../../../../../shared/texts/texts';
 import SERVICES from '../../../../../shared/constants/services';
 import Card from '../../../../../components/atoms/Card/Card';
 import ArrowButton from '../../../../../components/atoms/ArrowButton';
+import StyledContainer from '../../../../../assets/styles/StyledContainer';
 
 const Abilities = () => {
   return (
-    <StyledAbilities>
-      <StyledAbilitiesSubHeading>
-        {TEXTS.homePage.abilities.subHeading}
-      </StyledAbilitiesSubHeading>
-      <StyledAbilitiesHeading>
-        {TEXTS.homePage.abilities.heading}
-      </StyledAbilitiesHeading>
-      <StyledAbilitiesWrapper>
-        {SERVICES.slice(0, 8).map((service) => (
-          <Card key={service.id} logo={service.logo} text={service.text} />
-        ))}
-      </StyledAbilitiesWrapper>
-      <ArrowButton path={'/'} text={TEXTS.homePage.abilities.buttonText} />
-    </StyledAbilities>
+    <StyledContainer>
+      <StyledAbilities>
+        <StyledAbilitiesSubHeading>
+          {TEXTS.homePage.abilities.subHeading}
+        </StyledAbilitiesSubHeading>
+        <StyledAbilitiesHeading>
+          {TEXTS.homePage.abilities.heading}
+        </StyledAbilitiesHeading>
+        <StyledAbilitiesWrapper>
+          {SERVICES.slice(0, 8).map((service) => (
+            <Card key={service.id} logo={service.logo} text={service.text} />
+          ))}
+        </StyledAbilitiesWrapper>
+        <ArrowButton path={'/'} text={TEXTS.homePage.abilities.buttonText} />
+      </StyledAbilities>
+    </StyledContainer>
   );
 };
 

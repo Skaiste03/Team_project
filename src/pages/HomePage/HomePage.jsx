@@ -6,44 +6,37 @@ import Services from './components/organisms/Services';
 import Experience from './components/organisms/Experience';
 import Brands from './components/organisms/Brands';
 import CallToAction from '../../components/organisms/CallToAction';
-import {
-  StyledAbiliesWrapper,
-  StyledBrandsContainer,
-  StyledExpierenceWrapper,
-  StyledHeroContainer,
-  StyledHomePage,
-  StyledProcessContainer,
-  StyledServicesWrapper,
-} from './HomePage.style';
+import { StyledHomePage } from './HomePage.style';
+import StyledWrapper from '../../assets/styles/StyledWrapper';
 
 const HomePage = () => {
   return (
     <StyledHomePage>
-      <StyledHeroContainer>
+      <StyledWrapper>
         <Hero />
-      </StyledHeroContainer>
+      </StyledWrapper>
 
-      <StyledServicesWrapper>
+      <StyledWrapper theme={'light'}>
         <Services />
-      </StyledServicesWrapper>
+      </StyledWrapper>
 
-      <StyledProcessContainer>
+      <StyledWrapper>
         <Process />
-      </StyledProcessContainer>
+      </StyledWrapper>
 
-      <StyledAbiliesWrapper>
+      <StyledWrapper theme={'lighter'}>
         <Abilities />
-      </StyledAbiliesWrapper>
+      </StyledWrapper>
 
       <CallToAction />
 
-      <StyledExpierenceWrapper>
+      <StyledWrapper theme={'lighter'}>
         <Experience />
-      </StyledExpierenceWrapper>
+      </StyledWrapper>
 
-      <StyledBrandsContainer>
+      <StyledWrapper>
         <Brands />
-      </StyledBrandsContainer>
+      </StyledWrapper>
     </StyledHomePage>
   );
 };

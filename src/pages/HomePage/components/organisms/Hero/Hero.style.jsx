@@ -7,10 +7,15 @@ export const StyledHero = styled.div`
   align-items: center;
   flex-direction: column;
 
-  padding-top: 80px;
-  padding-bottom: 128px;
+  padding: 50px 0;
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
 
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    padding-bottom: 128px;
     flex-direction: row;
   }
 `;
@@ -64,15 +69,22 @@ export const StyledHeroRightBg = styled.div`
 export const StyledHeroHeading = styled.h1`
   color: #1e1b1b;
   font-weight: 800;
-  font-size: 64px;
-  line-height: 84px;
+  font-size: 44px;
+  line-height: 64px;
   letter-spacing: -0.03em;
   text-align: center;
 
   padding-bottom: 32px;
 
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    font-size: 54px;
+    line-height: 74px;
+  }
+
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    font-size: 64px;
     text-align: left;
+    line-height: 84px;
   }
 `;
 
