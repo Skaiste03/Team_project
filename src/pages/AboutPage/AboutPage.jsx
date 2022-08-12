@@ -6,10 +6,14 @@ import { StyledAboutPage } from './AboutPage.style';
 import StyledContainer from '../../assets/styles/StyledContainer';
 import StyledWrapper from '../../assets/styles/StyledWrapper';
 import Color from './components/organisms/Color/Color';
+import Steps from './components/organisms/Steps/Steps';
 
 const AboutPage = () => {
   return (
     <StyledAboutPage>
+      <StyledContainer>
+        <Steps />
+      </StyledContainer>
       <Color />
       <StyledWrapper theme={'lighter'}>
         <StyledContainer>
