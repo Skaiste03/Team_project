@@ -3,7 +3,7 @@ import ctaBgOne from '../../../assets/images/cta-bg-1.jpg';
 import ctaBgTwo from '../../../assets/images/cta-bg-2.jpg';
 import BREAKPOINTS from '../../../shared/constants/breakpoints';
 
-export const StyledCallToAction = styled.div`
+export const StyledCallToAction = styled.section`
   position: relative;
 `;
 
