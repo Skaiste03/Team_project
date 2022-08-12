@@ -24,6 +24,7 @@ const Process = () => {
       <StyledPocessRight>
         {HOME_PAGE_QUOTES.map((quote, index) => (
           <QuoteCard
+            key={quote.id}
             quote={quote}
             number={index + 1}
             line={index !== HOME_PAGE_QUOTES.length - 1}
