@@ -52,10 +52,18 @@ export const StyledServicesExpWrapper = styled.div`
   align-items: flex-start;
   gap: 37px;
 
-  padding-right: 35%;
+  width: 100%;
 
-  @media screen and (max-width: ${BREAKPOINTS.sm}) {
-    padding-right: 0;
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    width: 85%;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    width: 65%;
+  }
+
+  & div:last-of-type {
+    padding-left: 63px;
   }
 `;
 
