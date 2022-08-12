@@ -10,6 +10,7 @@ import Color from './components/organisms/Color/Color';
 const AboutPage = () => {
   return (
     <StyledAboutPage>
+      <Color />
       <StyledWrapper theme={'lighter'}>
         <StyledContainer>
           <Features />
@@ -19,7 +20,6 @@ const AboutPage = () => {
         <OurTeam />
       </StyledContainer>
       <CallToAction />
-      <Color />
     </StyledAboutPage>
   );
 };
