@@ -30,3 +30,7 @@ export const StyledProcessContainer = styled.div`
 export const StyledAbiliesWrapper = styled.div`
   background-color: #f2f2f2;
 `;
+
+export const StyledExpierenceWrapper = styled.div`
+  background-color: #f2f2f2;
+`;

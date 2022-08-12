@@ -6,11 +6,13 @@ import Services from './components/organisms/Services';
 import CallToAction from '../../components/organisms/CallToAction';
 import {
   StyledAbiliesWrapper,
+  StyledExpierenceWrapper,
   StyledHeroContainer,
   StyledHomePage,
   StyledProcessContainer,
   StyledServicesWrapper,
 } from './HomePage.style';
+import Experience from './components/organisms/Experience/Experience';
 
 const HomePage = () => {
   return (
@@ -18,16 +20,24 @@ const HomePage = () => {
       <StyledHeroContainer>
         <Hero />
       </StyledHeroContainer>
+
       <StyledServicesWrapper>
         <Services />
       </StyledServicesWrapper>
+
       <StyledProcessContainer>
         <Process />
       </StyledProcessContainer>
+
       <StyledAbiliesWrapper>
         <Abilities />
       </StyledAbiliesWrapper>
+
       <CallToAction />
+
+      <StyledExpierenceWrapper>
+        <Experience />
+      </StyledExpierenceWrapper>
     </StyledHomePage>
   );
 };

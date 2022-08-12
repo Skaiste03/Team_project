@@ -14,10 +14,26 @@ export const StyledArrowButton = styled.div`
       font-weight: 600;
       font-size: 18px;
       line-height: 32px;
+
+      transition: 0.3s;
     }
 
     & svg {
       color: #1e1b1b;
+
+      transition: 0.3s;
+    }
+  }
+
+  &:hover a {
+    opacity: 0.7;
+
+    & span {
+      opacity: 0.7;
+    }
+
+    & svg {
+      opacity: 0.7;
     }
   }
 `;

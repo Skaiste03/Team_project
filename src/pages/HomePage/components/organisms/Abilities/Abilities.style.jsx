@@ -30,8 +30,8 @@ export const StyledAbilitiesHeading = styled.h2`
   color: #1e1b1b;
 
   font-weight: 800;
-  font-size: 58px;
-  line-height: 76px;
+  font-size: 38px;
+  line-height: 56px;
 
   text-align: center;
   letter-spacing: -0.03em;
@@ -40,6 +40,11 @@ export const StyledAbilitiesHeading = styled.h2`
 
   margin-bottom: 64px;
   margin-top: 8px;
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    font-size: 58px;
+    line-height: 76px;
+  }
 `;
 
 export const StyledAbilitiesSubHeading = styled.p`
