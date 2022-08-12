@@ -42,7 +42,6 @@ export const StyledServicesHeading = styled.h2`
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     text-align: left;
-    /* test */
   }
 `;
 

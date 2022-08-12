@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import BREAKPOINTS from '../../../../../shared/constants/breakpoints';
 
 export const StyledExperience = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   /* Container Experience */
   max-width: 1280px;
@@ -14,7 +15,6 @@ export const StyledExperience = styled.div`
   background-color: #f2f2f2;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
-    grid-template-columns: repeat(4, 1fr);
     padding: 48px 15px;
   }
 `;
