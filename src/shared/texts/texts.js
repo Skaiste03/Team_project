@@ -167,6 +167,10 @@ const TEXTS = {
       },
       desc: 'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes ',
     },
+    steps: {
+      title: 'We Provide Expert Service and aim to have a long term with you',
+      desc: 'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter',
+    },
   },
 
   button: {
