@@ -157,6 +157,16 @@ const TEXTS = {
       title: 'Services we provide to our valued customers',
       desc: 'Through True Rich Attended does no end it his mother since real had half every him end it his mother',
     },
+    color: {
+      titles: {
+        firstTitle:
+          'Serve our customers and always deliver the customer service',
+        secondTitle: `To be the world’s most eader in automotive business solutions.`,
+        thirdTitle:
+          'We value the service we provide and our loyal returning customers',
+      },
+      desc: 'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes ',
+    },
   },
 
   button: {
