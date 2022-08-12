@@ -1,23 +1,23 @@
 import OurTeam from './components/organisms/OurTeam';
 import Features from './components/organisms/Features';
+import CallToAction from '../../components/organisms/CallToAction';
 
-import {
-  StyledAboutPage,
-  StyledContainer,
-  StyledFeaturesWrapper,
-} from './AboutPage.style';
+import { StyledAboutPage } from './AboutPage.style';
+import StyledContainer from '../../assets/styles/StyledContainer';
+import StyledWrapper from '../../assets/styles/StyledWrapper';
 
 const AboutPage = () => {
   return (
     <StyledAboutPage>
-      <StyledFeaturesWrapper>
+      <StyledWrapper theme={'lighter'}>
         <StyledContainer>
           <Features />
         </StyledContainer>
-      </StyledFeaturesWrapper>
+      </StyledWrapper>
       <StyledContainer>
         <OurTeam />
       </StyledContainer>
+      <CallToAction />
     </StyledAboutPage>
   );
 };
