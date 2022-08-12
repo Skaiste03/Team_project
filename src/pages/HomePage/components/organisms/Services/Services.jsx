@@ -4,16 +4,15 @@ import {
   StyledServicesExpWrapper,
   StyledServicesHeading,
   StyledServicesLeft,
-  StyledServicesLink,
   StyledServicesRight,
   StyledServicesRightHeading,
 } from './Services.style';
 import TEXTS from '../../../../../shared/texts/texts';
 import ServiceCard from '../../../../../components/atoms/ServiceCard';
 import EXPERIANCES from '../../../../../shared/constants/experiences';
-import { ArrowIcon } from '../../../../../assets/icons';
 import Form from '../../../../../components/organisms/Form/Form';
 import { HOME_PAGE_FORM } from '../../../../../shared/constants/forms';
+import ArrowButton from '../../../../../components/atoms/ArrowButton';
 
 const Services = () => {
   return (
@@ -26,10 +25,7 @@ const Services = () => {
           {EXPERIANCES.map((experiance) => (
             <ServiceCard key={experiance.id} experiance={experiance} />
           ))}
-          <StyledServicesLink>
-            <span>{TEXTS.homePage.services.button}</span>
-            <ArrowIcon />
-          </StyledServicesLink>
+          <ArrowButton path={'/'} text={TEXTS.homePage.services.button} />
         </StyledServicesExpWrapper>
       </StyledServicesLeft>
 
