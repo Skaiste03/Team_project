@@ -5,6 +5,7 @@ import CallToAction from '../../components/organisms/CallToAction';
 import { StyledAboutPage } from './AboutPage.style';
 import StyledContainer from '../../assets/styles/StyledContainer';
 import StyledWrapper from '../../assets/styles/StyledWrapper';
+import Color from './components/organisms/Color/Color';
 
 const AboutPage = () => {
   return (
@@ -18,6 +19,7 @@ const AboutPage = () => {
         <OurTeam />
       </StyledContainer>
       <CallToAction />
+      <Color />
     </StyledAboutPage>
   );
 };
