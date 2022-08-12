@@ -98,6 +98,24 @@ const TEXTS = {
       subHeading: 'What we Offer',
       buttonText: 'Learn about services',
     },
+    experiences: {
+      experience1: {
+        title: '20+',
+        desc: 'Proffesional',
+      },
+      experience2: {
+        title: '10+',
+        desc: 'Years Eperience',
+      },
+      experience3: {
+        title: '12K+',
+        desc: 'Service Closed',
+      },
+      experience4: {
+        title: '100%',
+        desc: 'Customer Satisfaction',
+      },
+    },
   },
   cta: {
     heading: 'Get in touch with us for your service related query',
