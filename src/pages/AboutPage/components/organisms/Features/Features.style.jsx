@@ -1,8 +1,17 @@
 import styled from 'styled-components';
-import BRAKEPOINTS from '../../../../../shared/constants/breakpoints';
+import BREAKPOINTS from '../../../../../shared/constants/breakpoints';
 
 export const StyledSection = styled.section`
   text-align: center;
+  padding: 50px 15px;
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    padding: 100px 0;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    padding: 128px 0;
+  }
 `;
 
 export const StyledHeading = styled.h2`
@@ -17,10 +26,14 @@ export const StyledHeading = styled.h2`
 
   margin-bottom: 64px;
 
-  @media screen and (min-width: ${BRAKEPOINTS.md}) {
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
     font-size: 58px;
     line-height: 76px;
 
+    padding: 0 10% 0 10%;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     padding: 0 15% 0 15%;
   }
 `;
@@ -30,7 +43,15 @@ export const StyledServiceCardDiv = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: ${BRAKEPOINTS.lg}) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     flex-direction: row;
   }
+`;
+
+export const StyledNumbersDiv = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 48px 0;
 `;
