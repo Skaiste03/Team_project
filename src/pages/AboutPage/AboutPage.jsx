@@ -1,5 +1,6 @@
 import OurTeam from './components/organisms/OurTeam';
 import Features from './components/organisms/Features';
+
 import {
   StyledAboutPage,
   StyledContainer,
