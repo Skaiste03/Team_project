@@ -1,13 +1,14 @@
 import React from 'react';
+import { StyledCardImg, StyledTextDiv } from './ColorCard.style';
 
 const ColorCard = ({ color, image, title, description }) => {
   return (
-    <div image={image}>
-      <div color={color}>
+    <StyledCardImg image={image}>
+      <StyledTextDiv color={color}>
         <h4>{title}</h4>
         <p>{description}</p>
-      </div>
-    </div>
+      </StyledTextDiv>
+    </StyledCardImg>
   );
 };
 
