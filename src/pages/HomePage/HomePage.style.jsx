@@ -26,3 +26,7 @@ export const StyledProcessContainer = styled.div`
     padding: 0 15px;
   }
 `;
+
+export const StyledAbiliesWrapper = styled.div`
+  background-color: #f2f2f2;
+`;

@@ -1,8 +1,11 @@
 import React from 'react';
+import Abilities from './components/organisms/Abilities';
 import Hero from './components/organisms/Hero/Hero';
 import Process from './components/organisms/Process';
-import Services from './components/organisms/Services/Services';
+import Services from './components/organisms/Services';
+import CallToAction from '../../components/organisms/CallToAction';
 import {
+  StyledAbiliesWrapper,
   StyledHeroContainer,
   StyledHomePage,
   StyledProcessContainer,
@@ -21,6 +24,10 @@ const HomePage = () => {
       <StyledProcessContainer>
         <Process />
       </StyledProcessContainer>
+      <StyledAbiliesWrapper>
+        <Abilities />
+      </StyledAbiliesWrapper>
+      <CallToAction />
     </StyledHomePage>
   );
 };
