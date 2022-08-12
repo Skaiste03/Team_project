@@ -119,6 +119,9 @@ const TEXTS = {
     brands: {
       heading: 'Brands we Serve',
     },
+    testimonials: {
+      heading: 'Our customers say the nicest things about our service',
+    },
   },
   cta: {
     heading: 'Get in touch with us for your service related query',
