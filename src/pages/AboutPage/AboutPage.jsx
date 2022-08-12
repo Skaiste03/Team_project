@@ -1,12 +1,22 @@
 import OurTeam from './components/organisms/OurTeam';
-import { StyledAboutPage, StyledTeamContainer } from './AboutPage.style';
+import Features from './components/organisms/Features';
+import {
+  StyledAboutPage,
+  StyledContainer,
+  StyledFeaturesWrapper,
+} from './AboutPage.style';
 
 const AboutPage = () => {
   return (
     <StyledAboutPage>
-      <StyledTeamContainer>
+      <StyledFeaturesWrapper>
+        <StyledContainer>
+          <Features />
+        </StyledContainer>
+      </StyledFeaturesWrapper>
+      <StyledContainer>
         <OurTeam />
-      </StyledTeamContainer>
+      </StyledContainer>
     </StyledAboutPage>
   );
 };
