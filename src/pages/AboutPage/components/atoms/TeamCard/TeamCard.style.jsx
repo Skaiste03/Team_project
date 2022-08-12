@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import BREAKPOINTS from '../../../../shared/constants/breakpoints';
+import BREAKPOINTS from '../../../../../shared/constants/breakpoints';
 
 export const StyledCardWrapper = styled.div`
   display: flex;
@@ -10,11 +10,11 @@ export const StyledCardWrapper = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 
-  width: calc((100% / 2) - 15px);
+  width: calc((100% / 2) - 10px);
   height: 350px;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
-    width: calc((100% / 2) - 32px);
+    width: calc((100% / 2) - 15px);
     height: 430px;
   }
 
