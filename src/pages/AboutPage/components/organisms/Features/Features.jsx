@@ -7,14 +7,14 @@ import ExperienceCard from '../../../../../components/atoms/ExperienceCard';
 
 import {
   StyledHeading,
-  StyledSection,
+  StyledFeatures,
   StyledServiceCardDiv,
   StyledNumbersDiv,
 } from './Features.style';
 
 const Features = () => {
   return (
-    <StyledSection>
+    <StyledFeatures>
       <StyledHeading>{TEXTS.aboutPage.features.title}</StyledHeading>
       <StyledServiceCardDiv>
         {EXPERIENCES.map((experience) => (
@@ -31,7 +31,7 @@ const Features = () => {
           <ExperienceCard key={stat.id} title={stat.title} desc={stat.desc} />
         ))}
       </StyledNumbersDiv>
-    </StyledSection>
+    </StyledFeatures>
   );
 };
 

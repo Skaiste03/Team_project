@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import BREAKPOINTS from '../../../../../shared/constants/breakpoints';
 
-export const StyledSection = styled.section`
+export const StyledFeatures = styled.div`
   text-align: center;
   padding: 50px 15px;
 
