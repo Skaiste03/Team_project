@@ -1,12 +1,17 @@
+import React from 'react';
 // import EXPERIENCES from '../../../../../shared/constants/experiences';
+import TEXTS from '../../../../../shared/texts/texts';
+import { StyledHeading, StyledSection } from './Features.style';
 
 const Features = () => {
   return (
-    <section>
+    <StyledSection>
       <div>
-        <h1>Features</h1>
+        <StyledHeading>{TEXTS.aboutPage.features.title}</StyledHeading>
+        <div></div>
+        <div></div>
       </div>
-    </section>
+    </StyledSection>
   );
 };
 

@@ -128,6 +128,7 @@ const TEXTS = {
       },
     },
     features: {
+      title: 'Services we provide to our valued customers',
       desc: 'Through True Rich Attended does no end it his mother since real had half every him end it his mother',
     },
   },
