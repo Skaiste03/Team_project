@@ -93,6 +93,11 @@ const TEXTS = {
         desc: 'Through True Rich Attended does no end it his mother since real had half every.',
       },
     },
+    abilities: {
+      heading: 'We offer full service auto repair & maintenance',
+      subHeading: 'What we Offer',
+      buttonText: 'Learn about services',
+    },
   },
   cta: {
     heading: 'Get in touch with us for your service related query',
