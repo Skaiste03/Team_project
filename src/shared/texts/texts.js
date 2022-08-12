@@ -116,6 +116,9 @@ const TEXTS = {
         desc: 'Customer Satisfaction',
       },
     },
+    brands: {
+      heading: 'Brands we Serve',
+    },
   },
   cta: {
     heading: 'Get in touch with us for your service related query',
