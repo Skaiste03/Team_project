@@ -17,14 +17,11 @@ export const StyledFooterTopDiv = styled.div`
 // Footer top container
 export const StyledFooterTopContainerDiv = styled.div`
   // Mobile
-  max-width: 1280px;
-  margin: 0 auto;
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 
-  padding: 70px 30px;
+  padding: 70px 0px;
 
   gap: 40px;
 
@@ -70,8 +67,6 @@ export const StyledFooterTopContainerDiv = styled.div`
     align-items: start;
     justify-content: flex-start;
 
-    padding-left: 15px;
-
     .footer-top__left {
       width: calc(50% - 40px);
     }
@@ -95,6 +90,7 @@ export const StyledFooterTopContainerDiv = styled.div`
   @media (min-width: ${BREAKPOINTS.lg}) {
     padding-top: 128px;
     padding-bottom: 128px;
+
     .footer-top__left .footer-heading {
       font-size: 48px;
       margin-bottom: 64px;
@@ -111,16 +107,13 @@ export const StyledFooterBottomDiv = styled.div`
 // Footer bottom container
 export const StyledFooterBottomContainerDiv = styled.div`
   // Mobile
-  max-width: 1280px;
-  margin: 0 auto;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
   padding: 50px 0px;
-  gap: 10px;
+  gap: 20px;
 
   background: #1e1b1b;
 
@@ -144,18 +137,16 @@ export const StyledFooterBottomContainerDiv = styled.div`
     color: Grey;
     font-weight: 600;
     font-size: 14px;
+
     margin-top: 50px;
   }
 
   // Tablet
   @media (min-width: ${BREAKPOINTS.md}) {
-    padding-left: 15px;
-    padding-right: 15px;
-    gap: 0px;
-
     .copyright {
       font-size: 16px;
-      margin-top: 0px;
+
+      margin-top: 0;
     }
   }
 
