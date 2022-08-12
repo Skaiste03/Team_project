@@ -4,8 +4,13 @@ import BREAKPOINTS from '../../../shared/constants/breakpoints';
 export const StyledExperienceCard = styled.div`
   display: flex;
   flex-direction: column;
+  width: 50%;
 
   gap: 2px;
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    width: auto;
+  }
 `;
 
 export const StyledExperienceCardTitle = styled.h2`
