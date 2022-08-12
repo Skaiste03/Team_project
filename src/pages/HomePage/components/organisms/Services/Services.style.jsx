@@ -7,14 +7,17 @@ export const StyledServices = styled.div`
   flex-direction: column;
   gap: 60px;
 
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 128px 30px;
+  padding: 50px 0;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
-    padding: 128px 15px;
+    padding: 100px 0;
+
     flex-direction: row;
     gap: 20px;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    padding: 128px 0;
   }
 `;
 
@@ -30,8 +33,8 @@ export const StyledServicesLeft = styled.div`
 export const StyledServicesHeading = styled.h2`
   color: #1e1b1b;
   font-weight: 800;
-  font-size: 58px;
-  line-height: 76px;
+  font-size: 38px;
+  line-height: 46px;
   letter-spacing: -0.03em;
   text-align: center;
 
@@ -41,7 +44,14 @@ export const StyledServicesHeading = styled.h2`
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
+    font-size: 48px;
     text-align: left;
+    line-height: 66px;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    font-size: 58px;
+    line-height: 76px;
   }
 `;
 
@@ -94,7 +104,7 @@ export const StyledServicesRight = styled.div`
 export const StyledServicesRightHeading = styled.h3`
   color: #1e1b1b;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 28px;
   line-height: 140%;
   letter-spacing: -0.03em;
   text-align: center;
@@ -102,6 +112,11 @@ export const StyledServicesRightHeading = styled.h3`
   margin-bottom: 32px;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
+    font-size: 38px;
     text-align: left;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    font-size: 48px;
   }
 `;

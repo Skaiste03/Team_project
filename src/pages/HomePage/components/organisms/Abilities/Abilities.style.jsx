@@ -6,14 +6,14 @@ export const StyledAbilities = styled.div`
   align-items: center;
   flex-direction: column;
 
-  /* Abilities container */
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 128px 30px;
-  /* Abilities container */
+  padding: 50px 0;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
-    padding: 128px 15px;
+    padding: 100px 0;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    padding: 128px 0;
   }
 
   & > div:last-of-type {
@@ -36,12 +36,16 @@ export const StyledAbilitiesHeading = styled.h2`
   text-align: center;
   letter-spacing: -0.03em;
 
-  max-width: 70%;
-
   margin-bottom: 64px;
   margin-top: 8px;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
+    font-size: 48px;
+    line-height: 66px;
+    max-width: 70%;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     font-size: 58px;
     line-height: 76px;
   }

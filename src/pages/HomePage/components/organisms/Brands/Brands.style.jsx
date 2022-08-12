@@ -2,20 +2,37 @@ import styled from 'styled-components';
 import BREAKPOINTS from '../../../../../shared/constants/breakpoints';
 
 export const StyledBrands = styled.div`
-  padding-top: 128px;
-  padding-bottom: 80px;
+  padding: 50px 0;
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    padding: 100px 0;
+    padding-bottom: 80px;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    padding-top: 128px;
+    padding-bottom: 80px;
+  }
 `;
 
 export const StyledBrandsHeading = styled.h3`
   color: #1e1b1b;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 28px;
   line-height: 140%;
 
   text-align: center;
   letter-spacing: -0.03em;
 
   margin-bottom: 40px;
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    font-size: 38px;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    font-size: 48px;
+  }
 `;
 
 export const StyledBrandsWrapper = styled.div`
