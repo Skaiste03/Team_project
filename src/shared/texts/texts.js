@@ -170,6 +170,14 @@ const TEXTS = {
     steps: {
       title: 'We Provide Expert Service and aim to have a long term with you',
       desc: 'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter',
+      quotes: {
+        firstDesc:
+          'Through True Rich Attended does no end it his mother since real had half every',
+        secondDesc:
+          'Through True Rich Attended does no end it his mother since real',
+        thirdDesc:
+          'Ecstatic unsatiable saw his giving Remain expense you position concluded.',
+      },
     },
   },
 
