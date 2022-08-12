@@ -3,16 +3,18 @@ import Abilities from './components/organisms/Abilities';
 import Hero from './components/organisms/Hero/Hero';
 import Process from './components/organisms/Process';
 import Services from './components/organisms/Services';
+import Experience from './components/organisms/Experience';
+import Brands from './components/organisms/Brands';
 import CallToAction from '../../components/organisms/CallToAction';
 import {
   StyledAbiliesWrapper,
+  StyledBrandsContainer,
   StyledExpierenceWrapper,
   StyledHeroContainer,
   StyledHomePage,
   StyledProcessContainer,
   StyledServicesWrapper,
 } from './HomePage.style';
-import Experience from './components/organisms/Experience/Experience';
 
 const HomePage = () => {
   return (
@@ -38,6 +40,10 @@ const HomePage = () => {
       <StyledExpierenceWrapper>
         <Experience />
       </StyledExpierenceWrapper>
+
+      <StyledBrandsContainer>
+        <Brands />
+      </StyledBrandsContainer>
     </StyledHomePage>
   );
 };
