@@ -127,7 +127,11 @@ const TEXTS = {
         position: 'Support Assistant',
       },
     },
+    features: {
+      desc: 'Through True Rich Attended does no end it his mother since real had half every him end it his mother',
+    },
   },
+
   button: {
     contact: 'Contact Us',
     service: 'Book a service',

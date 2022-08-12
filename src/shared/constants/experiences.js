@@ -9,18 +9,21 @@ const EXPERIANCES = [
     id: uid(),
     title: `${TEXTS.homePage.services.conventient.title}`,
     desc: `${TEXTS.homePage.services.conventient.desc}`,
+    aboutDesc: `${TEXTS.aboutPage.features.desc}`,
     icon: `${serviceImgOne}`,
   },
   {
     id: uid(),
     title: `${TEXTS.homePage.services.expert.title}`,
     desc: `${TEXTS.homePage.services.expert.desc}`,
+    aboutDesc: `${TEXTS.aboutPage.features.desc}`,
     icon: `${serviceImgTwo}`,
   },
   {
     id: uid(),
     title: `${TEXTS.homePage.services.pricing.title}`,
     desc: `${TEXTS.homePage.services.pricing.desc}`,
+    aboutDesc: `${TEXTS.aboutPage.features.desc}`,
     icon: `${serviceImgThree}`,
   },
 ];

@@ -1,7 +1,13 @@
-import React from 'react';
+// import EXPERIENCES from '../../../../../shared/constants/experiences';
 
 const Features = () => {
-  return <div>Features</div>;
+  return (
+    <section>
+      <div>
+        <h1>Features</h1>
+      </div>
+    </section>
+  );
 };
 
 export default Features;

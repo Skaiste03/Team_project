@@ -13,9 +13,9 @@ const OurTeam = () => {
     <StyledSection>
       <StyledHeading>{TEXTS.aboutPage.team.heading}</StyledHeading>
       <StyledTeamCardsDiv>
-        {MEMBERS.map((member, i) => (
+        {MEMBERS.map((member) => (
           <TeamCard
-            key={i}
+            key={member.id}
             name={member.title}
             position={member.desc}
             image={member.image}

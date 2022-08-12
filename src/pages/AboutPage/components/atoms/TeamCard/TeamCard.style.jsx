@@ -10,16 +10,16 @@ export const StyledCardWrapper = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 
-  width: calc((100% / 2) - 30px);
+  width: calc((100% / 2) - 10px);
   height: 350px;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
-    width: calc((100% / 2) - 64px);
+    width: calc((100% / 2) - 15px);
     height: 430px;
   }
 
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
-    width: calc((100% / 3) - 64px);
+    width: calc((100% / 3) - 32px);
   }
 `;
 
