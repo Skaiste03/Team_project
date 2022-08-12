@@ -21,16 +21,29 @@ export const StyledBrandsHeading = styled.h3`
 export const StyledBrandsWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: 50px;
+  gap: 25px;
 
   & img {
     width: 100%;
     height: auto;
 
     opacity: 0.8;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.2);
+    }
   }
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     grid-template-columns: repeat(5, auto);
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    gap: 50px;
   }
 `;
