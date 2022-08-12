@@ -41,11 +41,14 @@ export const StyledHeading = styled.h3`
 export const StyledTeamCardsDiv = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 
-  gap: 15px;
+  row-gap: 15px;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
-    gap: 32px;
+    row-gap: 32px;
+  }
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    row-gap: 48px;
   }
 `;
