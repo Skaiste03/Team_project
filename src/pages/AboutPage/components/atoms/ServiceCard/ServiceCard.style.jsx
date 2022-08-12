@@ -32,9 +32,11 @@ export const StyledServiceCard = styled.div`
     opacity: 0.6;
   }
 
+  // Changing padding for Card Text to have enough space
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     padding: 58px 166px;
   }
+
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
     padding-left: 23px;
     padding-right: 23px;
