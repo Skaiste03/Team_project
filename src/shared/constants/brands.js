@@ -7,11 +7,16 @@ import brandImg5 from '../../assets/images/brand-img-5.png';
 import { uid } from 'uid';
 
 const BRANDS = [
-  { id: uid(), img: `${brandImg1}` },
-  { id: uid(), img: `${brandImg2}` },
-  { id: uid(), img: `${brandImg3}` },
-  { id: uid(), img: `${brandImg4}` },
-  { id: uid(), img: `${brandImg5}` },
+  { id: uid(), img: `${brandImg1}`, alt: 'brandImg1' },
+  { id: uid(), img: `${brandImg2}`, alt: 'brandImg2' },
+  { id: uid(), img: `${brandImg3}`, alt: 'brandImg3' },
+  { id: uid(), img: `${brandImg4}`, alt: 'brandImg4' },
+  { id: uid(), img: `${brandImg5}`, alt: 'brandImg5' },
+  { id: uid(), img: `${brandImg1}`, alt: 'brandImg1' },
+  { id: uid(), img: `${brandImg2}`, alt: 'brandImg2' },
+  { id: uid(), img: `${brandImg3}`, alt: 'brandImg3' },
+  { id: uid(), img: `${brandImg4}`, alt: 'brandImg4' },
+  { id: uid(), img: `${brandImg5}`, alt: 'brandImg5' },
 ];
 
 export default BRANDS;
