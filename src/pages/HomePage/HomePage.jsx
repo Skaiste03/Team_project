@@ -1,26 +1,42 @@
 import React from 'react';
+import Abilities from './components/organisms/Abilities';
 import Hero from './components/organisms/Hero/Hero';
 import Process from './components/organisms/Process';
-import Services from './components/organisms/Services/Services';
-import {
-  StyledHeroContainer,
-  StyledHomePage,
-  StyledProcessContainer,
-  StyledServicesWrapper,
-} from './HomePage.style';
+import Services from './components/organisms/Services';
+import Experience from './components/organisms/Experience';
+import Brands from './components/organisms/Brands';
+import CallToAction from '../../components/organisms/CallToAction';
+import { StyledHomePage } from './HomePage.style';
+import StyledWrapper from '../../assets/styles/StyledWrapper';
 
 const HomePage = () => {
   return (
     <StyledHomePage>
-      <StyledHeroContainer>
+      <StyledWrapper>
         <Hero />
-      </StyledHeroContainer>
-      <StyledServicesWrapper>
+      </StyledWrapper>
+
+      <StyledWrapper theme={'light'}>
         <Services />
-      </StyledServicesWrapper>
-      <StyledProcessContainer>
+      </StyledWrapper>
+
+      <StyledWrapper>
         <Process />
-      </StyledProcessContainer>
+      </StyledWrapper>
+
+      <StyledWrapper theme={'lighter'}>
+        <Abilities />
+      </StyledWrapper>
+
+      <CallToAction />
+
+      <StyledWrapper theme={'lighter'}>
+        <Experience />
+      </StyledWrapper>
+
+      <StyledWrapper>
+        <Brands />
+      </StyledWrapper>
     </StyledHomePage>
   );
 };
