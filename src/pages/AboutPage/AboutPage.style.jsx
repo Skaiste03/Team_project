@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import BREAKPOINTS from '../../shared/constants/breakpoints';
 
-export const StyledAboutPage = styled.div``;
+export const StyledAboutPage = styled.main``;
 
 export const StyledContainer = styled.div`
   max-width: 1280px;
