@@ -5,7 +5,7 @@ import CallToAction from '../../components/organisms/CallToAction';
 import { StyledAboutPage } from './AboutPage.style';
 import StyledContainer from '../../assets/styles/StyledContainer';
 import StyledWrapper from '../../assets/styles/StyledWrapper';
-import Color from './components/organisms/Color/Color';
+import Highlights from './components/organisms/Highlights';
 import Steps from './components/organisms/Steps/Steps';
 
 const AboutPage = () => {
@@ -14,7 +14,7 @@ const AboutPage = () => {
       <StyledContainer>
         <Steps />
       </StyledContainer>
-      <Color />
+      <Highlights />
       <StyledWrapper theme={'lighter'}>
         <StyledContainer>
           <Features />

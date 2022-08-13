@@ -2,6 +2,11 @@ import styled from 'styled-components';
 import BREAKPOINTS from '../../../../../shared/constants/breakpoints';
 
 export const StyledServiceCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+
   background: #ffffff;
   border: 1px solid #ebebeb;
 
@@ -11,28 +16,40 @@ export const StyledServiceCard = styled.div`
   img {
     background-color: #ffdace;
     border-radius: 50%;
-    padding: 14px;
+    padding: 11px;
     width: 64px;
     height: 64px;
+
+    margin-bottom: 24px;
   }
 
   h4 {
     color: #000000;
+
     font-weight: 700;
     font-size: 24px;
     line-height: 48px;
     letter-spacing: -0.03em;
+
+    text-align: center;
+
+    margin-bottom: auto;
   }
 
   p {
     color: #232536;
+
+    align-self: center;
+
     font-weight: 600;
     font-size: 16px;
     line-height: 175%;
+
+    text-align: center;
+
     opacity: 0.6;
   }
 
-  // Changing padding for Card Text to have enough space
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     padding: 58px 166px;
   }
@@ -43,7 +60,7 @@ export const StyledServiceCard = styled.div`
   }
 
   @media screen and (min-width: ${BREAKPOINTS.xxl}) {
-    padding: 88px 56px;
+    padding: 88px 46px;
 
     h4 {
       font-size: 32px;
