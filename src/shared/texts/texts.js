@@ -212,6 +212,8 @@ const TEXTS = {
           'Ecstatic unsatiable saw his giving Remain expense you position concluded.',
       },
     },
+    aboutDesc:
+      'Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw Through True Rich Attended does',
   },
 
   button: {
