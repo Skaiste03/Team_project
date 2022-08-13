@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import {
   StyledTestimonialBottom,
   StyledTestimonialButtonsWrapper,
@@ -40,7 +40,7 @@ const Testimonials = () => {
     return setPage(0);
   };
 
-  const handlePrevChange = () => {
+  const handlePrevChange = (page, data) => {
     setIsNext(false);
 
     if (page <= 0) {
@@ -68,25 +68,20 @@ const Testimonials = () => {
     }
 
     if (touchLength < 5) {
-      return handlePrevChange();
+      return handlePrevChange(page, data);
     }
 
     setTouchStart(null);
   };
 
-  // -- Callback
-  const memoizedCallback = useCallback(() => {
-    handleNextChange(page, data);
-  }, [page, data]);
-
   // -- Side effects
   useEffect(() => {
     const timer = setTimeout(() => {
-      memoizedCallback();
+      handleNextChange(page, data);
     }, 2000);
 
     return () => clearTimeout(timer);
-  }, [memoizedCallback]);
+  }, [page, data]);
 
   if (data.length - 1 < page) {
     return setPage(0);
@@ -126,7 +121,7 @@ const Testimonials = () => {
 
           <StyledTestimonialButtonsWrapper>
             <StyledTestimonialButton
-              onClick={handlePrevChange}
+              onClick={() => handlePrevChange(page, data)}
               clickType={'prev'}
             >
               <SmallArrowIcon />
