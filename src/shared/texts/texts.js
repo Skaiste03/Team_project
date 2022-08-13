@@ -157,7 +157,7 @@ const TEXTS = {
       title: 'Services we provide to our valued customers',
       desc: 'Through True Rich Attended does no end it his mother since real had half every him end it his mother',
     },
-    color: {
+    highlights: {
       titles: {
         firstTitle:
           'Serve our customers and always deliver the customer service',
