@@ -1,11 +1,12 @@
 import React from 'react';
-import Abilities from './components/organisms/Abilities';
-import Hero from './components/organisms/Hero/Hero';
-import Process from './components/organisms/Process';
-import Services from './components/organisms/Services';
-import Experience from './components/organisms/Experience';
-import Brands from './components/organisms/Brands';
+import Abilities from './components/Abilities';
+import Hero from './components/Hero';
+import Process from './components/Process';
+import Services from './components/Services';
+import Experience from './components/Experience';
+import Brands from './components/Brands';
 import CallToAction from '../../components/organisms/CallToAction';
+
 import { StyledHomePage } from './HomePage.style';
 import StyledWrapper from '../../assets/styles/StyledWrapper';
 

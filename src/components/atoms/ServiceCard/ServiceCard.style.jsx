@@ -18,19 +18,12 @@ export const StyledServiceCard = styled.div`
   }
 
   & p {
-    color: #1e1b1b;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: -0.03em;
+    ${({ theme }) => theme.title2};
+    color: ${({ theme }) => theme.color.black};
   }
 
   & span {
-    color: #1e1b1b;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 28px;
-
-    opacity: 0.6;
+    ${({ theme }) => theme.body2};
+    color: ${({ theme }) => theme.color.black};
   }
 `;

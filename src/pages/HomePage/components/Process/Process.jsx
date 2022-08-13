@@ -6,11 +6,11 @@ import {
   StyledProcessHeading,
   StyledProcessLeft,
 } from './Process.style';
-import TEXTS from '../../../../../shared/texts/texts';
-import QuoteCard from '../../../../../components/atoms/QuoteCard/QuoteCard';
-import { HOME_PAGE_QUOTES } from '../../../../../shared/constants/quotes';
-import Button from '../../../../../components/atoms/Button';
-import StyledContainer from '../../../../../assets/styles/StyledContainer';
+import TEXTS from '../../../../shared/texts/texts';
+import QuoteCard from '../../../../components/atoms/QuoteCard/QuoteCard';
+import { HOME_PAGE_QUOTES } from '../../../../shared/constants/quotes';
+import Button from '../../../../components/atoms/Button';
+import StyledContainer from '../../../../assets/styles/StyledContainer';
 
 const Process = () => {
   return (

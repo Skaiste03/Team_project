@@ -4,9 +4,9 @@ import {
   StyledBrandsHeading,
   StyledBrandsWrapper,
 } from './Brands.style';
-import TEXTS from '../../../../../shared/texts/texts';
-import BRANDS from '../../../../../shared/constants/brands';
-import StyledContainer from '../../../../../assets/styles/StyledContainer';
+import TEXTS from '../../../../shared/texts/texts';
+import BRANDS from '../../../../shared/constants/brands';
+import StyledContainer from '../../../../assets/styles/StyledContainer';
 
 const Brands = () => {
   return (
