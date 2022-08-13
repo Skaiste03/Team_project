@@ -31,6 +31,7 @@ const Hero = () => {
             <StyledHeroOpenSubTitle>
               {TEXTS.homePage.hero.openSubTitle}
             </StyledHeroOpenSubTitle>
+
             <StyledHeroOpenTitle>
               {TEXTS.homePage.hero.openTitle}
             </StyledHeroOpenTitle>

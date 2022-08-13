@@ -16,23 +16,13 @@ export const StyledBrands = styled.div`
 `;
 
 export const StyledBrandsHeading = styled.h3`
-  color: #1e1b1b;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 140%;
+  ${({ theme }) => theme.h3};
+
+  color: ${({ theme }) => theme.color.black};
 
   text-align: center;
-  letter-spacing: -0.03em;
 
   margin-bottom: 40px;
-
-  @media screen and (min-width: ${BREAKPOINTS.md}) {
-    font-size: 38px;
-  }
-
-  @media screen and (min-width: ${BREAKPOINTS.lg}) {
-    font-size: 48px;
-  }
 `;
 
 export const StyledBrandsWrapper = styled.div`

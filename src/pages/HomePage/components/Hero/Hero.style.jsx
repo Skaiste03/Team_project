@@ -67,24 +67,15 @@ export const StyledHeroRightBg = styled.div`
 `;
 
 export const StyledHeroHeading = styled.h1`
-  color: #1e1b1b;
-  font-weight: 800;
-  font-size: 44px;
-  line-height: 64px;
-  letter-spacing: -0.03em;
+  ${({ theme }) => theme.h1};
+  color: ${({ theme }) => theme.color.black};
+
   text-align: center;
 
   padding-bottom: 32px;
 
-  @media screen and (min-width: ${BREAKPOINTS.md}) {
-    font-size: 54px;
-    line-height: 74px;
-  }
-
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
-    font-size: 64px;
     text-align: left;
-    line-height: 84px;
   }
 `;
 
@@ -108,19 +99,15 @@ export const StyledHeroOpenWrapper = styled.div`
 `;
 
 export const StyledHeroOpenTitle = styled.p`
-  color: #1e1b1b;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 175%;
+  ${({ theme }) => theme.body1};
+  color: ${({ theme }) => theme.color.black};
 `;
 
 export const StyledHeroOpenSubTitle = styled.span`
-  grid-column: 2;
+  ${({ theme }) => theme.caption};
+  color: ${({ theme }) => theme.color.darkGrey};
 
-  color: #939191;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  grid-column: 2;
 `;
 
 export const StyledHeroBannerService = styled.div`
@@ -145,9 +132,7 @@ export const StyledHeroBannerService = styled.div`
   padding-right: 35px;
 
   & p {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
+    ${({ theme }) => theme.title2};
   }
 
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
@@ -186,19 +171,16 @@ export const StyledHeroBannerStars = styled.div`
 `;
 
 export const StyledHeroBannerTextWrapper = styled.p`
+  ${({ theme }) => theme.title2};
+  color: ${({ theme }) => theme.color.darkBlack};
+
   display: flex;
   flex-direction: column;
 
-  color: #000;
-  font-weight: 600;
-  font-size: 24px;
-
-  letter-spacing: -0.03em;
+  line-height: 1;
 
   & span {
-    font-weight: 500;
-    font-size: 16px;
-
+    ${({ theme }) => theme.caption};
     opacity: 0.7;
   }
 `;
@@ -234,18 +216,11 @@ export const StyledHeroBannerServiceCircle = styled.div`
   border-radius: 50%;
 
   & p {
-    color: #fff;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-
-    letter-spacing: -0.03em;
+    ${({ theme }) => theme.title2};
+    color: ${({ theme }) => theme.color.white};
 
     & span {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 28px;
-
+      ${({ theme }) => theme.body2};
       letter-spacing: 0;
     }
   }

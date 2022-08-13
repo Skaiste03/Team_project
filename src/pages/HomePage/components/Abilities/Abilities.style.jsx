@@ -27,38 +27,26 @@ export const StyledAbilities = styled.div`
 `;
 
 export const StyledAbilitiesHeading = styled.h2`
-  color: #1e1b1b;
 
-  font-weight: 800;
-  font-size: 38px;
-  line-height: 56px;
+  ${({ theme }) => theme.h2};
+
+  color: ${({ theme }) => theme.color.black};
 
   text-align: center;
-  letter-spacing: -0.03em;
 
   margin-bottom: 64px;
   margin-top: 8px;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
-    font-size: 48px;
-    line-height: 66px;
     max-width: 70%;
-  }
-
-  @media screen and (min-width: ${BREAKPOINTS.lg}) {
-    font-size: 58px;
-    line-height: 76px;
   }
 `;
 
 export const StyledAbilitiesSubHeading = styled.p`
-  color: #1e1b1b;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
+  ${({ theme }) => theme.title2};
+  color: ${({ theme }) => theme.color.black};
 
   text-align: center;
-  letter-spacing: -0.03em;
 `;
 
 export const StyledAbilitiesWrapper = styled.div`

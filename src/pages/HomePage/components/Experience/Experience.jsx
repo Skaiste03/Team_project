@@ -4,6 +4,7 @@ import HOME_PAGE_STATS from '../../../../shared/constants/stats';
 import StyledContainer from '../../../../assets/styles/StyledContainer';
 import { StyledExperience } from './Experience.style';
 
+
 const Experience = () => {
   return (
     <StyledContainer>

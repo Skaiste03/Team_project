@@ -56,39 +56,27 @@ export const StyledPocessRight = styled.div`
 `;
 
 export const StyledProcessHeading = styled.h2`
-  color: #1e1b1b;
-  font-weight: 800;
-  font-size: 38px;
-  line-height: 46px;
+
+  ${({ theme }) => theme.h2};
+  color: ${({ theme }) => theme.color.black};
 
   text-align: center;
 
-  letter-spacing: -0.03em;
-
   @media screen and (min-width: ${BREAKPOINTS.md}) {
-    font-size: 48px;
     text-align: left;
-    line-height: 66px;
-  }
-
-  @media screen and (min-width: ${BREAKPOINTS.lg}) {
-    font-size: 58px;
-    line-height: 76px;
   }
 `;
 
 export const StyledProcessDesc = styled.p`
-  color: #1e1b1b;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 28px;
+  ${({ theme }) => theme.body2};
+  color: ${({ theme }) => theme.color.black};
+
+  opacity: 0.6;
 
   text-align: center;
 
   margin-top: 16px;
   margin-bottom: 32px;
-
-  opacity: 0.6;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     padding-right: 30%;

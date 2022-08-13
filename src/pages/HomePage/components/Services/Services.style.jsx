@@ -31,11 +31,9 @@ export const StyledServicesLeft = styled.div`
 `;
 
 export const StyledServicesHeading = styled.h2`
-  color: #1e1b1b;
-  font-weight: 800;
-  font-size: 38px;
-  line-height: 46px;
-  letter-spacing: -0.03em;
+  ${({ theme }) => theme.h2};
+  color: ${({ theme }) => theme.color.darkBlack};
+
   text-align: center;
 
   margin-bottom: 53px;
@@ -44,14 +42,7 @@ export const StyledServicesHeading = styled.h2`
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
-    font-size: 48px;
     text-align: left;
-    line-height: 66px;
-  }
-
-  @media screen and (min-width: ${BREAKPOINTS.lg}) {
-    font-size: 58px;
-    line-height: 76px;
   }
 `;
 
@@ -102,21 +93,14 @@ export const StyledServicesRight = styled.div`
 `;
 
 export const StyledServicesRightHeading = styled.h3`
-  color: #1e1b1b;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 140%;
-  letter-spacing: -0.03em;
+  ${({ theme }) => theme.h3};
+  color: ${({ theme }) => theme.color.black};
+
   text-align: center;
 
   margin-bottom: 32px;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
-    font-size: 38px;
     text-align: left;
-  }
-
-  @media screen and (min-width: ${BREAKPOINTS.lg}) {
-    font-size: 48px;
   }
 `;
