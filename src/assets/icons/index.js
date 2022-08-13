@@ -422,3 +422,40 @@ export const SmallArrowIcon = (props) => {
     </svg>
   );
 };
+
+export const PlusIcon = (props) => {
+  return (
+    <svg
+      width='18'
+      height='16'
+      viewBox='0 0 18 16'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      {...props}
+    >
+      <line
+        x1='1.89551'
+        y1='8'
+        x2='16.9216'
+        y2='8'
+        stroke='white'
+        stroke-width='2'
+        stroke-linecap='round'
+      />
+      <line
+        x1='9.47266'
+        y1='15'
+        x2='9.47266'
+        y2='1'
+        stroke='white'
+        stroke-width='2'
+        stroke-linecap='round'
+        transform={props.isActive && 'rotate(90)'}
+        transform-origin='50% 50%'
+      />
+    </svg>
+  );
+};
+
+// x1 = 9.47266 + 14 / 2
+// x2 = 9.47266 + 0 / 2
