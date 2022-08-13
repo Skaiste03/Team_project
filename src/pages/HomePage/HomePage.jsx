@@ -9,6 +9,7 @@ import CallToAction from '../../components/organisms/CallToAction';
 import { StyledHomePage } from './HomePage.style';
 import StyledWrapper from '../../assets/styles/StyledWrapper';
 import Testimonials from './components/organisms/Testimonials/Testimonials';
+import Faq from './components/organisms/Faq';
 
 const HomePage = () => {
   return (
@@ -41,6 +42,10 @@ const HomePage = () => {
 
       <StyledWrapper theme={'lighter'}>
         <Testimonials />
+      </StyledWrapper>
+
+      <StyledWrapper theme={'light'}>
+        <Faq />
       </StyledWrapper>
     </StyledHomePage>
   );
