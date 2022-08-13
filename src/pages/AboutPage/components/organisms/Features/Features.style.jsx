@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import BREAKPOINTS from '../../../../../shared/constants/breakpoints';
 
 export const StyledFeatures = styled.div`
-  text-align: center;
   padding: 50px 15px;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
@@ -41,7 +40,6 @@ export const StyledHeading = styled.h2`
 export const StyledServiceCardDiv = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
     flex-direction: row;
