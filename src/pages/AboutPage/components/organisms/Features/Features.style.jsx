@@ -14,21 +14,14 @@ export const StyledFeatures = styled.div`
 `;
 
 export const StyledHeading = styled.h2`
-  color: #1e1b1b;
-
-  font-size: 35px;
-  font-weight: 800;
-  line-height: 50px;
+  ${({ theme }) => theme.h2};
+  color: ${({ theme }) => theme.color.black};
 
   text-align: center;
-  letter-spacing: -0.03em;
 
   margin-bottom: 64px;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
-    font-size: 58px;
-    line-height: 76px;
-
     padding: 0 10% 0 10%;
   }
 

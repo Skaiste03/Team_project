@@ -16,23 +16,18 @@ export const StyledSection = styled.section`
 `;
 
 // Section Heading
-export const StyledHeading = styled.h3`
-  font-size: 35px;
-  font-weight: 800;
+export const StyledHeading = styled.h1`
+  ${({ theme }) => theme.h1};
 
-  color: #1e1b1b;
+  color: ${({ theme }) => theme.color.black};
 
   margin-bottom: 20px;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
-    font-size: 44px;
-
     margin-bottom: 40px;
   }
 
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
-    font-size: 64px;
-
     margin-bottom: 66px;
   }
 `;

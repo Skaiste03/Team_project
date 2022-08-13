@@ -40,38 +40,20 @@ export const StyledTexts = styled.div`
   padding: 0 40px;
 
   h3 {
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 57px;
+    ${({ theme }) => theme.h3};
 
-    letter-spacing: -0.03em;
+    color: ${({ theme }) => theme.color.black};
+
     margin-bottom: 16px;
-
-    color: #1e1b1b;
   }
 
   p {
-    font-weight: 600;
-    font-size: 20px;
+    ${({ theme }) => theme.title2};
     line-height: 30px;
 
-    letter-spacing: -0.03em;
-
-    color: #232536;
+    color: ${({ theme }) => theme.color.darkBlue};
 
     opacity: 0.6;
-  }
-
-  @media screen and (min-width: ${BREAKPOINTS.md}) {
-    h3 {
-      font-size: 48px;
-      line-height: 67px;
-    }
-
-    p {
-      font-size: 24px;
-      line-height: 36px;
-    }
   }
 
   @media screen and (min-width: ${BREAKPOINTS.xl}) {
