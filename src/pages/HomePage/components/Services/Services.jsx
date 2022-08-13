@@ -7,13 +7,13 @@ import {
   StyledServicesRight,
   StyledServicesRightHeading,
 } from './Services.style';
-import TEXTS from '../../../../../shared/texts/texts';
-import ServiceCard from '../../../../../components/atoms/ServiceCard';
-import EXPERIANCES from '../../../../../shared/constants/experiences';
-import Form from '../../../../../components/organisms/Form/Form';
-import { HOME_PAGE_FORM } from '../../../../../shared/constants/forms';
-import ArrowButton from '../../../../../components/atoms/ArrowButton';
-import StyledContainer from '../../../../../assets/styles/StyledContainer';
+import TEXTS from '../../../../shared/texts/texts';
+import ServiceCard from '../../../../components/atoms/ServiceCard';
+import EXPERIANCES from '../../../../shared/constants/experiences';
+import Form from '../../../../components/organisms/Form/Form';
+import { HOME_PAGE_FORM } from '../../../../shared/constants/forms';
+import ArrowButton from '../../../../components/atoms/ArrowButton';
+import StyledContainer from '../../../../assets/styles/StyledContainer';
 
 const Services = () => {
   return (

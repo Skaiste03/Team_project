@@ -5,11 +5,11 @@ import {
   StyledAbilitiesSubHeading,
   StyledAbilitiesWrapper,
 } from './Abilities.style';
-import TEXTS from '../../../../../shared/texts/texts';
-import SERVICES from '../../../../../shared/constants/services';
-import Card from '../../../../../components/atoms/Card/Card';
-import ArrowButton from '../../../../../components/atoms/ArrowButton';
-import StyledContainer from '../../../../../assets/styles/StyledContainer';
+import TEXTS from '../../../../shared/texts/texts';
+import SERVICES from '../../../../shared/constants/services';
+import Card from '../../../../components/atoms/Card/Card';
+import ArrowButton from '../../../../components/atoms/ArrowButton';
+import StyledContainer from '../../../../assets/styles/StyledContainer';
 
 const Abilities = () => {
   return (
