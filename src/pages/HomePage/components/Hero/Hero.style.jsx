@@ -91,7 +91,7 @@ export const StyledHeroOpenWrapper = styled.div`
     justify-self: center;
     align-self: center;
 
-    color: #e2e6e9;
+    color: ${({ theme }) => theme.color.grey};
 
     grid-row-start: 1;
     grid-row-end: span 2;
@@ -196,11 +196,11 @@ export const StyledHeroBannerStarsWrapper = styled.div`
     cursor: pointer;
 
     &:hover {
-      color: #ffb648;
+      color: ${({ theme }) => theme.color.yellow};
     }
 
     &:hover ~ svg {
-      color: #ffb648;
+      color: ${({ theme }) => theme.color.yellow};
     }
   }
 `;
@@ -212,7 +212,7 @@ export const StyledHeroBannerServiceCircle = styled.div`
 
   width: 70px;
   height: 70px;
-  background-color: #5cba99;
+  background-color: ${({ theme }) => theme.color.darkGreen};
   border-radius: 50%;
 
   & p {
