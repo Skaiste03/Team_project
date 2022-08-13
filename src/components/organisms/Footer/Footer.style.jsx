@@ -27,19 +27,20 @@ export const StyledFooterTopContainerDiv = styled.div`
 
   .footer-top__left {
     width: 100%;
-  }
-  .footer-top__left .footer-heading {
-    font-size: 28px;
-    margin-bottom: 35px;
-  }
-  .footer-top__left .iconsBox {
-    display: flex;
-    align-items: center;
-  }
 
-  .footer-top__left .iconsBox svg {
-    margin-right: 15px;
-    color: #fff;
+    .footer-heading {
+      ${({ theme }) => theme.h3};
+      margin-bottom: 35px;
+    }
+    .iconsBox {
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 15px;
+        color: #fff;
+      }
+    }
   }
 
   .footer-top__right {
@@ -51,13 +52,14 @@ export const StyledFooterTopContainerDiv = styled.div`
 
   .contact-box {
     p:nth-child(1) {
-      color: Grey;
+      ${({ theme }) => theme.body1};
+      color: ${({ theme }) => theme.color.darkGrey};
+
       margin-bottom: 8px;
-      font-size: 18px;
     }
 
     p:nth-child(2) {
-      font-size: 20px;
+      ${({ theme }) => theme.title2};
     }
   }
 
@@ -70,19 +72,10 @@ export const StyledFooterTopContainerDiv = styled.div`
     .footer-top__left {
       width: calc(50% - 40px);
     }
-    .footer-top__left .footer-heading {
-      font-size: 38px;
-    }
 
     .footer-top__right {
       width: calc(50% - 40px);
       gap: 32px;
-    }
-
-    .contact-box {
-      p:nth-child(2) {
-        font-size: 24px;
-      }
     }
   }
 
@@ -90,11 +83,6 @@ export const StyledFooterTopContainerDiv = styled.div`
   @media (min-width: ${BREAKPOINTS.lg}) {
     padding-top: 128px;
     padding-bottom: 128px;
-
-    .footer-top__left .footer-heading {
-      font-size: 48px;
-      margin-bottom: 64px;
-    }
   }
 `;
 
@@ -134,9 +122,9 @@ export const StyledFooterBottomContainerDiv = styled.div`
   }
 
   .copyright {
-    color: Grey;
+    ${({ theme }) => theme.caption};
+    color: ${({ theme }) => theme.color.darkGrey};
     font-weight: 600;
-    font-size: 14px;
 
     margin-top: 50px;
   }
@@ -144,8 +132,6 @@ export const StyledFooterBottomContainerDiv = styled.div`
   // Tablet
   @media (min-width: ${BREAKPOINTS.md}) {
     .copyright {
-      font-size: 16px;
-
       margin-top: 0;
     }
   }
