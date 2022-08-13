@@ -7,14 +7,14 @@ export const StyledServiceCard = styled.div`
   align-items: center;
   height: auto;
 
-  background: #ffffff;
-  border: 1px solid #ebebeb;
+  background: ${({ theme }) => theme.color.white};
+  border: 1px solid ${({ theme }) => theme.color.lighterGrey};
 
   box-shadow: 11px 130px 100px 30px rgba(0, 0, 0, 0.02);
   padding: 58px 36px;
 
   img {
-    background-color: #ffdace;
+    background-color: ${({ theme }) => theme.color.lightOrange};
     border-radius: 50%;
     padding: 11px;
     width: 64px;
@@ -23,13 +23,9 @@ export const StyledServiceCard = styled.div`
     margin-bottom: 24px;
   }
 
-  h4 {
-    color: #000000;
-
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 48px;
-    letter-spacing: -0.03em;
+  h5 {
+    ${({ theme }) => theme.h5};
+    color: ${({ theme }) => theme.color.darkBlack};
 
     text-align: center;
 
@@ -37,13 +33,8 @@ export const StyledServiceCard = styled.div`
   }
 
   p {
-    color: #232536;
-
-    align-self: center;
-
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 175%;
+    ${({ theme }) => theme.body1};
+    color: ${({ theme }) => theme.color.darkBlue};
 
     text-align: center;
 
@@ -57,16 +48,17 @@ export const StyledServiceCard = styled.div`
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
     padding-left: 23px;
     padding-right: 23px;
+
+    h5 {
+      font-size: 24px;
+    }
   }
 
   @media screen and (min-width: ${BREAKPOINTS.xxl}) {
     padding: 88px 46px;
 
-    h4 {
+    h5 {
       font-size: 32px;
-    }
-    p {
-      font-size: 18px;
     }
   }
 `;

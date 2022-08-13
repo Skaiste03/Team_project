@@ -15,39 +15,20 @@ export const StyledTextDiv = styled.div`
   background: ${(props) => props.color};
   height: 100%;
 
-  color: #ffffff;
+  color: ${({ theme }) => theme.color.white};
 
   padding: 80px 30px 80px 60px;
 
   h4 {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 46px;
-    letter-spacing: -0.03em;
+    ${({ theme }) => theme.h4};
 
     margin-bottom: auto;
   }
   p {
+    ${({ theme }) => theme.title2};
     align-self: flex-end;
 
-    font-weight: 600;
-    font-size: 20px;
-
-    line-height: 26px;
-    letter-spacing: -0.03em;
-
     opacity: 0.7;
-  }
-
-  @media screen and (min-width: ${BREAKPOINTS.md}) {
-    h4 {
-      font-size: 40px;
-      line-height: 56px;
-    }
-    p {
-      font-size: 24px;
-      line-height: 36px;
-    }
   }
 
   @media screen and (min-width: ${BREAKPOINTS.lg}) {

@@ -3,14 +3,14 @@ import BREAKPOINTS from '../../../shared/constants/breakpoints';
 
 // Footer
 export const StyledFooter = styled.footer`
-  color: #fff;
+  color: ${({ theme }) => theme.color.white};
 `;
 
 // Footer top wrapper
 export const StyledFooterTopDiv = styled.div`
   width: 100%;
 
-  background: #1e1b1b;
+  background: ${({ theme }) => theme.color.black};
   opacity: 98%;
 `;
 
@@ -38,7 +38,7 @@ export const StyledFooterTopContainerDiv = styled.div`
 
       svg {
         margin-right: 15px;
-        color: #fff;
+        color: ${({ theme }) => theme.color.white};
       }
     }
   }
@@ -89,7 +89,7 @@ export const StyledFooterTopContainerDiv = styled.div`
 // Footer bottom wrapper
 export const StyledFooterBottomDiv = styled.div`
   width: 100%;
-  background: #1e1b1b;
+  background: ${({ theme }) => theme.color.black};
 `;
 
 // Footer bottom container
@@ -103,10 +103,10 @@ export const StyledFooterBottomContainerDiv = styled.div`
   padding: 50px 0px;
   gap: 20px;
 
-  background: #1e1b1b;
+  background: ${({ theme }) => theme.color.black};
 
   & a svg {
-    color: #fff;
+    color: ${({ theme }) => theme.color.white};
   }
 
   .navigation-box {
@@ -117,7 +117,7 @@ export const StyledFooterBottomContainerDiv = styled.div`
     }
 
     & nav ul li a {
-      color: #fff;
+      color: ${({ theme }) => theme.color.white};
     }
   }
 
