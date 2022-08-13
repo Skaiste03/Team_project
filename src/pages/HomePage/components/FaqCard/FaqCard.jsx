@@ -5,7 +5,7 @@ import {
   StyledFaqCardContent,
   StyledFaqCardTitle,
 } from './FaqCard.style';
-import { PlusIcon } from '../../../../../assets/icons';
+import { PlusIcon } from '../../../../assets/icons';
 import { motion } from 'framer-motion';
 
 const FaqCardContentMotion = motion(StyledFaqCardContent);

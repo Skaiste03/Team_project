@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import StyledContainer from '../../../../../assets/styles/StyledContainer';
+import StyledContainer from '../../../../assets/styles/StyledContainer';
 import { StyledFaq, StyledFaqHeading } from './Faq.style';
-import TEXTS from '../../../../../shared/texts/texts';
-import FaqCard from '../../atoms/FaqCard';
-import FAQS from '../../../../../shared/constants/faq';
+import TEXTS from '../../../../shared/texts/texts';
+import FaqCard from '../FaqCard';
+import FAQS from '../../../../shared/constants/faq';
 
 const Faq = () => {
   const [activeId, setActiveId] = useState(null);

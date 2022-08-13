@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import BREAKPOINTS from '../../../../../shared/constants/breakpoints';
+import BREAKPOINTS from '../../../../shared/constants/breakpoints';
 
 export const StyledFaq = styled.div`
   display: flex;

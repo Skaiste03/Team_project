@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import heroImg from '../../../../../assets/images/home-hero-img.jpg';
-import BREAKPOINTS from '../../../../../shared/constants/breakpoints';
+import heroImg from '../../../../assets/images/home-hero-img.jpg';
+import BREAKPOINTS from '../../../../shared/constants/breakpoints';
 
 export const StyledHero = styled.div`
   display: flex;

@@ -8,14 +8,14 @@ import {
   StyledTestimonialsHeading,
   StyledTestimonialWrapper,
 } from './Testimonials.style';
-import StyledContainer from '../../../../../assets/styles/StyledContainer';
-import TEXTS from '../../../../../shared/texts/texts';
-import SliderCard from '../../atoms/SliderCard';
-import SLIDER_DATA from '../../../../../data/slider';
-import useViewport from '../../../../../hooks/useViewport';
-import usePagination from '../../../../../hooks/usePagination';
-import BREAKPOINTS from '../../../../../shared/constants/breakpoints';
-import { SmallArrowIcon } from '../../../../../assets/icons';
+import StyledContainer from '../../../../assets/styles/StyledContainer';
+import TEXTS from '../../../../shared/texts/texts';
+import SliderCard from '../SliderCard';
+import SLIDER_DATA from '../../../../data/slider';
+import useViewport from '../../../../hooks/useViewport';
+import usePagination from '../../../../hooks/usePagination';
+import BREAKPOINTS from '../../../../shared/constants/breakpoints';
+import { SmallArrowIcon } from '../../../../assets/icons';
 import { motion } from 'framer-motion';
 
 const TestimonialsMotion = motion(StyledTestimonialWrapper);
