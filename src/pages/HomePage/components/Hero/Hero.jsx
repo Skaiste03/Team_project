@@ -14,10 +14,10 @@ import {
   StyledHeroRight,
   StyledHeroRightBg,
 } from './Hero.style';
-import TEXTS from '../../../../../shared/texts/texts';
-import { TimeHeroIcon, StarHeroIcon } from '../../../../../assets/icons';
-import Button from '../../../../../components/atoms/Button';
-import StyledContainer from '../../../../../assets/styles/StyledContainer';
+import TEXTS from '../../../../shared/texts/texts';
+import { TimeHeroIcon, StarHeroIcon } from '../../../../assets/icons';
+import Button from '../../../../components/atoms/Button';
+import StyledContainer from '../../../../assets/styles/StyledContainer';
 
 const Hero = () => {
   return (
@@ -31,6 +31,7 @@ const Hero = () => {
             <StyledHeroOpenSubTitle>
               {TEXTS.homePage.hero.openSubTitle}
             </StyledHeroOpenSubTitle>
+
             <StyledHeroOpenTitle>
               {TEXTS.homePage.hero.openTitle}
             </StyledHeroOpenTitle>
