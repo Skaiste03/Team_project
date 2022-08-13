@@ -27,6 +27,7 @@ export const StyledAbilities = styled.div`
 `;
 
 export const StyledAbilitiesHeading = styled.h2`
+
   ${({ theme }) => theme.h2};
 
   color: ${({ theme }) => theme.color.black};

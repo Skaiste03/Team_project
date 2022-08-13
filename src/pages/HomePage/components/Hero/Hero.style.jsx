@@ -68,7 +68,6 @@ export const StyledHeroRightBg = styled.div`
 
 export const StyledHeroHeading = styled.h1`
   ${({ theme }) => theme.h1};
-
   color: ${({ theme }) => theme.color.black};
 
   text-align: center;

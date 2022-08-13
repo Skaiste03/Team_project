@@ -25,11 +25,9 @@ const Hero = () => {
       <StyledHero>
         <StyledHeroLeft>
           <StyledHeroHeading>{TEXTS.homePage.hero.heading}</StyledHeroHeading>
-
           <Button bg={'primary'} text={TEXTS.homePage.hero.button} />
           <StyledHeroOpenWrapper>
             <TimeHeroIcon />
-
             <StyledHeroOpenSubTitle>
               {TEXTS.homePage.hero.openSubTitle}
             </StyledHeroOpenSubTitle>

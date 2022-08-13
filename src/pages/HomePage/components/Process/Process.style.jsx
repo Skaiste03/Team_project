@@ -56,6 +56,7 @@ export const StyledPocessRight = styled.div`
 `;
 
 export const StyledProcessHeading = styled.h2`
+
   ${({ theme }) => theme.h2};
   color: ${({ theme }) => theme.color.black};
 
