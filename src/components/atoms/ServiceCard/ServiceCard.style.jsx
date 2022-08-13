@@ -25,5 +25,6 @@ export const StyledServiceCard = styled.div`
   & span {
     ${({ theme }) => theme.body2};
     color: ${({ theme }) => theme.color.black};
+    opacity: 0.6;
   }
 `;

@@ -46,31 +46,32 @@ export const StyledFaqCardButton = styled.button`
 `;
 
 export const StyledFaqCardTitle = styled.p`
+  ${({ theme }) => theme.title2};
+  color: ${({ theme }) => theme.color.black};
+
   grid-column: 1;
   grid-row: 1;
 
+  text-align: center;
+
   align-self: center;
 
-  color: #1e1b1b;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 150%;
-
-  letter-spacing: -0.03em;
-
-  @media screen and (min-width: ${BREAKPOINTS.md}) {
-    font-size: 24px;
+  @media screen and (min-width: ${BREAKPOINTS.sm}) {
+    text-align: left;
   }
 `;
 
 export const StyledFaqCardContent = styled.p`
+  ${({ theme }) => theme.body1};
+  color: ${({ theme }) => theme.color.darkGrey};
   grid-column: 1 / span 2;
   grid-row: 2;
 
-  color: #939191;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 175%;
+  text-align: center;
 
   margin-top: 16px;
+
+  @media screen and (min-width: ${BREAKPOINTS.sm}) {
+    text-align: left;
+  }
 `;

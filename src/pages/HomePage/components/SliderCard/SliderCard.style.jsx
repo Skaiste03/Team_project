@@ -34,48 +34,28 @@ export const StyledSliderCard = styled.div`
 `;
 
 export const StyledSliderCardText = styled.p`
+  ${({ theme }) => theme.title2};
+  color: ${({ theme }) => theme.color.black};
+
   grid-column: 1 / span 2;
 
-  color: #1e1b1b;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
-
-  letter-spacing: -0.03em;
-
   margin-top: 24px;
-
-  @media screen and (min-width: ${BREAKPOINTS.md}) {
-    font-size: 24px;
-  }
 `;
 
 export const StyledSliderCardName = styled.p`
+  ${({ theme }) => theme.title2};
+  color: ${({ theme }) => theme.color.black};
+
   grid-row: 1;
   grid-column: 2;
 
   align-self: end;
-
-  color: #1e1b1b;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1;
-
-  letter-spacing: -0.03em;
-
-  @media screen and (min-width: ${BREAKPOINTS.md}) {
-    font-size: 24px;
-    line-height: 150%;
-  }
 `;
 
 export const StyledSliderCardLocation = styled.span`
+  ${({ theme }) => theme.body2};
+  color: ${({ theme }) => theme.color.darkGrey};
+
   grid-row: 2;
   grid-column: 2;
-
-  color: #939191;
-  font-weight: 600;
-  font-size: 16px;
-
-  line-height: 175%;
 `;

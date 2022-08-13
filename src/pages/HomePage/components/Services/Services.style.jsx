@@ -63,7 +63,11 @@ export const StyledServicesExpWrapper = styled.div`
   }
 
   & div:last-of-type {
-    padding-left: 63px;
+    padding-left: 0;
+
+    @media screen and (min-width: ${BREAKPOINTS.md}) {
+      padding-left: 63px;
+    }
   }
 `;
 
