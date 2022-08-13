@@ -5,7 +5,7 @@ const ServiceCard = (props) => {
   return (
     <StyledServiceCard>
       <img src={props.icon} alt='icon' />
-      <h4>{props.title}</h4>
+      <h5>{props.title}</h5>
       <p>{props.description}</p>
     </StyledServiceCard>
   );
