@@ -7,10 +7,21 @@ import StyledContainer from '../../assets/styles/StyledContainer';
 import StyledWrapper from '../../assets/styles/StyledWrapper';
 import Highlights from './components/organisms/Highlights';
 import Steps from './components/organisms/Steps/Steps';
+import AboutCard from '../../components/atoms/AboutCard';
+
+import aboutImage from '../../assets/images/about-img.jpg';
+import TEXTS from '../../shared/texts/texts';
 
 const AboutPage = () => {
   return (
     <StyledAboutPage>
+      <StyledContainer>
+        <AboutCard
+          image={aboutImage}
+          title={TEXTS.navigation.aboutus}
+          desc={TEXTS.aboutPage.aboutDesc}
+        />
+      </StyledContainer>
       <StyledContainer>
         <Steps />
       </StyledContainer>
