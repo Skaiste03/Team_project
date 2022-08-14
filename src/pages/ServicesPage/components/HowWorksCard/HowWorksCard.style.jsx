@@ -4,8 +4,6 @@ export const StyledHowWorksCard = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 24px;
-
-  margin-bottom: 32px;
 `;
 
 export const StyledHowWorksCardCricle = styled.div`
