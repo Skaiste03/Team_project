@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   StyledHowWorksTop,
+  StyledHowWorksTopContent,
   StyledHowWorksTopHeading,
   StyledHowWorksTopLeft,
   StyledHowWorksTopRight,
@@ -19,14 +20,16 @@ const HowWorksTop = () => {
         <StyledHowWorksTopHeading>
           {TEXTS.servicesPage.howWorks.heading1}
         </StyledHowWorksTopHeading>
-        {CRITERIA.map((criteria) => (
-          <HowWorksCard
-            key={criteria.id}
-            color={criteria.color}
-            title={criteria.title}
-            icon={criteria.icon}
-          />
-        ))}
+        <StyledHowWorksTopContent>
+          {CRITERIA.map((criteria) => (
+            <HowWorksCard
+              key={criteria.id}
+              color={criteria.color}
+              title={criteria.title}
+              icon={criteria.icon}
+            />
+          ))}
+        </StyledHowWorksTopContent>
       </StyledHowWorksTopLeft>
       <StyledHowWorksTopRight>
         <img src={howWorksBg1} alt='howWorksBg1.jpg' />

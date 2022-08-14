@@ -31,7 +31,7 @@ export const StyledHowWorksTopRight = styled.div`
   display: none;
   gap: 16px;
 
-  align-self: center;
+  align-self: flex-end;
 
   width: 100%;
   height: 100%;
@@ -50,4 +50,16 @@ export const StyledHowWorksTopHeading = styled.h3`
   ${({ theme }) => theme.h3}
 
   margin-bottom: 48px;
+
+  text-align: center;
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    text-align: left;
+  }
+`;
+
+export const StyledHowWorksTopContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 `;
