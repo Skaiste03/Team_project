@@ -190,7 +190,13 @@ const TEXTS = {
       desc: 'Through True Rich Attended does no end it his mother since real had half every him end it his mother',
     },
   },
-
+  servicesPage: {
+    services: {
+      title: 'Auto Diagnostics',
+      desc: 'Through True Rich Attended does no end it his mother since favourable real had half every him case in packages enquire we up ecstatic. Through True Rich Attended does no end it his mother. ',
+      buttonText: 'See service details',
+    },
+  },
   button: {
     contact: 'Contact Us',
     service: 'Book a service',
