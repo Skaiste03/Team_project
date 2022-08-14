@@ -5,11 +5,17 @@ import Services from './components/Services';
 import HowWorksTop from './components/HowWorksTop';
 import StyledContainer from '../../assets/styles/StyledContainer';
 import HowWorksBottom from './components/HowWorksBottom';
+import Header from './components/Header';
+import CallToAction from '../../components/organisms/CallToAction';
 
 const ServicesPage = () => {
   return (
     <SetyledServicesPage>
-      <StyledWrapper></StyledWrapper>
+      <StyledWrapper>
+        <StyledContainer>
+          <Header />
+        </StyledContainer>
+      </StyledWrapper>
 
       <StyledWrapper theme={'grey'}>
         <StyledContainer>
@@ -28,6 +34,8 @@ const ServicesPage = () => {
           <HowWorksBottom />
         </StyledContainer>
       </StyledWrapper>
+
+      <CallToAction />
     </SetyledServicesPage>
   );
 };
