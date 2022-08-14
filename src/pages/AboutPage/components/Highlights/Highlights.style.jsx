@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import BREAKPOINTS from '../../../../../shared/constants/breakpoints';
+import BREAKPOINTS from '../../../../shared/constants/breakpoints';
 
-export const StyledHighlightsSection = styled.section`
+export const StyledHighlights = styled.div`
   display: flex;
   flex-direction: column;
 

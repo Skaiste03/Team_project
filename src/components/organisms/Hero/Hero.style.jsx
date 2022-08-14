@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 import BREAKPOINTS from '../../../shared/constants/breakpoints';
 
-export const StyledCardDiv = styled.div`
+export const StyledHero = styled.div`
+  padding-top: 80px;
+`;
+
+export const StyledHeroDiv = styled.div`
   display: flex;
 
   position: relative;

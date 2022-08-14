@@ -1,20 +1,20 @@
 import React from 'react';
-import QuoteCard from '../../../../../components/atoms/QuoteCard';
-import TEXTS from '../../../../../shared/texts/texts';
-import { ABOUT_PAGE_QUOTES } from '../../../../../shared/constants/quotes';
+import QuoteCard from '../../../../components/atoms/QuoteCard';
+import TEXTS from '../../../../shared/texts/texts';
+import { ABOUT_PAGE_QUOTES } from '../../../../shared/constants/quotes';
 
 import {
-  StyledSection,
+  StyledSteps,
   StyledImageDiv,
-  StyledWrapper,
+  StyledContentDiv,
   StyledTexts,
   StyledQuotesDiv,
 } from './Steps.style';
 
 const Steps = () => {
   return (
-    <StyledSection>
-      <StyledWrapper>
+    <StyledSteps>
+      <StyledContentDiv>
         <StyledTexts>
           <h3>{TEXTS.aboutPage.steps.title}</h3>
           <p>{TEXTS.aboutPage.steps.desc}</p>
@@ -29,9 +29,9 @@ const Steps = () => {
             />
           ))}
         </StyledQuotesDiv>
-      </StyledWrapper>
+      </StyledContentDiv>
       <StyledImageDiv></StyledImageDiv>
-    </StyledSection>
+    </StyledSteps>
   );
 };
 

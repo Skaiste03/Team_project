@@ -1,16 +1,12 @@
 import React from 'react';
-import TeamCard from '../../atoms/TeamCard';
-import TEXTS from '../../../../../shared/texts/texts';
-import { MEMBERS } from '../../../../../shared/constants/team';
-import {
-  StyledSection,
-  StyledHeading,
-  StyledTeamCardsDiv,
-} from './OurTeam.style';
+import TeamCard from '../TeamCard';
+import TEXTS from '../../../../shared/texts/texts';
+import { MEMBERS } from '../../../../shared/constants/team';
+import { StyledTeam, StyledHeading, StyledTeamCardsDiv } from './OurTeam.style';
 
 const OurTeam = () => {
   return (
-    <StyledSection>
+    <StyledTeam>
       <StyledHeading>{TEXTS.aboutPage.team.heading}</StyledHeading>
       <StyledTeamCardsDiv>
         {MEMBERS.map((member) => (
@@ -22,7 +18,7 @@ const OurTeam = () => {
           />
         ))}
       </StyledTeamCardsDiv>
-    </StyledSection>
+    </StyledTeam>
   );
 };
 

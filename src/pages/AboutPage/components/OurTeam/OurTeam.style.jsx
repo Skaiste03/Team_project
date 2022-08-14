@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import BREAKPOINTS from '../../../../../shared/constants/breakpoints';
+import BREAKPOINTS from '../../../../shared/constants/breakpoints';
 
-// Our Team Section
-export const StyledSection = styled.section`
+// Our Team
+export const StyledTeam = styled.div`
   width: 100%;
   text-align: center;
 
