@@ -1,10 +1,10 @@
 // import React from 'react';
 import React from 'react';
 import { uid } from 'uid';
-import AboutPage from '../../pages/AboutPage';
 import TEXTS from '../texts/texts';
 const HomePage = React.lazy(() => import('../../pages/HomePage'));
 const ServicesPage = React.lazy(() => import('../../pages/ServicesPage'));
+const AboutPage = React.lazy(() => import('../../pages/AboutPage'));
 
 const ROUTES = [
   {

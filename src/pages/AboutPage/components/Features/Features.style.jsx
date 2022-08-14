@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import BREAKPOINTS from '../../../../../shared/constants/breakpoints';
+import BREAKPOINTS from '../../../../shared/constants/breakpoints';
 
 export const StyledFeatures = styled.div`
-  padding: 50px 15px;
+  padding: 50px 0;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     padding: 100px 0;

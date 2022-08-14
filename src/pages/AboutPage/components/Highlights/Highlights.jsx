@@ -1,12 +1,12 @@
 import React from 'react';
-import HighlightCard from '../../atoms/HighlightCard';
-import HIGHLIGHTS from '../../../../../shared/constants/highlights';
+import HighlightCard from '../HighlightCard';
+import HIGHLIGHTS from '../../../../shared/constants/highlights';
 
-import { StyledHighlightsSection } from './Highlights.style';
+import { StyledHighlights } from './Highlights.style';
 
 const Highlights = () => {
   return (
-    <StyledHighlightsSection>
+    <StyledHighlights>
       {HIGHLIGHTS.map((element) => (
         <HighlightCard
           key={element.id}
@@ -16,7 +16,7 @@ const Highlights = () => {
           description={element.desc}
         />
       ))}
-    </StyledHighlightsSection>
+    </StyledHighlights>
   );
 };
 

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import image from '../../../../../assets/images/steps-img.jpg';
-import BREAKPOINTS from '../../../../../shared/constants/breakpoints';
+import image from '../../../../assets/images/steps-img.jpg';
+import BREAKPOINTS from '../../../../shared/constants/breakpoints';
 
-export const StyledSection = styled.section`
+export const StyledSteps = styled.div`
   display: flex;
   gap: 87px;
 
@@ -28,7 +28,7 @@ export const StyledImageDiv = styled.div`
   }
 `;
 
-export const StyledWrapper = styled.div`
+export const StyledContentDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,13 +1,13 @@
-import OurTeam from './components/organisms/OurTeam';
-import Features from './components/organisms/Features';
+import OurTeam from './components/OurTeam';
+import Features from './components/Features';
 import CallToAction from '../../components/organisms/CallToAction';
 
 import { StyledAboutPage } from './AboutPage.style';
 import StyledContainer from '../../assets/styles/StyledContainer';
 import StyledWrapper from '../../assets/styles/StyledWrapper';
-import Highlights from './components/organisms/Highlights';
-import Steps from './components/organisms/Steps/Steps';
-import AboutCard from '../../components/atoms/AboutCard';
+import Highlights from './components/Highlights';
+import Steps from './components/Steps/Steps';
+import Hero from '../../components/organisms/Hero';
 
 import aboutImage from '../../assets/images/about-img.jpg';
 import TEXTS from '../../shared/texts/texts';
@@ -15,25 +15,33 @@ import TEXTS from '../../shared/texts/texts';
 const AboutPage = () => {
   return (
     <StyledAboutPage>
-      <StyledContainer>
-        <AboutCard
-          image={aboutImage}
-          title={TEXTS.navigation.aboutus}
-          desc={TEXTS.aboutPage.aboutDesc}
-        />
-      </StyledContainer>
-      <StyledContainer>
-        <Steps />
-      </StyledContainer>
-      <Highlights />
+      <StyledWrapper>
+        <StyledContainer>
+          <Hero
+            image={aboutImage}
+            title={TEXTS.navigation.aboutus}
+            desc={TEXTS.aboutPage.aboutDesc}
+          />
+        </StyledContainer>
+      </StyledWrapper>
+      <StyledWrapper>
+        <StyledContainer>
+          <Steps />
+        </StyledContainer>
+      </StyledWrapper>
+      <StyledWrapper>
+        <Highlights />
+      </StyledWrapper>
       <StyledWrapper theme={'lighter'}>
         <StyledContainer>
           <Features />
         </StyledContainer>
       </StyledWrapper>
-      <StyledContainer>
-        <OurTeam />
-      </StyledContainer>
+      <StyledWrapper>
+        <StyledContainer>
+          <OurTeam />
+        </StyledContainer>
+      </StyledWrapper>
       <CallToAction />
     </StyledAboutPage>
   );
