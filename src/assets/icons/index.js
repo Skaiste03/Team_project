@@ -439,8 +439,8 @@ export const PlusIcon = (props) => {
         x2='16.9216'
         y2='8'
         stroke='white'
-        stroke-width='2'
-        stroke-linecap='round'
+        strokeWidth='2'
+        strokeLinecap='round'
       />
       <line
         x1='9.47266'
@@ -448,9 +448,9 @@ export const PlusIcon = (props) => {
         x2='9.47266'
         y2='1'
         stroke='white'
-        stroke-width='2'
-        stroke-linecap='round'
-        transform={props.isActive && 'rotate(90)'}
+        strokeWidth='2'
+        strokeLinecap='round'
+        transform={props.active && 'rotate(90)'}
         transform-origin='50% 50%'
       />
     </svg>
