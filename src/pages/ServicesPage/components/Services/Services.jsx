@@ -1,5 +1,4 @@
 import React from 'react';
-import StyledContainer from '../../../../assets/styles/StyledContainer';
 import {
   StyledServices,
   StyledServicesDesc,
@@ -14,26 +13,21 @@ import Card from '../../../../components/atoms/Card';
 
 const Services = () => {
   return (
-    <StyledContainer>
-      <StyledServices>
-        <StyledServicesHighlighted>
-          <img src={serviceBg} alt='serviceBg.jpg' />
-          <StyledServicesHeading>
-            {TEXTS.servicesPage.services.title}
-          </StyledServicesHeading>
-          <StyledServicesDesc>
-            {TEXTS.servicesPage.services.desc}
-          </StyledServicesDesc>
-          <ArrowButton
-            path={'/'}
-            text={TEXTS.servicesPage.services.buttonText}
-          />
-        </StyledServicesHighlighted>
-        {SERVICES.slice(0, 6).map((service) => (
-          <Card key={service.id} text={service.text} logo={service.logo} />
-        ))}
-      </StyledServices>
-    </StyledContainer>
+    <StyledServices>
+      <StyledServicesHighlighted>
+        <img src={serviceBg} alt='serviceBg.jpg' />
+        <StyledServicesHeading>
+          {TEXTS.servicesPage.services.title}
+        </StyledServicesHeading>
+        <StyledServicesDesc>
+          {TEXTS.servicesPage.services.desc}
+        </StyledServicesDesc>
+        <ArrowButton path={'/'} text={TEXTS.servicesPage.services.buttonText} />
+      </StyledServicesHighlighted>
+      {SERVICES.slice(0, 6).map((service) => (
+        <Card key={service.id} text={service.text} logo={service.logo} />
+      ))}
+    </StyledServices>
   );
 };
 
