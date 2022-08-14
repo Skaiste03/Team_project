@@ -15,11 +15,11 @@ export const StyleCard = styled.div`
   transition: background-color 0.5s;
 
   & svg {
-    width: auto;
-    aspect-ratio: 1 / 2;
+    width: 23px;
+    height: auto;
 
     @media screen and (min-width: ${BREAKPOINTS.md}) {
-      aspect-ratio: 1 / 1;
+      width: auto;
     }
   }
 
