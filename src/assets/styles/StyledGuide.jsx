@@ -272,6 +272,8 @@ export const theme = {
   color: {
     darkBlack: '#000000',
     black: '#1E1B1B',
+    darkBlue: '#232536',
+    lightOrange: '#ffdace',
     orange: '#FF6433',
     purple: '#661CE7',
     yellow: '#ffb648',
@@ -279,6 +281,7 @@ export const theme = {
     darkGreen: '#61C4A1',
     darkGrey: '#939191',
     grey: '#E2E6E9',
+    lighterGrey: '#ebebeb',
     lightGrey: '#F2F2F2',
     white: '#ffffff',
   },
