@@ -10,7 +10,7 @@ export const StyledServices = styled.div`
   padding: 50px 0;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
-    grid-template-columns: 50% 1fr 1fr;
+    grid-template-columns: calc(50% - 16px) 1fr 1fr;
 
     padding: 100px 0;
   }
