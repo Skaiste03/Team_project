@@ -457,5 +457,22 @@ export const PlusIcon = (props) => {
   );
 };
 
-// x1 = 9.47266 + 14 / 2
-// x2 = 9.47266 + 0 / 2
+export const CheckIcon = (props) => {
+  return (
+    <svg
+      width='29'
+      height='23'
+      viewBox='0 0 29 23'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      {...props}
+    >
+      <path
+        d='M2 12.5L9 19.5L26.5 2'
+        stroke='currentColor'
+        stroke-width='4'
+        stroke-linecap='round'
+      />
+    </svg>
+  );
+};

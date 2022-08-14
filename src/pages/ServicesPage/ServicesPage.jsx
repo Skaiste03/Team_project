@@ -2,7 +2,9 @@ import React from 'react';
 import { SetyledServicesPage } from './ServicesPage.style';
 import StyledWrapper from '../../assets/styles/StyledWrapper';
 import Services from './components/Services';
-import HowWorks from './components/HowWorks';
+import HowWorksTop from './components/HowWorksTop';
+import StyledContainer from '../../assets/styles/StyledContainer';
+import HowWorksBottom from './components/HowWorksBottom';
 
 const ServicesPage = () => {
   return (
@@ -10,11 +12,21 @@ const ServicesPage = () => {
       <StyledWrapper></StyledWrapper>
 
       <StyledWrapper theme={'grey'}>
-        <Services />
+        <StyledContainer>
+          <Services />
+        </StyledContainer>
       </StyledWrapper>
 
       <StyledWrapper>
-        <HowWorks />
+        <StyledContainer>
+          <HowWorksTop />
+        </StyledContainer>
+      </StyledWrapper>
+
+      <StyledWrapper>
+        <StyledContainer>
+          <HowWorksBottom />
+        </StyledContainer>
       </StyledWrapper>
     </SetyledServicesPage>
   );
