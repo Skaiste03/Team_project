@@ -187,8 +187,33 @@ const TEXTS = {
       },
     },
     features: {
+      title: 'Services we provide to our valued customers',
       desc: 'Through True Rich Attended does no end it his mother since real had half every him end it his mother',
     },
+    highlights: {
+      titles: {
+        firstTitle:
+          'Serve our customers and always deliver the customer service',
+        secondTitle: `To be the world’s most eader in automotive business solutions.`,
+        thirdTitle:
+          'We value the service we provide and our loyal returning customers',
+      },
+      desc: 'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes ',
+    },
+    steps: {
+      title: 'We Provide Expert Service and aim to have a long term with you',
+      desc: 'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter',
+      quotes: {
+        firstDesc:
+          'Through True Rich Attended does no end it his mother since real had half every',
+        secondDesc:
+          'Through True Rich Attended does no end it his mother since real',
+        thirdDesc:
+          'Ecstatic unsatiable saw his giving Remain expense you position concluded.',
+      },
+    },
+    aboutDesc:
+      'Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw Through True Rich Attended does',
   },
 
   button: {

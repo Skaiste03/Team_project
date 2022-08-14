@@ -26,9 +26,7 @@ export const StyledCardWrapper = styled.div`
 export const StyledCardBottomDiv = styled.div`
   width: 100%;
 
-  background: #161616;
-  color: #fff;
-
+  background: ${({ theme }) => theme.color.black};
   padding: 24px 10px;
 
   transition: 0.3s ease-in;
@@ -39,25 +37,15 @@ export const StyledCardBottomDiv = styled.div`
 `;
 
 // Card bottom-div title
-export const StyledCardNameTitle = styled.h4`
-  font-size: 16px;
-  font-weight: 600;
-
-  @media screen and (min-width: ${BREAKPOINTS.md}) {
-    font-size: 20px;
-  }
-  @media screen and (min-width: ${BREAKPOINTS.lg}) {
-    font-size: 24px;
-  }
+export const StyledCardNameTitle = styled.p`
+  ${({ theme }) => theme.title2};
+  color: ${({ theme }) => theme.color.white};
 `;
 
 // Card bottom-div span
 export const StyledCardPositionSpan = styled.span`
-  color: #939191;
+  ${({ theme }) => theme.caption};
+  color: ${({ theme }) => theme.color.darkGrey};
   font-weight: 600;
   font-size: 14px;
-
-  @media screen and (min-width: ${BREAKPOINTS.md}) {
-    font-size: 16px;
-  }
 `;
