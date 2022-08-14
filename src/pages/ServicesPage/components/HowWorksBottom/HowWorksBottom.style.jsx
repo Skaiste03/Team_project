@@ -20,7 +20,7 @@ export const StyledHowWorksBottomLeft = styled.div`
   display: none;
   gap: 16px;
 
-  align-self: center;
+  align-self: flex-end;
 
   width: 100%;
   height: 100%;
@@ -50,12 +50,21 @@ export const StyledHowWorksBottomRight = styled.div`
   }
 
   & button {
-    align-self: flex-start;
+    align-self: center;
+
+    @media screen and (min-width: ${BREAKPOINTS.md}) {
+      align-self: flex-start;
+    }
   }
 `;
 
 export const StyledHowWorksBottomHeading = styled.h3`
   ${({ theme }) => theme.h3}
+  text-align: center;
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    text-align: left;
+  }
 `;
 
 export const StyledHowWorksBottomText = styled.p`
@@ -63,4 +72,10 @@ export const StyledHowWorksBottomText = styled.p`
   color: ${({ theme }) => theme.color.darkBlue};
 
   opacity: 0.6;
+
+  text-align: center;
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    text-align: left;
+  }
 `;
