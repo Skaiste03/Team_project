@@ -15,7 +15,7 @@ const FaqCard = (props) => {
     <StyledFaqCard onClick={props.action}>
       <StyledFaqCardTitle>{props.question}</StyledFaqCardTitle>
       <StyledFaqCardButton>
-        <PlusIcon isActive={props.isActive} />
+        <PlusIcon active={props.isActive ? 'true' : undefined} />
       </StyledFaqCardButton>
       {props.isActive && (
         <FaqCardContentMotion
