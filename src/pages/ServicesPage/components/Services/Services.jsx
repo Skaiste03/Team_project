@@ -24,7 +24,10 @@ const Services = () => {
           <StyledServicesDesc>
             {TEXTS.servicesPage.services.desc}
           </StyledServicesDesc>
-          <ArrowButton text={TEXTS.servicesPage.services.buttonText} />
+          <ArrowButton
+            path={'/'}
+            text={TEXTS.servicesPage.services.buttonText}
+          />
         </StyledServicesHighlighted>
         {SERVICES.slice(0, 6).map((service) => (
           <Card key={service.id} text={service.text} logo={service.logo} />
