@@ -222,8 +222,10 @@ const TEXTS = {
       buttonText: 'See service details',
     },
     howWorks: {
+      heading: 'Our services',
       heading1: 'How we work and the process we follow',
       heading2: 'Diagnose Car Problems If You Don`t Know Much About Cars',
+      desc: 'Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw Through True Rich Attended does',
       text: 'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes everything from struts, shocks, and tie rod ends to ball joints, springs everything from struts, shocks, and tie rod ends to ball joints, springs',
       buttonText: 'Book a service',
       list: {
