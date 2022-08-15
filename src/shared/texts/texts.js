@@ -246,12 +246,22 @@ const TEXTS = {
       desc: 'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical.',
       postDate: 'Posted on October 6th 2021',
     },
+    recaps: {
+      rm: {
+        title: 'Should I Buy a New Car or Lease a New Car in 2021?',
+        desc: 'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical.',
+      },
+      postTitle1: 'Get an Awesome Number Plate for Your New Car',
+      postTitle2: 'Would you Let a Robot Drive your Car? Our AI Future',
+      postTitle3: 'Will Electric Technology Soon Rule The Road?',
+    },
   },
   button: {
     contact: 'Contact Us',
     service: 'Book a service',
     quote: 'Get your quote',
     more: 'Learn more',
+    read: 'Read more',
     message: 'Send a message',
   },
 };
