@@ -11,8 +11,6 @@ import EXPERIANCES from '../../../../shared/constants/experiences';
 import ServiceCard from '../../../../components/atoms/ServiceCard';
 
 const Sidebar = ({ otherServices }) => {
-  console.log(otherServices);
-
   return (
     <StyledSidebar>
       <StyledSidebarTop>

@@ -8,6 +8,7 @@ import SERVICES from '../../shared/constants/services';
 import Article from './components/Article/Article';
 import Layout from './components/Layout';
 import Sidebar from './components/Sidebar';
+import CallToAction from '../../components/organisms/CallToAction';
 
 const ServicePage = () => {
   const { id } = useParams();
@@ -16,15 +17,18 @@ const ServicePage = () => {
   const otherServices = SERVICES.filter((service) => service.id !== +id);
 
   return (
-    <StyledServicePage>
-      <StyledContainer>
-        <StyledServicePageHeading>{service.text}</StyledServicePageHeading>
-        <Layout>
-          <Sidebar otherServices={otherServices} />
-          <Article service={service} />
-        </Layout>
-      </StyledContainer>
-    </StyledServicePage>
+    <>
+      <StyledServicePage>
+        <StyledContainer>
+          <StyledServicePageHeading>{service.text}</StyledServicePageHeading>
+          <Layout>
+            <Sidebar otherServices={otherServices} />
+            <Article service={service} />
+          </Layout>
+        </StyledContainer>
+      </StyledServicePage>
+      <CallToAction />
+    </>
   );
 };
 
