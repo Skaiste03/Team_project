@@ -1,18 +1,29 @@
-import React from 'react';
-import { StyledServicePage } from './ServicePage.style';
+import {
+  StyledServicePage,
+  StyledServicePageHeading,
+  StyledServicePageParagraph1,
+} from './ServicePage.style';
 import StyledContainer from '../../assets/styles/StyledContainer';
-import StyledWrapper from '../../assets/styles/StyledWrapper';
 import { useParams } from 'react-router-dom';
+import SERVICES from '../../shared/constants/services';
 
 const ServicePage = () => {
   const { id } = useParams();
-  console.log(id);
+
+  const service = SERVICES.find((service) => service.id === +id);
 
   return (
     <StyledServicePage>
-      <StyledWrapper>
-        <StyledContainer></StyledContainer>
-      </StyledWrapper>
+      <StyledContainer>
+        <aside></aside>
+        <article>
+          <img src={service.img.image} alt={service.img.alt} />
+          <StyledServicePageHeading>{service.text}</StyledServicePageHeading>
+          <StyledServicePageParagraph1>
+            {service.paragraph1}
+          </StyledServicePageParagraph1>
+        </article>
+      </StyledContainer>
     </StyledServicePage>
   );
 };
