@@ -2,7 +2,6 @@ import OurTeam from './components/OurTeam';
 import Features from './components/Features';
 import CallToAction from '../../components/organisms/CallToAction';
 
-import { StyledAboutPage } from './AboutPage.style';
 import StyledContainer from '../../assets/styles/StyledContainer';
 import StyledWrapper from '../../assets/styles/StyledWrapper';
 import Highlights from './components/Highlights';
@@ -15,7 +14,7 @@ import TEXTS from '../../shared/texts/texts';
 
 const AboutPage = () => {
   return (
-    <StyledAboutPage>
+    <main>
       <StyledWrapper>
         <StyledContainer>
           <Hero
@@ -44,7 +43,7 @@ const AboutPage = () => {
         </StyledContainer>
       </StyledWrapper>
       <CallToAction />
-    </StyledAboutPage>
+    </main>
   );
 };
 
