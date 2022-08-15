@@ -215,6 +215,7 @@ const TEXTS = {
     aboutDesc:
       'Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw Through True Rich Attended does',
   },
+
   servicesPage: {
     services: {
       title: 'Auto Diagnostics',
@@ -234,6 +235,16 @@ const TEXTS = {
         text3:
           'Since real had half every him case in packages enquire we up ecstatic',
       },
+    },
+  },
+
+  blogPage: {
+    ourBlog: {
+      heading: 'Our Blog',
+      label: 'TRENDING',
+      title: 'Diagnose Car Problems If You Don’t Know Much About Cars',
+      desc: 'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical.',
+      postDate: 'Posted on October 6th 2021',
     },
   },
   button: {
