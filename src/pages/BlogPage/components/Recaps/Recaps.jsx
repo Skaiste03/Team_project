@@ -15,9 +15,9 @@ import {
   StyledRmDiv,
   StyledSpan,
   StyledText,
-} from './PostsRecaps.style';
+} from './Recaps.style';
 
-const PostsRecaps = () => {
+const Recaps = () => {
   return (
     <StyledRecapsDiv>
       <StyledRmDiv>
@@ -50,4 +50,4 @@ const PostsRecaps = () => {
   );
 };
 
-export default PostsRecaps;
+export default Recaps;
