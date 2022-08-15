@@ -8,7 +8,8 @@ const Posts = () => {
     <StyledPosts>
       {POSTS.map((post) => (
         <Post
-          key={post.id}
+          key={post.uid}
+          id={'first'}
           image={post.img}
           span={post.span}
           title={post.title}
