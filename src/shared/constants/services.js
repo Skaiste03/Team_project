@@ -1,4 +1,3 @@
-import { uid } from 'uid';
 import TEXTS from '../texts/texts';
 import {
   DiagServiceIcon,
@@ -10,10 +9,11 @@ import {
   IncurServiceIcon,
   CustomServiceIcon,
 } from '../../assets/icons';
+import diagServiceImg from '../../assets/images/auto-diagnostic.jpg';
 
 const SERVICES = [
   {
-    id: uid(),
+    id: 1,
     text: `${TEXTS.services.diag}`,
     logo: <DiagServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -21,9 +21,13 @@ const SERVICES = [
     title2: `${TEXTS.servicePage.title2}`,
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
+    img: {
+      image: diagServiceImg,
+      alt: 'auto-diagnostic.jpg',
+    },
   },
   {
-    id: uid(),
+    id: 2,
     text: `${TEXTS.services.engine}`,
     logo: <EngineServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -31,9 +35,13 @@ const SERVICES = [
     title2: `${TEXTS.servicePage.title2}`,
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
+    img: {
+      image: diagServiceImg,
+      alt: 'auto-diagnostic.jpg',
+    },
   },
   {
-    id: uid(),
+    id: 3,
     text: `${TEXTS.services.wheel}`,
     logo: <WheelServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -41,9 +49,13 @@ const SERVICES = [
     title2: `${TEXTS.servicePage.title2}`,
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
+    img: {
+      image: diagServiceImg,
+      alt: 'auto-diagnostic.jpg',
+    },
   },
   {
-    id: uid(),
+    id: 4,
     text: `${TEXTS.services.oil}`,
     logo: <OilServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -51,9 +63,13 @@ const SERVICES = [
     title2: `${TEXTS.servicePage.title2}`,
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
+    img: {
+      image: diagServiceImg,
+      alt: 'auto-diagnostic.jpg',
+    },
   },
   {
-    id: uid(),
+    id: 5,
     text: `${TEXTS.services.body}`,
     logo: <BodyServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -61,9 +77,13 @@ const SERVICES = [
     title2: `${TEXTS.servicePage.title2}`,
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
+    img: {
+      image: diagServiceImg,
+      alt: 'auto-diagnostic.jpg',
+    },
   },
   {
-    id: uid(),
+    id: 6,
     text: `${TEXTS.services.batteries}`,
     logo: <BatteryServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -71,9 +91,13 @@ const SERVICES = [
     title2: `${TEXTS.servicePage.title2}`,
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
+    img: {
+      image: diagServiceImg,
+      alt: 'auto-diagnostic.jpg',
+    },
   },
   {
-    id: uid(),
+    id: 7,
     text: `${TEXTS.services.insur}`,
     logo: <IncurServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -81,9 +105,13 @@ const SERVICES = [
     title2: `${TEXTS.servicePage.title2}`,
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
+    img: {
+      image: diagServiceImg,
+      alt: 'auto-diagnostic.jpg',
+    },
   },
   {
-    id: uid(),
+    id: 8,
     text: `${TEXTS.services.custom}`,
     logo: <CustomServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -91,9 +119,13 @@ const SERVICES = [
     title2: `${TEXTS.servicePage.title2}`,
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
+    img: {
+      image: diagServiceImg,
+      alt: 'auto-diagnostic.jpg',
+    },
   },
   {
-    id: uid(),
+    id: 9,
     text: `${TEXTS.services.wash}`,
     logo: <DiagServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -101,9 +133,13 @@ const SERVICES = [
     title2: `${TEXTS.servicePage.title2}`,
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
+    img: {
+      image: diagServiceImg,
+      alt: 'auto-diagnostic.jpg',
+    },
   },
   {
-    id: uid(),
+    id: 10,
     text: `${TEXTS.services.ac}`,
     logo: <EngineServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -111,6 +147,10 @@ const SERVICES = [
     title2: `${TEXTS.servicePage.title2}`,
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
+    img: {
+      image: diagServiceImg,
+      alt: 'auto-diagnostic.jpg',
+    },
   },
 ];
 
