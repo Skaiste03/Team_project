@@ -38,6 +38,7 @@ export const StyledImageDiv = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
+
   img {
     width: 100%;
     height: 100%;
@@ -74,13 +75,19 @@ export const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
 
-  padding: 128px 20px;
+  padding: 50px 20px;
   gap: 48px;
 
   @media screen and (min-width: ${BREAKPOINTS.sm}) {
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
   @media screen and (min-width: ${BREAKPOINTS.xxl}) {
     padding-left: 64px;
     padding-right: 36%;
