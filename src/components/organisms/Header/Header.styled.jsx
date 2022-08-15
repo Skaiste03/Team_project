@@ -6,7 +6,11 @@ export const StyleHeader = styled.header`
   flex-wrap: wrap;
   justify-content: space-between;
 
-  padding: 18px 0;
+  /* Header container */
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 18px 40px;
+  /* Header container */
 
   & svg {
     display: block;
