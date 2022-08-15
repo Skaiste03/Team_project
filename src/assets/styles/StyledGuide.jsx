@@ -178,6 +178,7 @@ export const theme = {
     grey: '#E2E6E9',
     lighterGrey: '#ebebeb',
     lightGrey: '#F2F2F2',
+    lightGrey2: '#F5F5F5',
     white: '#ffffff',
   },
 };
