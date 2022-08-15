@@ -6,6 +6,7 @@ const HomePage = React.lazy(() => import('../../pages/HomePage'));
 const ServicesPage = React.lazy(() => import('../../pages/ServicesPage'));
 const AboutPage = React.lazy(() => import('../../pages/AboutPage'));
 const ServicePage = React.lazy(() => import('../../pages/ServicePage'));
+const BlogSinglePage = React.lazy(() => import('../../pages/BlogSinglePage'));
 
 const ROUTES = [
   {
@@ -29,6 +30,7 @@ const ROUTES = [
   { id: uid(), path: '/', element: '', text: `${TEXTS.navigation.blog}` },
   { id: uid(), path: '/', element: '', text: `${TEXTS.navigation.contact}` },
   { id: uid(), path: '/services/:id', element: <ServicePage />, text: '' },
+  { id: uid(), path: '/blog/:id', element: <BlogSinglePage />, text: '' },
 ];
 
 export default ROUTES;
