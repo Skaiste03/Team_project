@@ -7,6 +7,15 @@ export const StyledCard = styled.div`
   width: 100%;
 
   gap: 24px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
 `;
 
 export const StyledImgDiv = styled.div`
@@ -38,6 +47,10 @@ export const StyledText = styled.div`
 
     color: ${({ theme }) => theme.color.darkGrey};
 
+    opacity: 0.8;
+  }
+  transition: 0.3s;
+  &:hover {
     opacity: 0.8;
   }
 `;
