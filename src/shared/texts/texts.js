@@ -255,6 +255,11 @@ const TEXTS = {
       postTitle2: 'Would you Let a Robot Drive your Car? Our AI Future',
       postTitle3: 'Will Electric Technology Soon Rule The Road?',
     },
+    posts: {
+      firstTitle: '5 Genius Car Accessories You Should Never Drive Without',
+      secondTitle: 'We provide blow straight past it with the wheels skidding',
+      desc: 'We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models',
+    },
   },
   button: {
     contact: 'Contact Us',
