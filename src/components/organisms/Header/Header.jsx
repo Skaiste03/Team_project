@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navigation from '../../atoms/Navigation';
 import {
   StyleHeader,
@@ -12,9 +12,16 @@ import {
 import { LogoIcon, NavIcon, PhoneIcon } from '../../../assets/icons';
 import { Link } from 'react-router-dom';
 import TEXTS from '../../../shared/texts/texts';
+import { useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    setIsNavOpen(false);
+  }, [pathname]);
 
   return (
     <StyleHeader>
