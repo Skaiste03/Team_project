@@ -1,9 +1,16 @@
 import React from 'react';
 import { StyledPostDiv, StyledText } from './Post.style';
+import { useNavigate } from 'react-router-dom';
 
-const Post = ({ image, span, title, desc }) => {
+const Post = ({ image, span, title, desc, id }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/blog/${id}`);
+  };
+
   return (
-    <StyledPostDiv>
+    <StyledPostDiv onClick={handleClick}>
       <img src={image} alt='' />
       <StyledText>
         <span>{span}</span>
