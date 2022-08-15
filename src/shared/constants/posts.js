@@ -9,42 +9,42 @@ import img6 from '../../assets/images/post-6.jpg';
 
 const POSTS = [
   {
-    id: uid(),
+    uid: uid(),
     img: `${img1}`,
     span: `${TEXTS.blogPage.ourBlog.postDate}`,
     title: `${TEXTS.blogPage.posts.firstTitle}`,
     desc: `${TEXTS.blogPage.posts.desc}`,
   },
   {
-    id: uid(),
+    uid: uid(),
     img: `${img2}`,
     span: `${TEXTS.blogPage.ourBlog.postDate}`,
     title: `${TEXTS.blogPage.posts.firstTitle}`,
     desc: `${TEXTS.blogPage.posts.desc}`,
   },
   {
-    id: uid(),
+    uid: uid(),
     img: `${img3}`,
     span: `${TEXTS.blogPage.ourBlog.postDate}`,
     title: `${TEXTS.blogPage.posts.secondTitle}`,
     desc: `${TEXTS.blogPage.posts.desc}`,
   },
   {
-    id: uid(),
+    uid: uid(),
     img: `${img4}`,
     span: `${TEXTS.blogPage.ourBlog.postDate}`,
     title: `${TEXTS.blogPage.posts.secondTitle}`,
     desc: `${TEXTS.blogPage.posts.desc}`,
   },
   {
-    id: uid(),
+    uid: uid(),
     img: `${img5}`,
     span: `${TEXTS.blogPage.ourBlog.postDate}`,
     title: `${TEXTS.blogPage.posts.firstTitle}`,
     desc: `${TEXTS.blogPage.posts.desc}`,
   },
   {
-    id: uid(),
+    uid: uid(),
     img: `${img6}`,
     span: `${TEXTS.blogPage.ourBlog.postDate}`,
     title: `${TEXTS.blogPage.posts.firstTitle}`,
