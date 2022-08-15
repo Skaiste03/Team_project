@@ -16,6 +16,11 @@ export const StyledServicePage = styled.main`
 
 export const StyledServicePageHeading = styled.h1`
   ${({ theme }) => theme.h1}
+  margin-bottom: 46px;
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    margin-bottom: 96px;
+  }
 `;
 
 export const StyledServicePageParagraph1 = styled.p`
