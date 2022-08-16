@@ -14,19 +14,22 @@ export const StyledPostDiv = styled.div`
 `;
 
 export const StyledText = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 16px;
+
   margin-top: 24px;
 
   span {
     ${({ theme }) => theme.body2};
     color: ${({ theme }) => theme.color.darkGrey};
-
-    margin-bottom: 16px;
   }
 
   h3 {
     ${({ theme }) => theme.title1};
     color: ${({ theme }) => theme.color.black};
-    margin-bottom: 16px;
   }
 
   p {
