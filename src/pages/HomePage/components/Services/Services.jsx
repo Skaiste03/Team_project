@@ -38,7 +38,11 @@ const Services = () => {
           {TEXTS.homePage.services.formHeading}
         </StyledServicesRightHeading>
 
-        <Form inputs={HOME_PAGE_FORM} buttonText={TEXTS.homePage.form.button} />
+        <Form
+          inputs={HOME_PAGE_FORM}
+          buttonText={TEXTS.homePage.form.button}
+          fill={'light'}
+        />
       </StyledServicesRight>
     </StyledServices>
   );
