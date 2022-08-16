@@ -9,8 +9,12 @@ import TEXTS from '../../../../shared/texts/texts';
 import SERVICES from '../../../../shared/constants/services';
 import Card from '../../../../components/atoms/Card/Card';
 import ArrowButton from '../../../../components/atoms/ArrowButton';
+import shuffleArray from '../../../../shared/func/shuffleArray';
+import ROUTES from '../../../../shared/constants/routes';
 
 const Abilities = () => {
+  const services = shuffleArray(SERVICES);
+
   return (
     <StyledAbilities>
       <StyledAbilitiesSubHeading>
@@ -20,7 +24,7 @@ const Abilities = () => {
         {TEXTS.homePage.abilities.heading}
       </StyledAbilitiesHeading>
       <StyledAbilitiesWrapper>
-        {SERVICES.slice(0, 8).map((service) => (
+        {services.slice(0, 8).map((service) => (
           <Card
             key={service.id}
             logo={service.logo}
@@ -29,7 +33,10 @@ const Abilities = () => {
           />
         ))}
       </StyledAbilitiesWrapper>
-      <ArrowButton path={'/'} text={TEXTS.homePage.abilities.buttonText} />
+      <ArrowButton
+        path={ROUTES[2].path}
+        text={TEXTS.homePage.abilities.buttonText}
+      />
     </StyledAbilities>
   );
 };

@@ -9,7 +9,6 @@ const BlogPage = React.lazy(() => import('../../pages/BlogPage'));
 const ServicePage = React.lazy(() => import('../../pages/ServicePage'));
 const BlogSinglePage = React.lazy(() => import('../../pages/BlogSinglePage'));
 
-
 const ROUTES = [
   {
     id: uid(),
