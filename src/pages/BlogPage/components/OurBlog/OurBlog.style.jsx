@@ -71,10 +71,11 @@ export const StyledRightDiv = styled.div`
   }
 `;
 
-export const StyledContent = styled.div`
+export const StyledContentContainer = styled.div`
   display: flex;
   flex-direction: column;
 
+  max-width: 704px;
   padding: 50px 20px;
   gap: 48px;
 
@@ -90,7 +91,6 @@ export const StyledContent = styled.div`
 
   @media screen and (min-width: ${BREAKPOINTS.xxl}) {
     padding-left: 64px;
-    padding-right: 36%;
   }
 `;
 
