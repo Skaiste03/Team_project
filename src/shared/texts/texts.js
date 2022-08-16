@@ -259,7 +259,7 @@ const TEXTS = {
       secondTitle: 'We provide blow straight past it with the wheels skidding',
       desc: 'We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models',
     },
-},
+  },
   servicePage: {
     asideText: 'Other services',
     title1:
@@ -291,6 +291,23 @@ Ut non urna a odio condimentum dictum. Proin egestas erat a orci ultrices, vitae
       'Ut non urna a odio condimentum dictum. Proin egestas erat a orci ultrices, vitae bibendum libero posuere. Quisque laoreet tincidunt justo. Vestibulum congue dictum libero finibus vehicula. Aliquam nisi velit, ultricies eget enim vel, venenatis mollis ante.',
     desc5:
       'Ut non urna a odio condimentum dictum. Proin egestas erat a orci ultrices, vitae bibendum libero posuere. Quisque laoreet tincidunt justo. Vestibulum congue dictum libero finibus vehicula. Aliquam nisi velit, ultricies eget enim vel, venenatis mollis ante. Maecenas sodales tristique quam. Suspendisse fringilla massa vel dolor ornare rhoncus. Nullam ut orci mattis leo varius laoreet sed mollis dui. Aenean placerat nec enim ut finibus. Maecenas suscipit nibh eu neque egestas, non condimentum mi bibendum. Sed est eros, molestie consectetur auctor non, lobortis quis tortor. Nam cursus imperdiet massa volutpat hendrerit. Sed suscipit ligula iaculis lorem sagittis tincidunt. Etiam pellentesque metus vel enim iaculis aliquam. Mauris at nisi sed elit gravida malesuada.',
+  },
+  contactPage: {
+    heading: 'Get in touch with our experts',
+    labels: {
+      address: 'Address',
+      details: 'Contact  Details',
+      hours: 'Opening Hours',
+    },
+  },
+  form2: {
+    placeholder: {
+      name: 'Your full Name',
+      email: 'Your Email',
+      service: 'Select service type',
+      message: 'Message',
+    },
+    buttonText: 'Send message',
   },
   button: {
     contact: 'Contact Us',
