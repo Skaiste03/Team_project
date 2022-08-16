@@ -9,7 +9,16 @@ import {
   IncurServiceIcon,
   CustomServiceIcon,
 } from '../../assets/icons';
-import diagServiceImg from '../../assets/images/auto-diagnostic.jpg';
+import diagnosticImg from '../../assets/images/service-diagnostic.jpg';
+import engineRepairImg from '../../assets/images/service-engine-repair.jpg';
+import wheelRepairImg from '../../assets/images/service-wheel-repair.jpg';
+import oilChangeImg from '../../assets/images/service-oil-change.jpg';
+import bodyWorkImg from '../../assets/images/service-body-work.jpg';
+import batteryImg from '../../assets/images/service-battery.jpg';
+import insuranceImg from '../../assets/images/service-car-insurance.jpg';
+import customImg from '../../assets/images/service-custom.jpg';
+import carWashImg from '../../assets/images/service-car-wash.jpg';
+import acRepairImg from '../../assets/images/service-ac-repair.jpg';
 
 const SERVICES = [
   {
@@ -22,8 +31,8 @@ const SERVICES = [
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
     img: {
-      image: diagServiceImg,
-      alt: 'auto-diagnostic.jpg',
+      image: diagnosticImg,
+      alt: 'service-diagnostic.jpg',
     },
   },
   {
@@ -36,8 +45,8 @@ const SERVICES = [
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
     img: {
-      image: diagServiceImg,
-      alt: 'auto-diagnostic.jpg',
+      image: engineRepairImg,
+      alt: 'service-engine-repair.jpg',
     },
   },
   {
@@ -50,8 +59,8 @@ const SERVICES = [
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
     img: {
-      image: diagServiceImg,
-      alt: 'auto-diagnostic.jpg',
+      image: wheelRepairImg,
+      alt: 'service-wheel-repair.jpg',
     },
   },
   {
@@ -64,8 +73,8 @@ const SERVICES = [
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
     img: {
-      image: diagServiceImg,
-      alt: 'auto-diagnostic.jpg',
+      image: oilChangeImg,
+      alt: 'service-oil-change.jpg',
     },
   },
   {
@@ -78,8 +87,8 @@ const SERVICES = [
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
     img: {
-      image: diagServiceImg,
-      alt: 'auto-diagnostic.jpg',
+      image: bodyWorkImg,
+      alt: 'service-body-work.jpg',
     },
   },
   {
@@ -92,8 +101,8 @@ const SERVICES = [
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
     img: {
-      image: diagServiceImg,
-      alt: 'auto-diagnostic.jpg',
+      image: batteryImg,
+      alt: 'service-battery.jpg',
     },
   },
   {
@@ -106,8 +115,8 @@ const SERVICES = [
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
     img: {
-      image: diagServiceImg,
-      alt: 'auto-diagnostic.jpg',
+      image: insuranceImg,
+      alt: 'service-car-insurance.jpg',
     },
   },
   {
@@ -120,8 +129,8 @@ const SERVICES = [
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
     img: {
-      image: diagServiceImg,
-      alt: 'auto-diagnostic.jpg',
+      image: customImg,
+      alt: 'service-custom.jpg',
     },
   },
   {
@@ -134,8 +143,8 @@ const SERVICES = [
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
     img: {
-      image: diagServiceImg,
-      alt: 'auto-diagnostic.jpg',
+      image: carWashImg,
+      alt: 'service-car-wash.jpg',
     },
   },
   {
@@ -148,8 +157,8 @@ const SERVICES = [
     paragraph2: `${TEXTS.servicePage.paragraph2}`,
     quote: `${TEXTS.servicePage.quote}`,
     img: {
-      image: diagServiceImg,
-      alt: 'auto-diagnostic.jpg',
+      image: acRepairImg,
+      alt: 'service-ac-repair.jpg',
     },
   },
 ];
