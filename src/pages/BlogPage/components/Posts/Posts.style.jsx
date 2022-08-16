@@ -6,7 +6,7 @@ export const StyledPosts = styled.div`
   grid-template-columns: repeat(1, auto);
   grid-template-rows: repeat(4, auto);
 
-  row-gap: 62px;
+  row-gap: 42px;
 
   padding: 50px 0;
 
@@ -15,6 +15,7 @@ export const StyledPosts = styled.div`
     grid-template-rows: repeat(3, auto);
 
     column-gap: 32px;
+    row-gap: 62px;
 
     padding: 128px 0;
   }
