@@ -19,24 +19,25 @@ export const StyledCard = styled.div`
 `;
 
 export const StyledImgDiv = styled.div`
+  width: calc(28% - 24px);
+
   img {
-    width: 192px;
-    height: 100%;
+    display: block;
+    width: 100%;
 
     object-fit: cover;
   }
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
-    img {
-      width: 192px;
-      height: 100%;
-
-      object-fit: cover;
-    }
+    width: calc(30.5% - 24px);
   }
 `;
 
 export const StyledText = styled.div`
+  width: 72%;
+
+  padding-right: 5px;
+
   h3 {
     ${({ theme }) => theme.title1}
 
@@ -52,5 +53,9 @@ export const StyledText = styled.div`
   transition: 0.3s;
   &:hover {
     opacity: 0.8;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    width: 69.5%;
   }
 `;
