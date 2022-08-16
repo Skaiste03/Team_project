@@ -33,7 +33,7 @@ export const StyledRmDiv = styled.div`
   padding: 32px;
 
   img {
-    display: block;
+    display: inherit;
     width: 100%;
   }
 `;
