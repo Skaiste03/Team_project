@@ -7,9 +7,6 @@ export const StyleCard = styled.div`
   align-items: center;
   justify-content: center;
 
-  width: 100%;
-  height: 132px;
-
   background-color: #fff;
 
   transition: background-color 0.5s;
@@ -23,8 +20,7 @@ export const StyleCard = styled.div`
     }
   }
 
-  @media screen and (min-width: ${BREAKPOINTS.md}) {
-    height: 232px;
+  @media screen and (min-width: ${BREAKPOINTS.sm}) {
     gap: 12px;
   }
 
@@ -53,4 +49,5 @@ export const StyleCard = styled.div`
 
 export const StyleCardText = styled.span`
   ${({ theme }) => theme.title2};
+  text-align: center;
 `;
