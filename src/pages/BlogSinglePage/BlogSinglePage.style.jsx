@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import BREAKPOINTS from '../../shared/constants/breakpoints';
 
 export const StyledPost = styled.div`
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 80px;
 
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
