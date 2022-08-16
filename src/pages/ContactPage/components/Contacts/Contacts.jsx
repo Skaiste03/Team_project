@@ -17,7 +17,7 @@ const Contacts = () => {
       <Form
         inputs={CONTACT_PAGE_FORM}
         buttonText={TEXTS.form2.buttonText}
-        bg={'dark'}
+        fill={'dark'}
       />
       <StyledContactsRight>
         {CONTACTS.map((contact) => (
