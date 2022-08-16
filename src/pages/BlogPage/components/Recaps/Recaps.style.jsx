@@ -11,14 +11,10 @@ export const StyledRecapsDiv = styled.div`
 
   padding: 50px 0;
 
-  @media screen and (min-width: ${BREAKPOINTS.md}) {
-    grid-template-columns: calc(50% - 16px) 1fr;
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    grid-template-columns: calc(43.2% - 16px) 1fr;
     grid-template-rows: 1fr;
 
-    padding: 100px 0;
-  }
-
-  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     padding: 128px 0;
   }
 `;
@@ -37,7 +33,7 @@ export const StyledRmDiv = styled.div`
   padding: 32px;
 
   img {
-    display: inherit;
+    display: block;
     width: 100%;
   }
 `;
