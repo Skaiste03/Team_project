@@ -13,6 +13,7 @@ import EXPERIANCES from '../../../../shared/constants/experiences';
 import Form from '../../../../components/organisms/Form/Form';
 import { HOME_PAGE_FORM } from '../../../../shared/constants/forms';
 import ArrowButton from '../../../../components/atoms/ArrowButton';
+import ROUTES from '../../../../shared/constants/routes';
 
 const Services = () => {
   return (
@@ -25,7 +26,10 @@ const Services = () => {
           {EXPERIANCES.map((experiance) => (
             <ServiceCard key={experiance.id} experiance={experiance} />
           ))}
-          <ArrowButton path={'/'} text={TEXTS.homePage.services.button} />
+          <ArrowButton
+            path={ROUTES[1].path}
+            text={TEXTS.homePage.services.button}
+          />
         </StyledServicesExpWrapper>
       </StyledServicesLeft>
 
