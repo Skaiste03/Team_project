@@ -12,7 +12,7 @@ import {
   StyledSpan,
   StyledLeftDiv,
   StyledRightDiv,
-  StyledContent,
+  StyledContentContainer,
 } from './OurBlog.style';
 
 const OurBlog = () => {
@@ -26,7 +26,7 @@ const OurBlog = () => {
         <h1>{TEXTS.blogPage.ourBlog.heading}</h1>
       </StyledLeftDiv>
       <StyledRightDiv>
-        <StyledContent>
+        <StyledContentContainer>
           <StyledText>
             <span>{TEXTS.blogPage.ourBlog.label}</span>
             <h4>{TEXTS.blogPage.ourBlog.title}</h4>
@@ -36,7 +36,7 @@ const OurBlog = () => {
             <Button text={TEXTS.button.more} bg='primary' />
             <StyledSpan>{TEXTS.blogPage.ourBlog.postDate}</StyledSpan>
           </StyledButtonDiv>
-        </StyledContent>
+        </StyledContentContainer>
       </StyledRightDiv>
     </StyledBlog>
   );
