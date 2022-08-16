@@ -215,6 +215,7 @@ const TEXTS = {
     aboutDesc:
       'Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw Through True Rich Attended does',
   },
+
   servicesPage: {
     services: {
       title: 'Auto Diagnostics',
@@ -236,6 +237,29 @@ const TEXTS = {
       },
     },
   },
+  blogPage: {
+    ourBlog: {
+      heading: 'Our Blog',
+      label: 'TRENDING',
+      title: 'Diagnose Car Problems If You Don’t Know Much About Cars',
+      desc: 'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical.',
+      postDate: 'Posted on October 6th 2021',
+    },
+    recaps: {
+      rm: {
+        title: 'Should I Buy a New Car or Lease a New Car in 2021?',
+        desc: 'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical.',
+      },
+      postTitle1: 'Get an Awesome Number Plate for Your New Car',
+      postTitle2: 'Would you Let a Robot Drive your Car? Our AI Future',
+      postTitle3: 'Will Electric Technology Soon Rule The Road?',
+    },
+    posts: {
+      firstTitle: '5 Genius Car Accessories You Should Never Drive Without',
+      secondTitle: 'We provide blow straight past it with the wheels skidding',
+      desc: 'We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models',
+    },
+},
   servicePage: {
     asideText: 'Other services',
     title1:
@@ -255,6 +279,7 @@ const TEXTS = {
     service: 'Book a service',
     quote: 'Get your quote',
     more: 'Learn more',
+    read: 'Read more',
     message: 'Send a message',
   },
 };
