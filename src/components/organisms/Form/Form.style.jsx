@@ -20,12 +20,16 @@ export const StyledInput = styled.input`
 
   width: 100%;
 
-  padding: 23px 40px;
+  padding: 23px 30px;
 
   outline: none;
   border: none;
 
   border-radius: 2px;
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    padding: 23px 40px;
+  }
 
   &::placeholder {
     ${({ theme }) => theme.body2};
@@ -46,6 +50,10 @@ export const StyledInput = styled.input`
     props.fill === 'dark' &&
     css`
       background-color: ${({ theme }) => theme.color.lightGrey};
+
+      &::placeholder {
+        transition: opacity 0.5s;
+      }
 
       &:focus::placeholder {
         opacity: 0.5;
