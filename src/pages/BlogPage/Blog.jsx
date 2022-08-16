@@ -4,6 +4,7 @@ import StyledContainer from '../../assets/styles/StyledContainer';
 import OurBlog from './components/OurBlog';
 import Recaps from './components/Recaps/Recaps';
 import Posts from './components/Posts';
+import CallToAction from '../../components/organisms/CallToAction';
 
 const Blog = () => {
   return (
@@ -23,6 +24,8 @@ const Blog = () => {
           <Posts />
         </StyledContainer>
       </StyledWrapper>
+
+      <CallToAction />
     </main>
   );
 };
