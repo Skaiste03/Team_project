@@ -9,19 +9,20 @@ import Article from './components/Article/Article';
 import Layout from './components/Layout';
 import Sidebar from './components/Sidebar';
 import CallToAction from '../../components/organisms/CallToAction';
+import shuffleArray from '../../shared/func/shuffleArray';
 
 const ServicePage = () => {
   const { id } = useParams();
 
   const service = SERVICES.find((service) => service.id === +id);
-  const otherServices = SERVICES.filter((service) => service.id !== +id);
+  const services = shuffleArray(SERVICES);
 
   return (
     <StyledServicePage>
       <StyledContainer>
         <StyledServicePageHeading>{service.text}</StyledServicePageHeading>
         <Layout>
-          <Sidebar otherServices={otherServices} />
+          <Sidebar otherServices={services} />
           <Article service={service} />
         </Layout>
       </StyledContainer>
