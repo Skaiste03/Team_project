@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../../atoms/Button';
 import { StyledForm, StyledInput, StyledInputsWrapper } from './Form.style';
 
-const Form = ({ inputs, buttonText, bg }) => {
+const Form = ({ inputs, buttonText, fill }) => {
   const handleSubmit = (e) => e.preventDefault();
 
   return (
@@ -13,7 +13,7 @@ const Form = ({ inputs, buttonText, bg }) => {
             key={input.id}
             placeholder={input.placeholder}
             type={input.type}
-            bg={bg}
+            fill={fill}
           ></StyledInput>
         ))}
       </StyledInputsWrapper>

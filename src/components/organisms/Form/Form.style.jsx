@@ -33,25 +33,19 @@ export const StyledInput = styled.input`
   }
 
   ${(props) =>
-    props.bg === 'light' &&
+    props.fill === 'light' &&
     css`
       background-color: ${({ theme }) => theme.color.white};
 
       &::placeholder {
-        color: ${({ theme }) => theme.color.black};
         opacity: 0.5;
       }
     `}
 
   ${(props) =>
-    props.bg === 'dark' &&
+    props.fill === 'dark' &&
     css`
       background-color: ${({ theme }) => theme.color.lightGrey};
-      transition: opacity 0.5s;
-
-      &::placeholder {
-        color: ${({ theme }) => theme.color.black};
-      }
 
       &:focus::placeholder {
         opacity: 0.5;
