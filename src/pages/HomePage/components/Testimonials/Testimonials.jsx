@@ -8,7 +8,6 @@ import {
   StyledTestimonialsHeading,
   StyledTestimonialWrapper,
 } from './Testimonials.style';
-import StyledContainer from '../../../../assets/styles/StyledContainer';
 import TEXTS from '../../../../shared/texts/texts';
 import SliderCard from '../SliderCard';
 import SLIDER_DATA from '../../../../data/slider';
@@ -94,48 +93,46 @@ const Testimonials = () => {
   };
 
   return (
-    <StyledContainer>
-      <StyledTestimonials>
-        <StyledTestimonialsHeading>
-          {TEXTS.homePage.testimonials.heading}
-        </StyledTestimonialsHeading>
-        <TestimonialsMotion
-          key={page}
-          initial={isNext ? 'next' : 'prev'}
-          animate={{ x: 0, opacity: 1 }}
-          exit={isNext ? 'next' : 'prev'}
-          variants={slider}
-          onTouchStart={handleTouchStart}
-          onTouchEnd={handleTouchEnd}
-        >
-          <SliderCard data={data[page][0]} />
-          {!isSmall && <SliderCard data={data[page][1]} />}
-        </TestimonialsMotion>
-        <StyledTestimonialBottom>
-          {data.map((_, index) => (
-            <StyledTestimonialPointer
-              key={index}
-              isActive={index === page}
-            ></StyledTestimonialPointer>
-          ))}
+    <StyledTestimonials>
+      <StyledTestimonialsHeading>
+        {TEXTS.homePage.testimonials.heading}
+      </StyledTestimonialsHeading>
+      <TestimonialsMotion
+        key={page}
+        initial={isNext ? 'next' : 'prev'}
+        animate={{ x: 0, opacity: 1 }}
+        exit={isNext ? 'next' : 'prev'}
+        variants={slider}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
+        <SliderCard data={data[page][0]} />
+        {!isSmall && <SliderCard data={data[page][1]} />}
+      </TestimonialsMotion>
+      <StyledTestimonialBottom>
+        {data.map((_, index) => (
+          <StyledTestimonialPointer
+            key={index}
+            isActive={index === page}
+          ></StyledTestimonialPointer>
+        ))}
 
-          <StyledTestimonialButtonsWrapper>
-            <StyledTestimonialButton
-              onClick={() => handlePrevChange(page, data)}
-              clickType={'prev'}
-            >
-              <SmallArrowIcon />
-            </StyledTestimonialButton>
-            <StyledTestimonialButton
-              onClick={() => handleNextChange(page, data)}
-              clickType={'next'}
-            >
-              <SmallArrowIcon />
-            </StyledTestimonialButton>
-          </StyledTestimonialButtonsWrapper>
-        </StyledTestimonialBottom>
-      </StyledTestimonials>
-    </StyledContainer>
+        <StyledTestimonialButtonsWrapper>
+          <StyledTestimonialButton
+            onClick={() => handlePrevChange(page, data)}
+            clickType={'prev'}
+          >
+            <SmallArrowIcon />
+          </StyledTestimonialButton>
+          <StyledTestimonialButton
+            onClick={() => handleNextChange(page, data)}
+            clickType={'next'}
+          >
+            <SmallArrowIcon />
+          </StyledTestimonialButton>
+        </StyledTestimonialButtonsWrapper>
+      </StyledTestimonialBottom>
+    </StyledTestimonials>
   );
 };
 
