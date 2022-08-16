@@ -6,9 +6,9 @@ import POST from '../../shared/constants/post';
 import CallToAction from '../../components/organisms/CallToAction';
 
 import {
-  StyledText,
+  StyledTextContainer,
   StyledImg,
-  StyledArticle,
+  StyledArticleContainer,
   StyledBr,
   StyledBigHd,
   StyledSmallHd,
@@ -25,13 +25,13 @@ const BlogSinglePage = () => {
       <StyledWrapper>
         <StyledContainer>
           <StyledPost>
-            <StyledText>
+            <StyledTextContainer>
               <span>{post.date}</span>
               <h3>{post.firstTitle}</h3>
               <p>{post.desc1}</p>
-            </StyledText>
+            </StyledTextContainer>
             <StyledImg src={post.heroImage} alt='hero' />
-            <StyledArticle>
+            <StyledArticleContainer>
               <StyledBigHd>{post.secondTitle}</StyledBigHd>
               <p>{post.desc2}</p>
               <img src={post.postImg} alt='post' />
@@ -39,7 +39,7 @@ const BlogSinglePage = () => {
               <p>{post.desc3}</p>
               <StyledBr>{post.desc4}</StyledBr>
               <p>{post.desc5}</p>
-            </StyledArticle>
+            </StyledArticleContainer>
           </StyledPost>
         </StyledContainer>
       </StyledWrapper>
