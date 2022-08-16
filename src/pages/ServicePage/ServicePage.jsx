@@ -17,18 +17,16 @@ const ServicePage = () => {
   const otherServices = SERVICES.filter((service) => service.id !== +id);
 
   return (
-    <>
-      <StyledServicePage>
-        <StyledContainer>
-          <StyledServicePageHeading>{service.text}</StyledServicePageHeading>
-          <Layout>
-            <Sidebar otherServices={otherServices} />
-            <Article service={service} />
-          </Layout>
-        </StyledContainer>
-      </StyledServicePage>
+    <StyledServicePage>
+      <StyledContainer>
+        <StyledServicePageHeading>{service.text}</StyledServicePageHeading>
+        <Layout>
+          <Sidebar otherServices={otherServices} />
+          <Article service={service} />
+        </Layout>
+      </StyledContainer>
       <CallToAction />
-    </>
+    </StyledServicePage>
   );
 };
 
