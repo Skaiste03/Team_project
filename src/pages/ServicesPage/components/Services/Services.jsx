@@ -4,7 +4,6 @@ import {
   StyledServicesHeading,
   StyledServicesHighlighted,
 } from './Services.style';
-// import serviceBg from '../../../../assets/images/service-bg.jpg';
 import TEXTS from '../../../../shared/texts/texts';
 import ArrowButton from '../../../../components/atoms/ArrowButton';
 import SERVICES from '../../../../shared/constants/services';
