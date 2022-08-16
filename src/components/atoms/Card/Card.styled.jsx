@@ -7,6 +7,9 @@ export const StyleCard = styled.div`
   align-items: center;
   justify-content: center;
 
+  width: 100%;
+  height: auto;
+
   background-color: #fff;
 
   transition: background-color 0.5s;
