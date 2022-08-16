@@ -1,6 +1,13 @@
 import styled from 'styled-components';
+import BREAKPOINTS from '../../../shared/constants/breakpoints';
 
 export const StyledArrowButton = styled.div`
+  align-self: center;
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    align-self: self-start;
+  }
+
   & a {
     display: inline-flex;
     align-items: center;
