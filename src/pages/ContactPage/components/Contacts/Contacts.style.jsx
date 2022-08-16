@@ -4,7 +4,7 @@ import BREAKPOINTS from '../../../../shared/constants/breakpoints';
 export const StyledContacts = styled.div`
   display: grid;
   grid-template-columns: auto;
-  grid-column-gap: 139px;
+  grid-column-gap: 50px;
   grid-row-gap: 48px;
 
   padding-top: 50px;
@@ -19,6 +19,7 @@ export const StyledContacts = styled.div`
 
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
     padding-bottom: 128px;
+    grid-column-gap: 139px;
   }
 
   & form {
@@ -29,9 +30,16 @@ export const StyledContacts = styled.div`
 
 export const StyledContactsHeading = styled.h1`
   ${({ theme }) => theme.h1}
+
   text-align: center;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
+    grid-column: 1 / span 2;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    grid-column: 1;
+
     text-align: left;
   }
 `;
