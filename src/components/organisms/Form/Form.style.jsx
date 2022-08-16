@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import BREAKPOINTS from '../../../shared/constants/breakpoints';
 
 export const StyledForm = styled.form`
@@ -30,9 +30,33 @@ export const StyledInput = styled.input`
   &::placeholder {
     ${({ theme }) => theme.body2};
     color: ${({ theme }) => theme.color.black};
-
-    opacity: 0.5;
   }
+
+  ${(props) =>
+    props.bg === 'light' &&
+    css`
+      background-color: ${({ theme }) => theme.color.white};
+
+      &::placeholder {
+        color: ${({ theme }) => theme.color.black};
+        opacity: 0.5;
+      }
+    `}
+
+  ${(props) =>
+    props.bg === 'dark' &&
+    css`
+      background-color: ${({ theme }) => theme.color.lightGrey};
+      transition: opacity 0.5s;
+
+      &::placeholder {
+        color: ${({ theme }) => theme.color.black};
+      }
+
+      &:focus::placeholder {
+        opacity: 0.5;
+      }
+    `}
 `;
 
 export const StyledInputsWrapper = styled.div`
