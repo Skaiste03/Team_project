@@ -7,9 +7,9 @@ export const StyleHeader = styled.header`
   justify-content: space-between;
 
   /* Header container */
-  max-width: 1320px;
+  max-width: 1360px;
   margin: 0 auto;
-  padding: 18px 40px;
+  padding: 18px 20px;
   /* Header container */
 
   & svg {
@@ -23,6 +23,7 @@ export const StyleHeader = styled.header`
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     justify-content: space-between;
+    padding: 18px 40px;
   }
 `;
 
