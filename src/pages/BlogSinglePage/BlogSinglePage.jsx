@@ -3,6 +3,7 @@ import StyledWrapper from '../../assets/styles/StyledWrapper';
 import StyledContainer from '../../assets/styles/StyledContainer';
 import { useParams } from 'react-router-dom';
 import POST from '../../shared/constants/post';
+import CallToAction from '../../components/organisms/CallToAction';
 
 import {
   StyledText,
@@ -42,6 +43,8 @@ const BlogSinglePage = () => {
           </StyledPost>
         </StyledContainer>
       </StyledWrapper>
+
+      <CallToAction />
     </main>
   );
 };
