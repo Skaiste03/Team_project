@@ -1,11 +1,16 @@
 import styled from 'styled-components';
+import BREAKPOINTS from '../../shared/constants/breakpoints';
 
-export const StyledPost = styled.main`
+export const StyledPost = styled.div`
   padding-top: 80px;
-  padding-bottom: 128px;
+  padding-bottom: 80px;
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    padding-bottom: 128px;
+  }
 `;
 
-export const StyledText = styled.div`
+export const StyledTextContainer = styled.div`
   max-width: 896px;
   margin: 0 auto;
 
@@ -31,10 +36,14 @@ export const StyledText = styled.div`
 
 export const StyledImg = styled.img`
   width: 100%;
-  margin: 64px 0;
+  margin: 34px 0;
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    margin: 64px 0;
+  }
 `;
 
-export const StyledArticle = styled.article`
+export const StyledArticleContainer = styled.article`
   max-width: 896px;
   margin: 0 auto;
 
@@ -52,8 +61,13 @@ export const StyledArticle = styled.article`
   img {
     width: 100%;
 
-    margin-top: 56px;
-    margin-bottom: 80px;
+    margin-top: 36px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: ${BREAKPOINTS.lg}) {
+      margin-top: 56px;
+      margin-bottom: 80px;
+    }
   }
 `;
 
