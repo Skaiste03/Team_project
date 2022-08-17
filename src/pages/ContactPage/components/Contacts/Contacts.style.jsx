@@ -71,3 +71,5 @@ export const StyledContactsInfo = styled.p`
     opacity: 0.7;
   }
 `;
+
+export const StyledContactsForm = styled.form``;
