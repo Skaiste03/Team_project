@@ -9,7 +9,7 @@ const Posts = () => {
       {POSTS.map((post) => (
         <Post
           key={post.uid}
-          id={'first'}
+          id={post.id}
           image={post.img}
           span={post.span}
           title={post.title}

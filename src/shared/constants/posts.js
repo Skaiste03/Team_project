@@ -10,6 +10,7 @@ import img6 from '../../assets/images/post-6.jpg';
 const POSTS = [
   {
     uid: uid(),
+    id: 1,
     img: `${img1}`,
     span: `${TEXTS.blogPage.ourBlog.postDate}`,
     title: `${TEXTS.blogPage.posts.firstTitle}`,
@@ -17,6 +18,7 @@ const POSTS = [
   },
   {
     uid: uid(),
+    id: 2,
     img: `${img2}`,
     span: `${TEXTS.blogPage.ourBlog.postDate}`,
     title: `${TEXTS.blogPage.posts.firstTitle}`,
@@ -24,6 +26,7 @@ const POSTS = [
   },
   {
     uid: uid(),
+    id: 3,
     img: `${img3}`,
     span: `${TEXTS.blogPage.ourBlog.postDate}`,
     title: `${TEXTS.blogPage.posts.secondTitle}`,
@@ -31,6 +34,7 @@ const POSTS = [
   },
   {
     uid: uid(),
+    id: 4,
     img: `${img4}`,
     span: `${TEXTS.blogPage.ourBlog.postDate}`,
     title: `${TEXTS.blogPage.posts.secondTitle}`,
@@ -38,6 +42,7 @@ const POSTS = [
   },
   {
     uid: uid(),
+    id: 5,
     img: `${img5}`,
     span: `${TEXTS.blogPage.ourBlog.postDate}`,
     title: `${TEXTS.blogPage.posts.firstTitle}`,
@@ -45,6 +50,7 @@ const POSTS = [
   },
   {
     uid: uid(),
+    id: 6,
     img: `${img6}`,
     span: `${TEXTS.blogPage.ourBlog.postDate}`,
     title: `${TEXTS.blogPage.posts.firstTitle}`,
