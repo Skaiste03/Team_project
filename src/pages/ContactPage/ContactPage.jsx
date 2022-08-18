@@ -3,7 +3,7 @@ import { StyledContactPage } from './ContactPage.style';
 import StyledContainer from '../../assets/styles/StyledContainer';
 import StyledWrapper from '../../assets/styles/StyledWrapper';
 import Contacts from './components/Contacts';
-import Map from './components/Map';
+import Maps from './components/Maps';
 
 const ContactPage = () => {
   return (
@@ -15,7 +15,7 @@ const ContactPage = () => {
       </StyledWrapper>
 
       <StyledWrapper>
-        <Map />
+        <Maps />
       </StyledWrapper>
     </StyledContactPage>
   );

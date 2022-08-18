@@ -12,7 +12,7 @@ import {
   Marker,
   InfoWindow,
 } from '@react-google-maps/api';
-import MapMarker from '../Marker';
+import MapMarker from '../MapMarker';
 
 const containerStyle = {
   width: '100%',
