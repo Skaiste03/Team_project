@@ -14,18 +14,21 @@ import {
 } from '@react-google-maps/api';
 import MapMarker from '../MapMarker';
 
+// GoogleMap component style
 const containerStyle = {
   width: '100%',
   height: '100%',
 };
 
+// GoogleMap initial position and Marker position
 const center = {
   lat: 40.701,
   lng: -73.995,
 };
 
+// GoogleMap options
 const options = {
-  mapId: '75339764bd754f8',
+  mapId: '75339764bd754f8', // Map style id
   disableDefaultUI: true,
   clickableIcons: false,
 };
