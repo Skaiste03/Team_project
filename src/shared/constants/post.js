@@ -8,7 +8,7 @@ import postImg3 from '../../assets/images/post-3.jpg';
 
 const POST = [
   {
-    id: 'first',
+    id: 1,
     date: `${TEXTS.SingleBlogPage.date}`,
     firstTitle: `${TEXTS.SingleBlogPage.firstTitle}`,
     desc1: `${TEXTS.SingleBlogPage.desc1}`,
@@ -22,7 +22,7 @@ const POST = [
     desc5: `${TEXTS.SingleBlogPage.desc5}`,
   },
   {
-    id: 'second',
+    id: 2,
     date: `${TEXTS.SingleBlogPage.date}`,
     firstTitle: `${TEXTS.blogPage.posts.firstTitle}`,
     desc1: `${TEXTS.SingleBlogPage.desc1}`,
@@ -36,7 +36,7 @@ const POST = [
     desc5: `${TEXTS.SingleBlogPage.desc5}`,
   },
   {
-    id: 'third',
+    id: 3,
     date: `${TEXTS.SingleBlogPage.date}`,
     firstTitle: `${TEXTS.SingleBlogPage.firstTitle}`,
     desc1: `${TEXTS.SingleBlogPage.desc1}`,
@@ -50,7 +50,7 @@ const POST = [
     desc5: `${TEXTS.SingleBlogPage.desc5}`,
   },
   {
-    id: 'fourth',
+    id: 4,
     date: `${TEXTS.SingleBlogPage.date}`,
     firstTitle: `${TEXTS.blogPage.posts.firstTitle}`,
     desc1: `${TEXTS.SingleBlogPage.desc1}`,
@@ -64,7 +64,7 @@ const POST = [
     desc5: `${TEXTS.SingleBlogPage.desc5}`,
   },
   {
-    id: 'fifth',
+    id: 5,
     date: `${TEXTS.SingleBlogPage.date}`,
     firstTitle: `${TEXTS.SingleBlogPage.firstTitle}`,
     desc1: `${TEXTS.SingleBlogPage.desc1}`,
@@ -78,7 +78,7 @@ const POST = [
     desc5: `${TEXTS.SingleBlogPage.desc5}`,
   },
   {
-    id: 'sixth',
+    id: 6,
     date: `${TEXTS.SingleBlogPage.date}`,
     firstTitle: `${TEXTS.blogPage.posts.secondTitle}`,
     desc1: `${TEXTS.SingleBlogPage.desc1}`,
