@@ -14,6 +14,7 @@ import {
   StyledSmallHd,
   StyledPost,
 } from './BlogSinglePage.style';
+import Main from '../../components/atoms/Main';
 
 const BlogSinglePage = () => {
   const { id } = useParams();
@@ -23,7 +24,7 @@ const BlogSinglePage = () => {
   const post = POST.find((element) => `${element.id}` === id);
 
   return (
-    <main>
+    <Main>
       <StyledWrapper>
         <StyledContainer>
           <StyledPost>
@@ -47,7 +48,7 @@ const BlogSinglePage = () => {
       </StyledWrapper>
 
       <CallToAction />
-    </main>
+    </Main>
   );
 };
 
