@@ -5,7 +5,7 @@ export const StyledLoaderDiv = styled.div`
   justify-content: center;
   align-items: center;
 
-  height: 40vh;
+  height: calc(100vh - 83px);
 `;
 
 export const StyledLoader = styled.div`
