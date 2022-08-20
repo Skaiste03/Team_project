@@ -17,6 +17,15 @@ import {
 import TEXTS from '../../../../shared/texts/texts';
 import { TimeHeroIcon, StarHeroIcon } from '../../../../assets/icons';
 import Button from '../../../../components/atoms/Button';
+import { motion } from 'framer-motion';
+
+const ServiceMotion = motion(StyledHeroBannerService);
+const StarsMotion = motion(StyledHeroBannerStars);
+
+const variants = {
+  left: { x: '-100px', opacity: 0 },
+  right: { x: '100px', opacity: 0 },
+};
 
 const Hero = () => {
   return (
@@ -37,7 +46,12 @@ const Hero = () => {
       </StyledHeroLeft>
       <StyledHeroRight>
         <StyledHeroRightBg></StyledHeroRightBg>
-        <StyledHeroBannerService>
+        <ServiceMotion
+          initial={'left'}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          variants={variants}
+        >
           <StyledHeroBannerServiceCircle>
             <p>
               {TEXTS.homePage.hero.hr.value}&nbsp;
@@ -45,8 +59,13 @@ const Hero = () => {
             </p>
           </StyledHeroBannerServiceCircle>
           <p>{TEXTS.homePage.hero.service}</p>
-        </StyledHeroBannerService>
-        <StyledHeroBannerStars>
+        </ServiceMotion>
+        <StarsMotion
+          initial={'right'}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          variants={variants}
+        >
           <StyledHeroBannerTextWrapper>
             {TEXTS.homePage.hero.rating.value}
             <span>{TEXTS.homePage.hero.rating.text}</span>
@@ -58,7 +77,7 @@ const Hero = () => {
             <StarHeroIcon />
             <StarHeroIcon />
           </StyledHeroBannerStarsWrapper>
-        </StyledHeroBannerStars>
+        </StarsMotion>
       </StyledHeroRight>
     </StyledHero>
   );
