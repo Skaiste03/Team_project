@@ -11,6 +11,14 @@ import Card from '../../../../components/atoms/Card/Card';
 import ArrowButton from '../../../../components/atoms/ArrowButton';
 import shuffleArray from '../../../../shared/func/shuffleArray';
 import ROUTES from '../../../../shared/constants/routes';
+import { motion } from 'framer-motion';
+
+const AbilitiesWrapperMotion = motion(StyledAbilitiesWrapper);
+
+const variants = {
+  offScreen: { opacity: 0, scale: 0.5 },
+  onScreen: { opacity: 1, scale: 1 },
+};
 
 const Abilities = () => {
   const services = shuffleArray(SERVICES);
@@ -23,16 +31,22 @@ const Abilities = () => {
       <StyledAbilitiesHeading>
         {TEXTS.homePage.abilities.heading}
       </StyledAbilitiesHeading>
-      <StyledAbilitiesWrapper>
-        {services.slice(0, 8).map((service) => (
+      <AbilitiesWrapperMotion
+        initial='offScreen'
+        whileInView='onScreen'
+        viewport={{ once: false, amount: 0.8 }}
+      >
+        {services.slice(0, 8).map((service, index) => (
           <Card
+            variants={variants}
             key={service.id}
             logo={service.logo}
             text={service.text}
             id={service.id}
+            index={index}
           />
         ))}
-      </StyledAbilitiesWrapper>
+      </AbilitiesWrapperMotion>
       <ArrowButton
         path={ROUTES[2].path}
         text={TEXTS.homePage.abilities.buttonText}
