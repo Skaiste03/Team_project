@@ -1,5 +1,4 @@
 import React from 'react';
-import { StyledHomePage } from './HomePage.style';
 import StyledWrapper from '../../assets/styles/StyledWrapper';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -11,10 +10,11 @@ import Testimonials from './components/Testimonials';
 import Faq from './components/Faq';
 import CallToAction from '../../components/organisms/CallToAction';
 import StyledContainer from '../../assets/styles/StyledContainer';
+import Main from '../../components/atoms/Main';
 
 const HomePage = () => {
   return (
-    <StyledHomePage>
+    <Main>
       <StyledWrapper>
         <StyledContainer>
           <Hero />
@@ -64,7 +64,7 @@ const HomePage = () => {
           <Faq />
         </StyledContainer>
       </StyledWrapper>
-    </StyledHomePage>
+    </Main>
   );
 };
 
