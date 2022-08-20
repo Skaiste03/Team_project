@@ -27,7 +27,11 @@ const Process = () => {
           {TEXTS.homePage.process.heading}
         </StyledProcessHeading>
         <StyledProcessDesc>{TEXTS.homePage.process.desc}</StyledProcessDesc>
-        <Button bg={'primary'} text={TEXTS.homePage.process.buttonText} />
+        <Button
+          bg={'primary'}
+          text={TEXTS.homePage.process.buttonText}
+          path={'/about'}
+        />
       </StyledProcessLeft>
       <ProcessRightMotion
         initial='offScreen'
