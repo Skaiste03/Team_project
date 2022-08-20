@@ -7,12 +7,12 @@ const Loader = () => {
   const containerVariants = {
     start: {
       transition: {
-        staggerChildren: 0.2,
+        staggerChildren: 0.1,
       },
     },
     end: {
       transition: {
-        staggerChildren: 0.2,
+        staggerChildren: 0.1,
       },
     },
   };
@@ -28,7 +28,7 @@ const Loader = () => {
   const circleTransition = {
     repeat: Infinity,
     repeatType: 'reverse',
-    duration: 0.5,
+    duration: 0.3,
     ease: 'easeInOut',
   };
 
