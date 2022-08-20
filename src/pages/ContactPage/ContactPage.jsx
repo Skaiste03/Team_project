@@ -1,13 +1,13 @@
 import React from 'react';
-import { StyledContactPage } from './ContactPage.style';
 import StyledContainer from '../../assets/styles/StyledContainer';
 import StyledWrapper from '../../assets/styles/StyledWrapper';
 import Contacts from './components/Contacts';
 import Maps from './components/Maps';
+import Main from '../../components/atoms/Main';
 
 const ContactPage = () => {
   return (
-    <StyledContactPage>
+    <Main>
       <StyledWrapper>
         <StyledContainer>
           <Contacts />
@@ -17,7 +17,7 @@ const ContactPage = () => {
       <StyledWrapper>
         <Maps />
       </StyledWrapper>
-    </StyledContactPage>
+    </Main>
   );
 };
 
