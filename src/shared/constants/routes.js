@@ -48,7 +48,7 @@ const ROUTES = [
   },
   {
     id: uid(),
-    path: '/services/:id',
+    path: '/services/:slug',
     element: <ServicePage />,
     text: '',
     nav: false,

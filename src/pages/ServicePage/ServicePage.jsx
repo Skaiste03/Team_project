@@ -11,9 +11,9 @@ import Main from '../../components/atoms/Main';
 import StyledWrapper from '../../assets/styles/StyledWrapper';
 
 const ServicePage = () => {
-  const { id } = useParams();
+  const { slug } = useParams();
 
-  const service = SERVICES.find((service) => service.id === +id);
+  const service = SERVICES.find((service) => service.slug === slug);
   const services = shuffleArray(SERVICES);
 
   return (

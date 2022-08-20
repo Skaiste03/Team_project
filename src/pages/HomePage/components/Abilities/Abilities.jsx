@@ -42,7 +42,7 @@ const Abilities = () => {
             key={service.id}
             logo={service.logo}
             text={service.text}
-            id={service.id}
+            slug={service.slug}
             index={index}
           />
         ))}

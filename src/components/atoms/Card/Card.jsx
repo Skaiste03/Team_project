@@ -9,7 +9,7 @@ const Card = (props) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/services/${props.id}`);
+    navigate(`/services/${props.slug}`);
   };
 
   return (

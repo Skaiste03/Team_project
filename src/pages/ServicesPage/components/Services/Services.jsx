@@ -23,7 +23,7 @@ const Services = () => {
           {shortenText(services[0].paragraph1, 30)}
         </StyledServicesDesc>
         <ArrowButton
-          path={`/services/${services[0].id}`}
+          path={`/services/${services[0].slug}`}
           text={TEXTS.servicesPage.services.buttonText}
         />
       </StyledServicesHighlighted>
@@ -32,7 +32,7 @@ const Services = () => {
           key={service.id}
           text={service.text}
           logo={service.logo}
-          id={service.id}
+          slug={service.slug}
         />
       ))}
     </StyledServices>
