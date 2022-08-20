@@ -6,7 +6,7 @@ import {
 } from './Services.style';
 import TEXTS from '../../../../shared/texts/texts';
 import ArrowButton from '../../../../components/atoms/ArrowButton';
-import SERVICES from '../../../../shared/constants/services';
+import SERVICES from '../../../../data/services';
 import Card from '../../../../components/atoms/Card';
 import shortenText from '../../../../shared/func/shortenText';
 import shuffleArray from '../../../../shared/func/shuffleArray';

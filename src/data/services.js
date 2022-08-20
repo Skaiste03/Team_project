@@ -1,4 +1,4 @@
-import TEXTS from '../texts/texts';
+import TEXTS from '../shared/texts/texts';
 import {
   DiagServiceIcon,
   EngineServiceIcon,
@@ -8,17 +8,17 @@ import {
   BatteryServiceIcon,
   IncurServiceIcon,
   CustomServiceIcon,
-} from '../../assets/icons';
-import diagnosticImg from '../../assets/images/service-diagnostic.jpg';
-import engineRepairImg from '../../assets/images/service-engine-repair.jpg';
-import wheelRepairImg from '../../assets/images/service-wheel-repair.jpg';
-import oilChangeImg from '../../assets/images/service-oil-change.jpg';
-import bodyWorkImg from '../../assets/images/service-body-work.jpg';
-import batteryImg from '../../assets/images/service-battery.jpg';
-import insuranceImg from '../../assets/images/service-car-insurance.jpg';
-import customImg from '../../assets/images/service-custom.jpg';
-import carWashImg from '../../assets/images/service-car-wash.jpg';
-import acRepairImg from '../../assets/images/service-ac-repair.jpg';
+} from '../assets/icons';
+import diagnosticImg from '../assets/images/service-diagnostic.jpg';
+import engineRepairImg from '../assets/images/service-engine-repair.jpg';
+import wheelRepairImg from '../assets/images/service-wheel-repair.jpg';
+import oilChangeImg from '../assets/images/service-oil-change.jpg';
+import bodyWorkImg from '../assets/images/service-body-work.jpg';
+import batteryImg from '../assets/images/service-battery.jpg';
+import insuranceImg from '../assets/images/service-car-insurance.jpg';
+import customImg from '../assets/images/service-custom.jpg';
+import carWashImg from '../assets/images/service-car-wash.jpg';
+import acRepairImg from '../assets/images/service-ac-repair.jpg';
 
 const SERVICES = [
   {
