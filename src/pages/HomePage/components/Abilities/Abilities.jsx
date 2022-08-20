@@ -34,7 +34,7 @@ const Abilities = () => {
       <AbilitiesWrapperMotion
         initial='offScreen'
         whileInView='onScreen'
-        viewport={{ once: false, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.8 }}
       >
         {services.slice(0, 8).map((service, index) => (
           <Card
