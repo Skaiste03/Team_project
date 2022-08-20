@@ -14,11 +14,31 @@ import Form from '../../../../components/organisms/Form/Form';
 import { HOME_PAGE_FORM } from '../../../../shared/constants/forms';
 import ArrowButton from '../../../../components/atoms/ArrowButton';
 import ROUTES from '../../../../shared/constants/routes';
+import { motion } from 'framer-motion';
+
+const ServicesLeftMotion = motion(StyledServicesLeft);
+const ServicesRightMotion = motion(StyledServicesRight);
+const ServicesMotion = motion(StyledServices);
+
+const variants = {
+  left: {
+    offScreen: { y: '100px', opacity: 0 },
+    onScreen: { y: '0px', opacity: 1, transition: { delay: 0.3 } },
+  },
+  right: {
+    offScreen: { y: '-100px', opacity: 0 },
+    onScreen: { y: '0px', opacity: 1, transition: { delay: 0.3 } },
+  },
+};
 
 const Services = () => {
   return (
-    <StyledServices>
-      <StyledServicesLeft>
+    <ServicesMotion
+      initial='offScreen'
+      whileInView='onScreen'
+      viewport={{ once: true, amount: 0.4 }}
+    >
+      <ServicesLeftMotion variants={variants.left}>
         <StyledServicesHeading>
           {TEXTS.homePage.services.heading}
         </StyledServicesHeading>
@@ -31,9 +51,9 @@ const Services = () => {
             text={TEXTS.homePage.services.button}
           />
         </StyledServicesExpWrapper>
-      </StyledServicesLeft>
+      </ServicesLeftMotion>
 
-      <StyledServicesRight>
+      <ServicesRightMotion variants={variants.right}>
         <StyledServicesRightHeading>
           {TEXTS.homePage.services.formHeading}
         </StyledServicesRightHeading>
@@ -43,8 +63,8 @@ const Services = () => {
           buttonText={TEXTS.homePage.form.button}
           fill={'light'}
         />
-      </StyledServicesRight>
-    </StyledServices>
+      </ServicesRightMotion>
+    </ServicesMotion>
   );
 };
 
