@@ -41,6 +41,20 @@ export const StyledServiceCard = styled.div`
     opacity: 0.6;
   }
 
+  transition: 0.4s ease-in-out;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.color.orange};
+    p,
+    h5 {
+      color: ${({ theme }) => theme.color.white};
+    }
+
+    img {
+      background-color: ${({ theme }) => theme.color.white};
+    }
+  }
+
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     padding: 58px 166px;
   }
