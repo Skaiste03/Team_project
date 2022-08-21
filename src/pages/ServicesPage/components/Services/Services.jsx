@@ -6,7 +6,7 @@ import {
 } from './Services.style';
 import TEXTS from '../../../../shared/texts/texts';
 import ArrowButton from '../../../../components/atoms/ArrowButton';
-import SERVICES from '../../../../shared/constants/services';
+import SERVICES from '../../../../data/services';
 import Card from '../../../../components/atoms/Card';
 import shortenText from '../../../../shared/func/shortenText';
 import shuffleArray from '../../../../shared/func/shuffleArray';
@@ -23,7 +23,7 @@ const Services = () => {
           {shortenText(services[0].paragraph1, 30)}
         </StyledServicesDesc>
         <ArrowButton
-          path={`/services/${services[0].id}`}
+          path={`/services/${services[0].slug}`}
           text={TEXTS.servicesPage.services.buttonText}
         />
       </StyledServicesHighlighted>
@@ -32,7 +32,7 @@ const Services = () => {
           key={service.id}
           text={service.text}
           logo={service.logo}
-          id={service.id}
+          slug={service.slug}
         />
       ))}
     </StyledServices>

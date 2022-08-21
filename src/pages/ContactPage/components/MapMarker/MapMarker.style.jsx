@@ -1,12 +1,21 @@
 import styled from 'styled-components';
+import BREAKPOINTS from '../../../../shared/constants/breakpoints';
 
 export const StyledMapMarker = styled.div`
-  padding: 10px 20px;
+  padding: 0;
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    padding: 30px;
+  }
 
   & svg {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
     padding-bottom: 20px;
+
+    @media screen and (min-width: ${BREAKPOINTS.md}) {
+      display: block;
+    }
   }
 `;
 

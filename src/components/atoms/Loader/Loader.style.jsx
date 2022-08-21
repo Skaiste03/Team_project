@@ -5,10 +5,12 @@ export const StyledLoaderDiv = styled.div`
   justify-content: center;
   align-items: center;
 
-  height: 40vh;
+  height: 100vh;
 `;
 
 export const StyledLoader = styled.div`
+  margin-bottom: 83px;
+
   .loader-container {
     display: flex;
     gap: 5px;

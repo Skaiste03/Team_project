@@ -1,4 +1,5 @@
-import TEXTS from '../texts/texts';
+import { uid } from 'uid';
+import TEXTS from '../shared/texts/texts';
 import {
   DiagServiceIcon,
   EngineServiceIcon,
@@ -8,21 +9,22 @@ import {
   BatteryServiceIcon,
   IncurServiceIcon,
   CustomServiceIcon,
-} from '../../assets/icons';
-import diagnosticImg from '../../assets/images/service-diagnostic.jpg';
-import engineRepairImg from '../../assets/images/service-engine-repair.jpg';
-import wheelRepairImg from '../../assets/images/service-wheel-repair.jpg';
-import oilChangeImg from '../../assets/images/service-oil-change.jpg';
-import bodyWorkImg from '../../assets/images/service-body-work.jpg';
-import batteryImg from '../../assets/images/service-battery.jpg';
-import insuranceImg from '../../assets/images/service-car-insurance.jpg';
-import customImg from '../../assets/images/service-custom.jpg';
-import carWashImg from '../../assets/images/service-car-wash.jpg';
-import acRepairImg from '../../assets/images/service-ac-repair.jpg';
+} from '../assets/icons';
+import diagnosticImg from '../assets/images/service-diagnostic.jpg';
+import engineRepairImg from '../assets/images/service-engine-repair.jpg';
+import wheelRepairImg from '../assets/images/service-wheel-repair.jpg';
+import oilChangeImg from '../assets/images/service-oil-change.jpg';
+import bodyWorkImg from '../assets/images/service-body-work.jpg';
+import batteryImg from '../assets/images/service-battery.jpg';
+import insuranceImg from '../assets/images/service-car-insurance.jpg';
+import customImg from '../assets/images/service-custom.jpg';
+import carWashImg from '../assets/images/service-car-wash.jpg';
+import acRepairImg from '../assets/images/service-ac-repair.jpg';
 
 const SERVICES = [
   {
-    id: 1,
+    id: uid(),
+    slug: 'car-diagnostic',
     text: `${TEXTS.services.diag}`,
     logo: <DiagServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -36,7 +38,8 @@ const SERVICES = [
     },
   },
   {
-    id: 2,
+    id: uid(),
+    slug: 'engine-repair',
     text: `${TEXTS.services.engine}`,
     logo: <EngineServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -50,7 +53,8 @@ const SERVICES = [
     },
   },
   {
-    id: 3,
+    id: uid(),
+    slug: 'wheel-repair',
     text: `${TEXTS.services.wheel}`,
     logo: <WheelServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -64,7 +68,8 @@ const SERVICES = [
     },
   },
   {
-    id: 4,
+    id: uid(),
+    slug: 'oil-change',
     text: `${TEXTS.services.oil}`,
     logo: <OilServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -78,7 +83,8 @@ const SERVICES = [
     },
   },
   {
-    id: 5,
+    id: uid(),
+    slug: 'body-repair',
     text: `${TEXTS.services.body}`,
     logo: <BodyServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -92,7 +98,8 @@ const SERVICES = [
     },
   },
   {
-    id: 6,
+    id: uid(),
+    slug: 'battery-change',
     text: `${TEXTS.services.batteries}`,
     logo: <BatteryServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -106,7 +113,8 @@ const SERVICES = [
     },
   },
   {
-    id: 7,
+    id: uid(),
+    slug: 'car-insurance',
     text: `${TEXTS.services.insur}`,
     logo: <IncurServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -120,7 +128,8 @@ const SERVICES = [
     },
   },
   {
-    id: 8,
+    id: uid(),
+    slug: 'custom-service',
     text: `${TEXTS.services.custom}`,
     logo: <CustomServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -134,7 +143,8 @@ const SERVICES = [
     },
   },
   {
-    id: 9,
+    id: uid(),
+    slug: 'car-wash',
     text: `${TEXTS.services.wash}`,
     logo: <DiagServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,
@@ -148,7 +158,8 @@ const SERVICES = [
     },
   },
   {
-    id: 10,
+    id: uid(),
+    slug: 'ac-repair',
     text: `${TEXTS.services.ac}`,
     logo: <EngineServiceIcon />,
     title1: `${TEXTS.servicePage.title1}`,

@@ -6,6 +6,8 @@ export const StyleHeader = styled.header`
   flex-wrap: wrap;
   justify-content: space-between;
 
+  gap: 20px;
+
   /* Header container */
   max-width: 1360px;
   margin: 0 auto;

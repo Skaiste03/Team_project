@@ -14,6 +14,8 @@ export const StyleCard = styled.div`
 
   transition: background-color 0.5s;
 
+  padding: 10px;
+
   & svg {
     width: 23px;
     height: auto;

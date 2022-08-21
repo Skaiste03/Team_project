@@ -5,10 +5,11 @@ import OurBlog from './components/OurBlog';
 import Recaps from './components/Recaps/Recaps';
 import Posts from './components/Posts';
 import CallToAction from '../../components/organisms/CallToAction';
+import Main from '../../components/atoms/Main';
 
 const Blog = () => {
   return (
-    <main>
+    <Main>
       <StyledWrapper>
         <OurBlog />
       </StyledWrapper>
@@ -26,7 +27,7 @@ const Blog = () => {
       </StyledWrapper>
 
       <CallToAction />
-    </main>
+    </Main>
   );
 };
 

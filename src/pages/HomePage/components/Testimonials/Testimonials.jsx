@@ -88,8 +88,8 @@ const Testimonials = () => {
 
   // -- Motion variants
   const slider = {
-    next: { x: `${isSmall ? '20px' : '50'}`, opacity: 0 },
-    prev: { x: `${isSmall ? '-20px' : '-50'}`, opacity: 0 },
+    next: { x: `${isSmall ? '20px' : '50px'}`, opacity: 0 },
+    prev: { x: `${isSmall ? '-20px' : '-50px'}`, opacity: 0 },
   };
 
   return (

@@ -11,10 +11,11 @@ import Hero from '../../components/organisms/Hero';
 import heroImage from '../../assets/images/hero-about-img.jpg';
 
 import TEXTS from '../../shared/texts/texts';
+import Main from '../../components/atoms/Main';
 
 const AboutPage = () => {
   return (
-    <main>
+    <Main>
       <StyledWrapper>
         <StyledContainer>
           <Hero
@@ -43,7 +44,7 @@ const AboutPage = () => {
         </StyledContainer>
       </StyledWrapper>
       <CallToAction />
-    </main>
+    </Main>
   );
 };
 
