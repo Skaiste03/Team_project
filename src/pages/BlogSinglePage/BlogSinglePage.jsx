@@ -18,8 +18,6 @@ import {
 const BlogSinglePage = () => {
   const { id } = useParams();
 
-  console.log(typeof id);
-
   const post = POST.find((element) => `${element.id}` === id);
 
   return (
