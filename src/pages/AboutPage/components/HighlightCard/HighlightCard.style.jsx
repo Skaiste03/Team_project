@@ -34,6 +34,12 @@ export const StyledTextDiv = styled.div`
 
     opacity: 0.7;
   }
+
+  transition: 0.3s ease-in;
+
+  &:hover {
+    opacity: 0.9;
+  }
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
     padding: 80px 35px;
   }
