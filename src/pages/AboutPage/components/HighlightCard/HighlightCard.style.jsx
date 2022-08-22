@@ -22,7 +22,7 @@ export const StyledTextDiv = styled.div`
   color: ${({ theme }) => theme.color.white};
 
   gap: 32px;
-  padding: 80px 60px;
+  padding: 60px 40px;
 
   h4 {
     ${({ theme }) => theme.h4};
@@ -36,6 +36,7 @@ export const StyledTextDiv = styled.div`
   }
 
   transition: 0.3s ease-in;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.9;

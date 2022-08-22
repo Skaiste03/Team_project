@@ -38,13 +38,13 @@ export const StyledDescDiv = styled.div`
   align-items: center;
   gap: 48px;
 
-  padding: 56px;
+  padding: 46px;
 
   z-index: 2;
 
   width: 100%;
 
-  @media screen and (min-width: ${BREAKPOINTS.md}) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     padding: 96px 96px 146px 96px;
   }
 
