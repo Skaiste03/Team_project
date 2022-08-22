@@ -36,7 +36,7 @@ export const StyledTextDiv = styled.div`
   }
 
   transition: 0.3s ease-in;
-  cursor: pointer;
+  cursor: default;
 
   &:hover {
     opacity: 0.9;
