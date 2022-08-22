@@ -41,6 +41,7 @@ export const StyledServiceCard = styled.div`
     opacity: 0.6;
   }
 
+  cursor: pointer;
   transition: 0.4s ease-in-out;
 
   &:hover {
